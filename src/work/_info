@@ -1,0 +1,1286 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+!s11e vcom 2021.2 2021.04, Apr 14 2021
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 d/home/longz/Desktop/Cpre381/project-1/src
+T_opt
+!s110 1636942663
+Vn8[ZM_jVX76O=Aaj:]X:?3
+04 14 9 work mips_processor structure 1
+=1-0050569b1228-6191c347-32a08-477b
+!s124 OEM100
+o-quiet -auto_acc_if_foreign -work work +acc
+tCvgOpt 0
+n@_opt
+OL;O;2021.2;73
+Eaddsub
+Z2 w1631332499
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 57
+R1
+Z5 8/home/longz/Desktop/Cpre381/project-1/src/addsub.vhd
+Z6 F/home/longz/Desktop/Cpre381/project-1/src/addsub.vhd
+l0
+Z7 L21 1
+ViSQ>=;D;QbINoW3zZ7YHY0
+!s100 T8GJZgkJ9STB:kUdnh7bn2
+Z8 OL;C;2021.2;73
+32
+Z9 !s110 1636942011
+!i10b 1
+Z10 !s108 1636942011.000000
+Z11 !s90 -reportprogress|300|-work|work|/home/longz/Desktop/Cpre381/project-1/src/addsub.vhd|
+Z12 !s107 /home/longz/Desktop/Cpre381/project-1/src/addsub.vhd|
+!i113 0
+Z13 o-work work
+Z14 tExplicit 1 CvgOpt 0
+Abehavior
+R3
+R4
+DEx4 work 6 addsub 0 22 iSQ>=;D;QbINoW3zZ7YHY0
+!i122 57
+l57
+L31 48
+V]j=k?P2@N7LW1gAUI914S0
+!s100 cUQ5?VVzf7]4SELlaCE0H2
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Ealu_32bit
+Z15 w1636765684
+R3
+R4
+!i122 58
+R1
+Z16 8/home/longz/Desktop/Cpre381/project-1/src/ALU_32bit.vhd
+Z17 F/home/longz/Desktop/Cpre381/project-1/src/ALU_32bit.vhd
+l0
+Z18 L20 1
+V@6CKlSX1NJSk2[nA7E[d_1
+!s100 E9Il0NK<_dgaJDA;z]F243
+R8
+32
+R9
+!i10b 1
+R10
+Z19 !s90 -reportprogress|300|-work|work|/home/longz/Desktop/Cpre381/project-1/src/ALU_32bit.vhd|
+Z20 !s107 /home/longz/Desktop/Cpre381/project-1/src/ALU_32bit.vhd|
+!i113 0
+R13
+R14
+Astructural
+R3
+R4
+DEx4 work 9 alu_32bit 0 22 @6CKlSX1NJSk2[nA7E[d_1
+!i122 58
+l101
+L31 169
+VY9=F^m[WZ>=WOVYAaA7d01
+!s100 k=R4^jo5B9>1eWb<n`D5O3
+R8
+32
+R9
+!i10b 1
+R10
+R19
+R20
+!i113 0
+R13
+R14
+Eand_32bit_data
+Z21 w1636754715
+R3
+R4
+!i122 59
+R1
+Z22 8/home/longz/Desktop/Cpre381/project-1/src/and_32bit_data.vhd
+Z23 F/home/longz/Desktop/Cpre381/project-1/src/and_32bit_data.vhd
+l0
+R18
+V^eMnmHaA3b`aRInj=dzcd1
+!s100 hSd3[OF;>EPKz1di6^?dF3
+R8
+32
+R9
+!i10b 1
+R10
+Z24 !s90 -reportprogress|300|-work|work|/home/longz/Desktop/Cpre381/project-1/src/and_32bit_data.vhd|
+Z25 !s107 /home/longz/Desktop/Cpre381/project-1/src/and_32bit_data.vhd|
+!i113 0
+R13
+R14
+Adataflow
+R3
+R4
+DEx4 work 14 and_32bit_data 0 22 ^eMnmHaA3b`aRInj=dzcd1
+!i122 59
+l27
+Z26 L26 8
+VP:lOGidS`NA?oWKo_69S_3
+!s100 K21:GIWW87K]F_gW8QX951
+R8
+32
+R9
+!i10b 1
+R10
+R24
+R25
+!i113 0
+R13
+R14
+Eandg2
+Z27 w1636232237
+R3
+R4
+!i122 60
+R1
+Z28 8/home/longz/Desktop/Cpre381/project-1/src/andg2.vhd
+Z29 F/home/longz/Desktop/Cpre381/project-1/src/andg2.vhd
+l0
+Z30 L23 1
+VQ@<<<@nlJ=eiIl4BJDFzW2
+!s100 YT?bGzEmcFo:DlnoC^B4_0
+R8
+32
+Z31 !s110 1636942012
+!i10b 1
+R10
+Z32 !s90 -reportprogress|300|-work|work|/home/longz/Desktop/Cpre381/project-1/src/andg2.vhd|
+Z33 !s107 /home/longz/Desktop/Cpre381/project-1/src/andg2.vhd|
+!i113 0
+R13
+R14
+Adataflow
+R3
+R4
+DEx4 work 5 andg2 0 22 Q@<<<@nlJ=eiIl4BJDFzW2
+!i122 60
+l32
+Z34 L31 6
+VJVOzCk?IH:iJ5bCRU`CK13
+!s100 I`@Z@UBObS]<7m8bPgKUS1
+R8
+32
+R31
+!i10b 1
+R10
+R32
+R33
+!i113 0
+R13
+R14
+Ebarrel_shifter
+Z35 w1636349317
+Z36 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+R3
+R4
+!i122 61
+R1
+Z37 8/home/longz/Desktop/Cpre381/project-1/src/BarrelShifter.vhd
+Z38 F/home/longz/Desktop/Cpre381/project-1/src/BarrelShifter.vhd
+l0
+L5 1
+VPko3F1f][QJM]n]A64U1j3
+!s100 m[49kc:5<=H`lNLN^VK^<0
+R8
+32
+R31
+!i10b 1
+Z39 !s108 1636942012.000000
+Z40 !s90 -reportprogress|300|-work|work|/home/longz/Desktop/Cpre381/project-1/src/BarrelShifter.vhd|
+Z41 !s107 /home/longz/Desktop/Cpre381/project-1/src/BarrelShifter.vhd|
+!i113 0
+R13
+R14
+Absh
+R36
+R3
+R4
+DEx4 work 14 barrel_shifter 0 22 Pko3F1f][QJM]n]A64U1j3
+!i122 61
+l16
+L14 22
+Vb]TW_`aB=DaImYlPInZ9^0
+!s100 ff7n`R76cIbQ4PAE0Lm<`3
+R8
+32
+R31
+!i10b 1
+R39
+R40
+R41
+!i113 0
+R13
+R14
+Econtrolunit
+Z42 w1636765291
+R3
+R4
+!i122 63
+R1
+Z43 8/home/longz/Desktop/Cpre381/project-1/src/controlUnit.vhd
+Z44 F/home/longz/Desktop/Cpre381/project-1/src/controlUnit.vhd
+l0
+R18
+V@[52bogeConZ=?gfk`c961
+!s100 M>@`kd26^T4oEXfiX82?j1
+R8
+32
+Z45 !s110 1636942014
+!i10b 1
+Z46 !s108 1636942013.000000
+Z47 !s90 -reportprogress|300|-work|work|/home/longz/Desktop/Cpre381/project-1/src/controlUnit.vhd|
+Z48 !s107 /home/longz/Desktop/Cpre381/project-1/src/controlUnit.vhd|
+!i113 0
+R13
+R14
+Abehavioral
+R3
+R4
+DEx4 work 11 controlunit 0 22 @[52bogeConZ=?gfk`c961
+!i122 63
+l49
+L42 570
+VAc`NQzZfTPfmi8@YoXc`H3
+!s100 CoO9PF9BiXPb_?bImQDK:3
+R8
+32
+R45
+!i10b 1
+R46
+R47
+R48
+!i113 0
+R13
+R14
+Econtrolunit_tb
+Z49 w1636757621
+R3
+R4
+!i122 64
+R1
+Z50 8/home/longz/Desktop/Cpre381/project-1/src/controlUnit_tb.vhd
+Z51 F/home/longz/Desktop/Cpre381/project-1/src/controlUnit_tb.vhd
+l0
+R18
+V>bL;;Og8Y=;KAb[lPV<:M0
+!s100 f>bidZIWc3Md?US2IWMd:3
+R8
+32
+R45
+!i10b 1
+Z52 !s108 1636942014.000000
+Z53 !s90 -reportprogress|30|-work|work|/home/longz/Desktop/Cpre381/project-1/src/controlUnit_tb.vhd|
+Z54 !s107 /home/longz/Desktop/Cpre381/project-1/src/controlUnit_tb.vhd|
+!i113 0
+R13
+R14
+Abehavior
+R3
+R4
+DEx4 work 14 controlunit_tb 0 22 >bL;;Og8Y=;KAb[lPV<:M0
+!i122 64
+l60
+L23 230
+VnkR9:9BE:[PAmSnCEN>Yn0
+!s100 fz8Sl9onHcOQ9A2YGQBX[1
+R8
+32
+R45
+!i10b 1
+R52
+R53
+R54
+!i113 0
+R13
+R14
+Edecoder5t32
+Z55 w1633053306
+R3
+R4
+!i122 65
+R1
+Z56 8/home/longz/Desktop/Cpre381/project-1/src/decoder5t32.vhd
+Z57 F/home/longz/Desktop/Cpre381/project-1/src/decoder5t32.vhd
+l0
+R30
+VC3>NMaGB=4n[cA]GTRo_z3
+!s100 1N?DMH[2PMllSPF>b3[ej2
+R8
+32
+R45
+!i10b 1
+R52
+Z58 !s90 -reportprogress|30|-work|work|/home/longz/Desktop/Cpre381/project-1/src/decoder5t32.vhd|
+Z59 !s107 /home/longz/Desktop/Cpre381/project-1/src/decoder5t32.vhd|
+!i113 0
+R13
+R14
+Adataflow
+R3
+R4
+DEx4 work 11 decoder5t32 0 22 C3>NMaGB=4n[cA]GTRo_z3
+!i122 65
+l32
+L29 41
+VD5V>Lc@HGAK<KMSY`HF0Z1
+!s100 >MBZj4QeCYkKh=CA>4fcL2
+R8
+32
+R45
+!i10b 1
+R52
+R58
+R59
+!i113 0
+R13
+R14
+Edffg
+Z60 w1633552470
+R3
+R4
+!i122 66
+R1
+Z61 8/home/longz/Desktop/Cpre381/project-1/src/dffg.vhd
+Z62 F/home/longz/Desktop/Cpre381/project-1/src/dffg.vhd
+l0
+R30
+V<]b9Vm3e`GAN;Cnj:57L>2
+!s100 T4gcXQGMCgKJbn8XhBM;b0
+R8
+32
+R45
+!i10b 1
+R52
+Z63 !s90 -reportprogress|30|-work|work|/home/longz/Desktop/Cpre381/project-1/src/dffg.vhd|
+Z64 !s107 /home/longz/Desktop/Cpre381/project-1/src/dffg.vhd|
+!i113 0
+R13
+R14
+Amixed
+R3
+R4
+DEx4 work 4 dffg 0 22 <]b9Vm3e`GAN;Cnj:57L>2
+!i122 66
+l37
+L33 29
+V`CHXPZKVEek`3gFWL_zFm2
+!s100 iOdlTUid@@]UimFK_53^C1
+R8
+32
+R45
+!i10b 1
+R52
+R63
+R64
+!i113 0
+R13
+R14
+Eextender_n
+Z65 w1636929213
+R36
+R3
+R4
+!i122 62
+R1
+Z66 8/home/longz/Desktop/Cpre381/project-1/src/bitxtend.vhd
+Z67 F/home/longz/Desktop/Cpre381/project-1/src/bitxtend.vhd
+l0
+L5 1
+V9[j9gU;Vld^`6f=YRhioF2
+!s100 _CIUX=I[jo>VcKiNcAc7T3
+R8
+32
+Z68 !s110 1636942013
+!i10b 1
+R46
+Z69 !s90 -reportprogress|300|-work|work|/home/longz/Desktop/Cpre381/project-1/src/bitxtend.vhd|
+Z70 !s107 /home/longz/Desktop/Cpre381/project-1/src/bitxtend.vhd|
+!i113 0
+R13
+R14
+Abehavior
+R36
+R3
+R4
+DEx4 work 10 extender_n 0 22 9[j9gU;Vld^`6f=YRhioF2
+!i122 62
+l18
+L16 8
+VOlgdzDM^1PzSPmHX5AgZh3
+!s100 c8ejeQ?gM=Rf]MlYID@9>2
+R8
+32
+R68
+!i10b 1
+R46
+R69
+R70
+!i113 0
+R13
+R14
+Efetch
+Z71 w1636664718
+R3
+R4
+!i122 67
+R1
+Z72 8/home/longz/Desktop/Cpre381/project-1/src/fetch.vhd
+Z73 F/home/longz/Desktop/Cpre381/project-1/src/fetch.vhd
+l0
+L17 1
+Vc[@A?b^AP[om7lFZLe^7@0
+!s100 b0LMHcz382@_kXZzF2RIg2
+R8
+32
+R45
+!i10b 1
+R52
+Z74 !s90 -reportprogress|30|-work|work|/home/longz/Desktop/Cpre381/project-1/src/fetch.vhd|
+Z75 !s107 /home/longz/Desktop/Cpre381/project-1/src/fetch.vhd|
+!i113 0
+R13
+R14
+Abehavorial
+R3
+R4
+DEx4 work 5 fetch 0 22 c[@A?b^AP[om7lFZLe^7@0
+!i122 67
+l28
+L26 12
+VAj;3mEEEPeb;Ao9]WT_^C1
+!s100 BGha=?3K^4hzm8Ao9E_DU2
+R8
+32
+R45
+!i10b 1
+R52
+R74
+R75
+!i113 0
+R13
+R14
+Efulladder
+Z76 w1631324950
+R3
+R4
+!i122 68
+R1
+Z77 8/home/longz/Desktop/Cpre381/project-1/src/Fulladder.vhd
+Z78 F/home/longz/Desktop/Cpre381/project-1/src/Fulladder.vhd
+l0
+R7
+V[BgXo<4R>Kk>2;93NC1l[3
+!s100 M_Kb>RZZgiV06<YThXV;Q0
+R8
+32
+Z79 !s110 1636942015
+!i10b 1
+R52
+Z80 !s90 -reportprogress|30|-work|work|/home/longz/Desktop/Cpre381/project-1/src/Fulladder.vhd|
+Z81 !s107 /home/longz/Desktop/Cpre381/project-1/src/Fulladder.vhd|
+!i113 0
+R13
+R14
+Apizza
+R3
+R4
+DEx4 work 9 fulladder 0 22 [BgXo<4R>Kk>2;93NC1l[3
+!i122 68
+l60
+L30 59
+Vd^f2MlHe2=a4>?nk@1Efo1
+!s100 ULW_38DKl32A9Wi?QRMl93
+R8
+32
+R79
+!i10b 1
+R52
+R80
+R81
+!i113 0
+R13
+R14
+Efulladder_n
+Z82 w1631328412
+R3
+R4
+!i122 76
+R1
+Z83 8/home/longz/Desktop/Cpre381/project-1/src/Fulladder_N.vhd
+Z84 F/home/longz/Desktop/Cpre381/project-1/src/Fulladder_N.vhd
+l0
+R7
+VOHlF@]TZS8VPMzf^IE1jP0
+!s100 Yd<:VBDeez]VG=oTUagQ>1
+R8
+32
+Z85 !s110 1636942021
+!i10b 1
+Z86 !s108 1636942021.000000
+Z87 !s90 -reportprogress|300|-work|work|/home/longz/Desktop/Cpre381/project-1/src/Fulladder_N.vhd|
+Z88 !s107 /home/longz/Desktop/Cpre381/project-1/src/Fulladder_N.vhd|
+!i113 0
+R13
+R14
+Apizza_n
+R3
+R4
+DEx4 work 11 fulladder_n 0 22 OHlF@]TZS8VPMzf^IE1jP0
+!i122 76
+l44
+L31 34
+Vbi?fd<G`g8`8zc;NAf@XS1
+!s100 aI3aTG5z8M2FUOd@=P8431
+R8
+32
+R85
+!i10b 1
+R86
+R87
+R88
+!i113 0
+R13
+R14
+Emem
+Z89 w1633410510
+R36
+R3
+R4
+!i122 77
+R1
+Z90 8/home/longz/Desktop/Cpre381/project-1/src/mem.vhd
+Z91 F/home/longz/Desktop/Cpre381/project-1/src/mem.vhd
+l0
+L8 1
+Vl8<PCiN;cU;BN3M[A<;IE3
+!s100 fRlcaiTJZJ1H;nZh;8=LI3
+R8
+32
+R85
+!i10b 1
+R86
+Z92 !s90 -reportprogress|300|-work|work|/home/longz/Desktop/Cpre381/project-1/src/mem.vhd|
+Z93 !s107 /home/longz/Desktop/Cpre381/project-1/src/mem.vhd|
+!i113 0
+R13
+R14
+Artl
+R36
+R3
+R4
+DEx4 work 3 mem 0 22 l8<PCiN;cU;BN3M[A<;IE3
+!i122 77
+l37
+L27 24
+V`6^NbPhKNmSBg:`:Un8;g3
+!s100 OI8_3><BhDkT3l3n8`OXd3
+R8
+32
+R85
+!i10b 1
+R86
+R92
+R93
+!i113 0
+R13
+R14
+Emips_processor
+Z94 w1636942658
+R3
+R4
+!i122 96
+R1
+Z95 8/home/longz/Desktop/Cpre381/project-1/src/MIPS_Processor.vhd
+Z96 F/home/longz/Desktop/Cpre381/project-1/src/MIPS_Processor.vhd
+l0
+R18
+V:o>C8KMfc[QmXhUL_3eIH3
+!s100 ^i1^b5_W1>L_al]g]Ha6H1
+R8
+32
+Z97 !s110 1636942661
+!i10b 1
+Z98 !s108 1636942661.000000
+Z99 !s90 -reportprogress|300|-work|work|/home/longz/Desktop/Cpre381/project-1/src/MIPS_Processor.vhd|
+Z100 !s107 /home/longz/Desktop/Cpre381/project-1/src/MIPS_Processor.vhd|
+!i113 0
+R13
+R14
+Astructure
+R3
+R4
+DEx4 work 14 mips_processor 0 22 :o>C8KMfc[QmXhUL_3eIH3
+!i122 96
+l203
+L32 344
+VkgNfOE]WS4DQElXch2kfn1
+!s100 :RdoCe5Mi49f]G[KnEQnC0
+R8
+32
+R97
+!i10b 1
+R98
+R99
+R100
+!i113 0
+R13
+R14
+Emux2t1
+Z101 w1630629905
+R3
+R4
+!i122 79
+R1
+Z102 8/home/longz/Desktop/Cpre381/project-1/src/mux2t1.vhd
+Z103 F/home/longz/Desktop/Cpre381/project-1/src/mux2t1.vhd
+l0
+R18
+V;e=ddDlLeLG>YOZzCI^OR2
+!s100 >BfQLNeOBOD:RJe[zjC031
+R8
+32
+Z104 !s110 1636942022
+!i10b 1
+Z105 !s108 1636942022.000000
+Z106 !s90 -reportprogress|30|-work|work|/home/longz/Desktop/Cpre381/project-1/src/mux2t1.vhd|
+Z107 !s107 /home/longz/Desktop/Cpre381/project-1/src/mux2t1.vhd|
+!i113 0
+R13
+R14
+Adataflow
+R3
+R4
+DEx4 work 6 mux2t1 0 22 ;e=ddDlLeLG>YOZzCI^OR2
+!i122 79
+l30
+L29 6
+VP2<GBVjkfn`5[V9;mnJNK1
+!s100 ;2>4GUaB[CX6iCc4lL<:g1
+R8
+32
+R104
+!i10b 1
+R105
+R106
+R107
+!i113 0
+R13
+R14
+Emux2t1_n
+Z108 w1631330543
+R3
+R4
+!i122 80
+R1
+Z109 8/home/longz/Desktop/Cpre381/project-1/src/mux2t1_N.vhd
+Z110 F/home/longz/Desktop/Cpre381/project-1/src/mux2t1_N.vhd
+l0
+R7
+VFY=Tc@WO1TP4Z42>dBMei3
+!s100 BKZeKCAB2i6lge3>7TA3d3
+R8
+32
+R104
+!i10b 1
+R105
+Z111 !s90 -reportprogress|30|-work|work|/home/longz/Desktop/Cpre381/project-1/src/mux2t1_N.vhd|
+Z112 !s107 /home/longz/Desktop/Cpre381/project-1/src/mux2t1_N.vhd|
+!i113 0
+R13
+R14
+Astructural
+R3
+R4
+DEx4 work 8 mux2t1_n 0 22 FY=Tc@WO1TP4Z42>dBMei3
+!i122 80
+l39
+L30 21
+V42CUQBzm6g@LDm29Dc=NM3
+!s100 W>5MMWO2LBg`K8[P>h>Ye1
+R8
+32
+R104
+!i10b 1
+R105
+R111
+R112
+!i113 0
+R13
+R14
+Emux32t1_array
+Z113 w1633550512
+Z114 DPx4 work 14 reg_array_type 0 22 g[ghLoeY3i[OTc`V8IEEW0
+R36
+R3
+R4
+!i122 82
+R1
+Z115 8/home/longz/Desktop/Cpre381/project-1/src/mux32t1_array.vhd
+Z116 F/home/longz/Desktop/Cpre381/project-1/src/mux32t1_array.vhd
+l0
+R30
+V<E8b<WlTJ2^PoQzBQI42h1
+!s100 zX;b<5KYY<DX;meod9<1X1
+R8
+32
+R104
+!i10b 1
+R105
+Z117 !s90 -reportprogress|30|-work|work|/home/longz/Desktop/Cpre381/project-1/src/mux32t1_array.vhd|
+Z118 !s107 /home/longz/Desktop/Cpre381/project-1/src/mux32t1_array.vhd|
+!i113 0
+R13
+R14
+Adataflow
+R114
+R36
+R3
+R4
+DEx4 work 13 mux32t1_array 0 22 <E8b<WlTJ2^PoQzBQI42h1
+!i122 82
+l32
+L30 7
+Vh4lmc>QYh>o5XHJ:ZM:l81
+!s100 `WZM_F<b04;R0lm0d]HKD1
+R8
+32
+R104
+!i10b 1
+R105
+R117
+R118
+!i113 0
+R13
+R14
+Emux8to1_32bit_data
+R21
+R3
+R4
+!i122 81
+R1
+Z119 8/home/longz/Desktop/Cpre381/project-1/src/mux8to1_32bit_data.vhd
+Z120 F/home/longz/Desktop/Cpre381/project-1/src/mux8to1_32bit_data.vhd
+l0
+R18
+Vj;>k?CCSla>aS14FXK<D73
+!s100 9o@jND@bj;LUlH1MQF6J_2
+R8
+32
+R104
+!i10b 1
+R105
+Z121 !s90 -reportprogress|30|-work|work|/home/longz/Desktop/Cpre381/project-1/src/mux8to1_32bit_data.vhd|
+Z122 !s107 /home/longz/Desktop/Cpre381/project-1/src/mux8to1_32bit_data.vhd|
+!i113 0
+R13
+R14
+Adataflow
+R3
+R4
+DEx4 work 18 mux8to1_32bit_data 0 22 j;>k?CCSla>aS14FXK<D73
+!i122 81
+l35
+L33 16
+VjmE2bD]:h`E=Snjb@JleR1
+!s100 Yf_ZW:Z;HKe3YljH=?n@_3
+R8
+32
+R104
+!i10b 1
+R105
+R121
+R122
+!i113 0
+R13
+R14
+Emux_32bit_dataflow
+Z123 w1636918596
+R3
+R4
+!i122 83
+R1
+Z124 8/home/longz/Desktop/Cpre381/project-1/src/mux_32bit_dataflow.vhd
+Z125 F/home/longz/Desktop/Cpre381/project-1/src/mux_32bit_dataflow.vhd
+l0
+R7
+Vb@dS<Lb5YcoKOUm?azX1b2
+!s100 VZ`=L:]:;Bz[lOaBRT?Ed0
+R8
+32
+R104
+!i10b 1
+R105
+Z126 !s90 -reportprogress|30|-work|work|/home/longz/Desktop/Cpre381/project-1/src/mux_32bit_dataflow.vhd|
+Z127 !s107 /home/longz/Desktop/Cpre381/project-1/src/mux_32bit_dataflow.vhd|
+!i113 0
+R13
+R14
+Adataflow
+R3
+R4
+DEx4 work 18 mux_32bit_dataflow 0 22 b@dS<Lb5YcoKOUm?azX1b2
+!i122 83
+l38
+L30 20
+V6>3j^2_SK4;3[>KmbK2jk3
+!s100 ;B[o5gjY7of:z_ZHKbR7:0
+R8
+32
+R104
+!i10b 1
+R105
+R126
+R127
+!i113 0
+R13
+R14
+Enand_32bit_data
+R21
+R3
+R4
+!i122 84
+R1
+Z128 8/home/longz/Desktop/Cpre381/project-1/src/nand_32bit_data.vhd
+Z129 F/home/longz/Desktop/Cpre381/project-1/src/nand_32bit_data.vhd
+l0
+R18
+VngLnIHiRE91`4G]NS_[M[1
+!s100 7bioe;zlLF6QkcfZYnNW01
+R8
+32
+Z130 !s110 1636942023
+!i10b 1
+Z131 !s108 1636942023.000000
+Z132 !s90 -reportprogress|30|-work|work|/home/longz/Desktop/Cpre381/project-1/src/nand_32bit_data.vhd|
+Z133 !s107 /home/longz/Desktop/Cpre381/project-1/src/nand_32bit_data.vhd|
+!i113 0
+R13
+R14
+Adataflow
+R3
+R4
+DEx4 work 15 nand_32bit_data 0 22 ngLnIHiRE91`4G]NS_[M[1
+!i122 84
+l27
+R26
+VME_UTk@]V;]P6nS`9MagE2
+!s100 ?5<VR9TjZm68Bl`P>4UbR0
+R8
+32
+R130
+!i10b 1
+R131
+R132
+R133
+!i113 0
+R13
+R14
+Enor_32bit_data
+R21
+R3
+R4
+!i122 85
+R1
+Z134 8/home/longz/Desktop/Cpre381/project-1/src/nor_32bit_data.vhd
+Z135 F/home/longz/Desktop/Cpre381/project-1/src/nor_32bit_data.vhd
+l0
+R18
+V=k9cFVYTmhVjYFfHjJV>m3
+!s100 HhnC02OVJz@I<d8>[[0Z<2
+R8
+32
+R130
+!i10b 1
+R131
+Z136 !s90 -reportprogress|30|-work|work|/home/longz/Desktop/Cpre381/project-1/src/nor_32bit_data.vhd|
+Z137 !s107 /home/longz/Desktop/Cpre381/project-1/src/nor_32bit_data.vhd|
+!i113 0
+R13
+R14
+Adataflow
+R3
+R4
+DEx4 work 14 nor_32bit_data 0 22 =k9cFVYTmhVjYFfHjJV>m3
+!i122 85
+l27
+R26
+V9bc^jkA0XVHfAIHQ>9@BG3
+!s100 W;mg:[QgB[AXn_mFM?gAD0
+R8
+32
+R130
+!i10b 1
+R131
+R136
+R137
+!i113 0
+R13
+R14
+Eor_32bit_data
+R21
+R3
+R4
+!i122 86
+R1
+Z138 8/home/longz/Desktop/Cpre381/project-1/src/or_32bit_data.vhd
+Z139 F/home/longz/Desktop/Cpre381/project-1/src/or_32bit_data.vhd
+l0
+R18
+VM0[iW2d7U:J^1U;IRAkf<1
+!s100 UhLSU:J=maHWB]G@GFMXb1
+R8
+32
+R130
+!i10b 1
+R131
+Z140 !s90 -reportprogress|30|-work|work|/home/longz/Desktop/Cpre381/project-1/src/or_32bit_data.vhd|
+Z141 !s107 /home/longz/Desktop/Cpre381/project-1/src/or_32bit_data.vhd|
+!i113 0
+R13
+R14
+Adataflow
+R3
+R4
+DEx4 work 13 or_32bit_data 0 22 M0[iW2d7U:J^1U;IRAkf<1
+!i122 86
+l27
+R26
+VjK0dkMBLXF[[CXKoa2@0c1
+!s100 S@J^?]HbgY^z5c3Zb[I@Y3
+R8
+32
+R130
+!i10b 1
+R131
+R140
+R141
+!i113 0
+R13
+R14
+Eorg2
+R27
+R3
+R4
+!i122 87
+R1
+Z142 8/home/longz/Desktop/Cpre381/project-1/src/org2.vhd
+Z143 F/home/longz/Desktop/Cpre381/project-1/src/org2.vhd
+l0
+R30
+V[C`FCj=kL0CTBYLlbjJzD3
+!s100 bGQ1F9eW^Q17OoL9h4g7z2
+R8
+32
+R130
+!i10b 1
+R131
+Z144 !s90 -reportprogress|30|-work|work|/home/longz/Desktop/Cpre381/project-1/src/org2.vhd|
+Z145 !s107 /home/longz/Desktop/Cpre381/project-1/src/org2.vhd|
+!i113 0
+R13
+R14
+Adataflow
+R3
+R4
+DEx4 work 4 org2 0 22 [C`FCj=kL0CTBYLlbjJzD3
+!i122 87
+l32
+R34
+VNHGn>Kh:]BEh4o]ImiG<d3
+!s100 h5_AzR3TdRA0a_K=dQ>mI2
+R8
+32
+R130
+!i10b 1
+R131
+R144
+R145
+!i113 0
+R13
+R14
+Eprogramcounter
+Z146 w1636940555
+R3
+R4
+!i122 88
+R1
+Z147 8/home/longz/Desktop/Cpre381/project-1/src/programCounter.vhd
+Z148 F/home/longz/Desktop/Cpre381/project-1/src/programCounter.vhd
+l0
+L4 1
+V448F[Pg8`hSXnKYdkf34e0
+!s100 UC9U5FYjPLE2T`<R?mBbM2
+R8
+32
+R130
+!i10b 1
+R131
+Z149 !s90 -reportprogress|30|-work|work|/home/longz/Desktop/Cpre381/project-1/src/programCounter.vhd|
+Z150 !s107 /home/longz/Desktop/Cpre381/project-1/src/programCounter.vhd|
+!i113 0
+R13
+R14
+Abehavorial
+R3
+R4
+DEx4 work 14 programcounter 0 22 448F[Pg8`hSXnKYdkf34e0
+!i122 88
+l13
+L12 17
+V8?bQm6Sm<8IMATjKSQQAU0
+!s100 >mz<jhKTEnXVaY>>D`?GC1
+R8
+32
+R130
+!i10b 1
+R131
+R149
+R150
+!i113 0
+R13
+R14
+Preg_array_type
+R3
+R4
+!i122 89
+w1633465945
+R1
+8/home/longz/Desktop/Cpre381/project-1/src/reg_array_type.vhd
+F/home/longz/Desktop/Cpre381/project-1/src/reg_array_type.vhd
+l0
+R7
+Vg[ghLoeY3i[OTc`V8IEEW0
+!s100 O?5gcFYVi?R]d]M^nSUi41
+R8
+32
+!s110 1636942024
+!i10b 1
+R131
+!s90 -reportprogress|30|-work|work|/home/longz/Desktop/Cpre381/project-1/src/reg_array_type.vhd|
+!s107 /home/longz/Desktop/Cpre381/project-1/src/reg_array_type.vhd|
+!i113 0
+R13
+R14
+Ereg_n
+Z151 w1633135026
+R3
+R4
+!i122 90
+R1
+Z152 8/home/longz/Desktop/Cpre381/project-1/src/Reg_N.vhd
+Z153 F/home/longz/Desktop/Cpre381/project-1/src/Reg_N.vhd
+l0
+L18 1
+VE1gi>R>A6SS2f3B<4mmCF2
+!s100 8o:EE;_O@lFIT]Qg1WcTA2
+R8
+32
+Z154 !s110 1636942025
+!i10b 1
+Z155 !s108 1636942025.000000
+Z156 !s90 -reportprogress|300|-work|work|/home/longz/Desktop/Cpre381/project-1/src/Reg_N.vhd|
+Z157 !s107 /home/longz/Desktop/Cpre381/project-1/src/Reg_N.vhd|
+!i113 0
+R13
+R14
+Aabc
+R3
+R4
+DEx4 work 5 reg_n 0 22 E1gi>R>A6SS2f3B<4mmCF2
+!i122 90
+l39
+L28 22
+V:M6^X9dL>JIILSMO^okL83
+!s100 gRYHII2zYjB58ST=PKKbB1
+R8
+32
+R154
+!i10b 1
+R155
+R156
+R157
+!i113 0
+R13
+R14
+Eregister_file
+Z158 w1636941608
+R114
+R36
+R3
+R4
+!i122 91
+R1
+Z159 8/home/longz/Desktop/Cpre381/project-1/src/Register_File.vhd
+Z160 F/home/longz/Desktop/Cpre381/project-1/src/Register_File.vhd
+l0
+R18
+VVgg]U8V:dA:[SBiX`>3Y;3
+!s100 P9S@PLPICSD=5_9Y6j:?51
+R8
+32
+Z161 !s110 1636942026
+!i10b 1
+Z162 !s108 1636942026.000000
+Z163 !s90 -reportprogress|300|-work|work|/home/longz/Desktop/Cpre381/project-1/src/Register_File.vhd|
+Z164 !s107 /home/longz/Desktop/Cpre381/project-1/src/Register_File.vhd|
+!i113 0
+R13
+R14
+Astructural
+R114
+R36
+R3
+R4
+DEx4 work 13 register_file 0 22 Vgg]U8V:dA:[SBiX`>3Y;3
+!i122 91
+l64
+L33 68
+VXGj:ZkW[J3G:OG5kX877;0
+!s100 IbK7zOCU0hFO6BI>^_JiH0
+R8
+32
+R161
+!i10b 1
+R162
+R163
+R164
+!i113 0
+R13
+R14
+Etb
+R89
+DPx3 std 3 env 0 22 d?`1ck@NdeD@H3RZG7FgZ2
+DPx4 ieee 16 std_logic_textio 0 22 8]8<fKiYoHe;_IDO3kmNH2
+R3
+R4
+!i122 25
+R1
+8/home/longz/Desktop/Cpre381/project-1/src/tb.vhd
+F/home/longz/Desktop/Cpre381/project-1/src/tb.vhd
+l0
+L25 1
+VZUWDl6Q0PlBe]_c?6lYJY2
+!s100 17fnb:E7lndl[EE?eR@^m0
+R8
+32
+!s110 1636941817
+!i10b 1
+!s108 1636941817.000000
+!s90 -reportprogress|300|-work|work|/home/longz/Desktop/Cpre381/project-1/src/tb.vhd|
+!s107 /home/longz/Desktop/Cpre381/project-1/src/tb.vhd|
+!i113 0
+R13
+R14
+Exor_32bit_data
+R21
+R3
+R4
+!i122 92
+R1
+Z165 8/home/longz/Desktop/Cpre381/project-1/src/xor_32bit_data.vhd
+Z166 F/home/longz/Desktop/Cpre381/project-1/src/xor_32bit_data.vhd
+l0
+R18
+VOg<NWjS6E0Z:SO[zQdzcD2
+!s100 H<m@[zS4`4[aT^4ShDJTj2
+R8
+32
+Z167 !s110 1636942028
+!i10b 1
+Z168 !s108 1636942027.000000
+Z169 !s90 -reportprogress|300|-work|work|/home/longz/Desktop/Cpre381/project-1/src/xor_32bit_data.vhd|
+Z170 !s107 /home/longz/Desktop/Cpre381/project-1/src/xor_32bit_data.vhd|
+!i113 0
+R13
+R14
+Adataflow
+R3
+R4
+DEx4 work 14 xor_32bit_data 0 22 Og<NWjS6E0Z:SO[zQdzcD2
+!i122 92
+l27
+R26
+VUoEO50L^aONm2E362DS5n2
+!s100 zM>O;CkbaYAJ4[m6T9S4D3
+R8
+32
+R167
+!i10b 1
+R168
+R169
+R170
+!i113 0
+R13
+R14
+Exorg2
+R27
+R3
+R4
+!i122 93
+R1
+Z171 8/home/longz/Desktop/Cpre381/project-1/src/xorg2.vhd
+Z172 F/home/longz/Desktop/Cpre381/project-1/src/xorg2.vhd
+l0
+R30
+V;hb`C0MKik;h36`3`SzM60
+!s100 [hI[mXFH4_j16U;>U1Lfn2
+R8
+32
+Z173 !s110 1636942029
+!i10b 1
+Z174 !s108 1636942029.000000
+Z175 !s90 -reportprogress|300|-work|work|/home/longz/Desktop/Cpre381/project-1/src/xorg2.vhd|
+Z176 !s107 /home/longz/Desktop/Cpre381/project-1/src/xorg2.vhd|
+!i113 0
+R13
+R14
+Adataflow
+R3
+R4
+DEx4 work 5 xorg2 0 22 ;hb`C0MKik;h36`3`SzM60
+!i122 93
+l32
+R34
+VbmLohbkYjJQ`?EHUY>LoL1
+!s100 Z6[FAPS4fBLB`F?OO<AY72
+R8
+32
+R173
+!i10b 1
+R174
+R175
+R176
+!i113 0
+R13
+R14
