@@ -67,7 +67,7 @@ architecture structure of MIPS_Processor is
   signal s_jadd         : std_logic_vector(31 downto 0);
   signal s_branchtomux  : std_logic_vector(31 downto 0);
   signal s_jtoMux       : std_logic_vector(31 downto 0);
-  signal s_D0         : std_logic_vector(31 downto 0); --normies
+  signal s_D0           : std_logic_vector(31 downto 0);
   signal s_jaltoMux     : std_logic_vector(4 downto 0);
   signal s_regDst       : std_logic;
 
