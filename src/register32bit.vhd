@@ -29,21 +29,21 @@ end register32bit;
 architecture structural of register32bit is
 
  component dffg
-   port(clock        : in std_logic;
-        i_rst        : in std_logic;
-        i_we         : in std_logic;
-        data         : in std_logic;
-        o_O          : out std_logic);
+   port(i_CLK        : in std_logic;     -- Clock input
+        i_RST        : in std_logic;     -- Reset input
+        i_WE         : in std_logic;     -- Write enable input
+        i_D          : in std_logic;     -- Data value input
+        o_Q          : out std_logic);   -- Data value output
  end component;
 
 begin
     M1: for i in 0 to N-1 generate
         generic_dffg: dffg
-        port MAP(clock => clock,
-                 i_rst => i_rst,
-                 i_we => i_we,
-                 data => data(i),
-                 o_O => o_O(i));
+        port MAP(i_CLK => clock,
+                 i_RST => i_rst,
+                 i_WE => i_we,
+                 i_D => data(i),
+                 o_Q => o_O(i));
     end generate;
 end structural;
 

@@ -71,11 +71,11 @@ generic(N: integer := 32);
 end component;
 
 component dffg
-   port(clock                   : in std_logic;
-        i_rst                   : in std_logic;
-        i_we                    : in std_logic;
-        data                    : in std_logic;
-        o_O                     : out std_logic);
+   port(i_CLK        : in std_logic;     -- Clock input
+        i_RST        : in std_logic;     -- Reset input
+        i_WE         : in std_logic;     -- Write enable input
+        i_D          : in std_logic;     -- Data value input
+        o_Q          : out std_logic);   -- Data value output
 end component;
 
 begin
@@ -161,108 +161,108 @@ generic_op : register32bit
              o_O => o_op);
 
 generic_upperImmediate : dffg
-    port map(clock => clock,
-             i_rst => i_rst,
-             i_we => i_we,
-             data => upperImmediate,
-             o_O => o_upperImmediate);
+    port map(i_CLK => clock,
+             i_RST => i_rst,
+             i_WE => i_we,
+             i_D => upperImmediate,
+             o_Q => o_upperImmediate);
 
 generic_sltu : dffg
-    port map(clock => clock,
-             i_rst => i_rst,
-             i_we => i_we,
-             data => sltu,
-             o_O => o_sltu);
+    port map(i_CLK => clock,
+             i_RST => i_rst,
+             i_WE => i_we,
+             i_D => sltu,
+             o_Q => o_sltu);
 
 generic_jal : dffg
-    port map(clock => clock,
-             i_rst => i_rst,
-             i_we => i_we,
-             data => jal,
-             o_O => o_jal);
+    port map(i_CLK => clock,
+             i_RST => i_rst,
+             i_WE => i_we,
+             i_D => jal,
+             o_Q => o_jal);
 
 generic_memtoReg : dffg
-    port map(clock => clock,
-             i_rst => i_rst,
-             i_we => i_we,
-             data => memtoreg,
-             o_O => o_MemtoReg);
+    port map(i_CLK => clock,
+             i_RST => i_rst,
+             i_WE => i_we,
+             i_D => memtoreg,
+             o_Q => o_MemtoReg);
 
 generic_register_Write : dffg
-    port map(clock => clock,
-             i_rst => i_rst,
-             i_we => i_we,
-             data => regwrite,
-             o_O => o_RegWrite);
+    port map(i_CLK => clock,
+             i_RST => i_rst,
+             i_WE => i_we,
+             i_D => regwrite,
+             o_Q => o_RegWrite);
 
 generic_memory_Write : dffg
-    port map(clock => clock,
-             i_rst => i_rst,
-             i_we => i_we,
-             data => memWrite,
-             o_O => o_memWrite);
+    port map(i_CLK => clock,
+             i_RST => i_rst,
+             i_WE => i_we,
+             i_D => memWrite,
+             o_Q => o_memWrite);
 
 generic_ALUSrc : dffg
-    port map(clock => clock,
-             i_rst => i_rst,
-             i_we => i_we,
-             data => ALUSrc,
-             o_O => o_ALUSrc);
+    port map(i_CLK => clock,
+             i_RST => i_rst,
+             i_WE => i_we,
+             i_D => ALUSrc,
+             o_Q => o_ALUSrc);
 
 generic_sl : dffg
-    port map(clock => clock,
-             i_rst => i_rst,
-             i_we => i_we,
-             data => sl,
-             o_O => o_sl);
+    port map(i_CLK => clock,
+             i_RST => i_rst,
+             i_WE => i_we,
+             i_D => sl,
+             o_Q => o_sl);
 
 generic_sr : dffg
-    port map(clock => clock,
-             i_rst => i_rst,
-             i_we => i_we,
-             data => sr,
-             o_O => o_sr);
+    port map(i_CLK => clock,
+             i_RST => i_rst,
+             i_WE => i_we,
+             i_D => sr,
+             o_Q => o_sr);
 
 generic_ALUControl : dffg
-    port map(clock => clock,
-             i_rst => i_rst,
-             i_we => i_we,
-             data => ALUControl,
-             o_O => o_ALUControl);
+    port map(i_CLK => clock,
+             i_RST => i_rst,
+             i_WE => i_we,
+             i_D => ALUControl,
+             o_Q => o_ALUControl);
 
 generic_shiftvariable : dffg
-    port map(clock => clock,
-             i_rst => i_rst,
-             i_we => i_we,
-             data => sv,
-             o_O => o_sv);
+    port map(i_CLK => clock,
+             i_RST => i_rst,
+             i_WE => i_we,
+             i_D => sv,
+             o_Q => o_sv);
 
 generic_register_Dst : dffg
-    port map(clock => clock,
-             i_rst => i_rst,
-             i_we => i_we,
-             data => regdst,
-             o_O => o_RegDst);
+    port map(i_CLK => clock,
+             i_RST => i_rst,
+             i_WE => i_we,
+             i_D => regdst,
+             o_Q => o_RegDst);
 
 generic_branch : dffg
-    port map(clock => clock,
-             i_rst => i_rst,
-             i_we => i_we,
-             data => branch,
-             o_O => o_branch);
+    port map(i_CLK => clock,
+             i_RST => i_rst,
+             i_WE => i_we,
+             i_D => branch,
+             o_Q => o_branch);
 
 generic_jump_and_register : dffg
-    port map(clock => clock,
-             i_rst => i_rst,
-             i_we => i_we,
-             data => jr,
-             o_O => o_jr);
+    port map(i_CLK => clock,
+             i_RST => i_rst,
+             i_WE => i_we,
+             i_D => jr,
+             o_Q => o_jr);
 generic_PC : register32bit
     generic map(N => 32)
     port map(clock => clock,
-            i_rst => i_rst,
-            i_we => i_we,
-            data => PC,
-            o_O => o_PC);
+             i_rst => i_rst,
+             i_we => i_we,
+             data => PC,
+             o_O => o_PC);
 
 end structural;
