@@ -38,12 +38,12 @@ architecture structural of register32bit is
 
 begin
     M1: for i in 0 to N-1 generate
-        generic_dflipflop: dflipflop
-        port MAP(i_CLK => i_CLK,
-                 i_RST => i_RST,
-                 i_WE => i_WE,
-                 i_D => i_D(i),
-                 o_Q => o_Q(i));
+        generic_dffg: dffg
+        port MAP(clock => clock,
+                 i_rst => i_rst,
+                 i_we => i_we,
+                 data => data(i),
+                 o_O => o_O(i));
     end generate;
 end structural;
 

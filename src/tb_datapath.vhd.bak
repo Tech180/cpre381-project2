@@ -247,7 +247,7 @@ generic_register_IDEX : register_IDEX
 	   shamt => s_inst(10 downto 6),
 	   rt1 => x"ff00ff00",
 	   rd1 => x"00ff00ff",
-	   immediateExtend => x"0000ffff",
+	   immediate_extend => x"0000ffff",
 	   o_upperImmediate => s_upperImmediate_EX,
 	   o_sltu => s_sltu_EX,
 	   o_jal => s_jal_EX,

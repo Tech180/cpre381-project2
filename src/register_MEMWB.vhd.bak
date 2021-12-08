@@ -76,7 +76,7 @@ generic_D0 : register32bit
              i_rst => i_rst,
              i_WE => i_WE,
              i_D => D0,
-             o_O => O_D0);
+             o_O => data0);
 
 generic_ALU_register : register32bit
     generic map(N => 32)

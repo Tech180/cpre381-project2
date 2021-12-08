@@ -44,14 +44,14 @@ entity register_IDEX is
         o_sr                    : out std_logic;
         o_ALUControl            : out std_logic;
         o_sv                    : out std_logic;
-        o_branch                : out std_logic;
+        o_Branch                : out std_logic;
         o_jr                    : out std_logic;
         o_op				    : out std_logic_vector(2 downto 0);
-        o_writeaddr	            : out std_logic_vector(4 downto 0);
+        o_WrAddr	            : out std_logic_vector(4 downto 0);
         o_rd	                : out std_logic_vector(4 downto 0);
         o_rt	                : out std_logic_vector(4 downto 0);
         o_shamt	                : out std_logic_vector(4 downto 0);
-        o_rt1			        : out std_logic_vector(N-1 downto 0);
+        o_rtD			        : out std_logic_vector(N-1 downto 0);
         o_rd1			        : out std_logic_vector(N-1 downto 0);
         o_immediateExtend			    : out std_logic_vector(N-1 downto 0);
         o_PC		            : out std_logic_vector(N-1 downto 0);
@@ -86,7 +86,7 @@ generic_wrAddr : register32bit
              i_rst => i_rst,
              i_we => i_we,
              data => writeaddr,
-             o_O => o_writeaddr);
+             o_O => o_WrAddr);
 
 generic_inst : register32bit
     generic map(N => 32)
@@ -144,7 +144,7 @@ generic_rd1 : register32bit
              data => rd1,
              o_O => o_rd1);
 
-generic_immediateExtend : register32bit
+generic_immediateExtedn : register32bit
     generic map(N => 32)
     port map(clock => clock,
              i_rst => i_rst,
@@ -249,7 +249,7 @@ generic_branch : dffg
              i_rst => i_rst,
              i_we => i_we,
              data => branch,
-             o_O => o_branch);
+             o_O => o_Branch);
 
 generic_jump_and_register : dffg
     port map(clock => clock,
