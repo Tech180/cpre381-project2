@@ -18,11 +18,12 @@ use work.reg_array_type.all;
 
 entity Register32bit is
 	generic(N : integer := 32);
-	port(i_Data : in std_logic_vector(N-1 DOWNTO 0) := (others => '0');
-             clk : in std_logic := '0';
-             wren : in std_logic := '0';
-             reset : in std_logic := '0';
-             o_Data : out std_logic_vector(N-1 DOWNTO 0) := (others => '0')
+	port(
+             clock : in std_logic := '0';
+             i_rst : in std_logic := '0';
+             i_we : in std_logic := '0';
+             data : in std_logic_vector(N-1 DOWNTO 0) := (others => '0');
+             o_O : out std_logic_vector(N-1 DOWNTO 0) := (others => '0')
 	     );
 
 end Register32bit;
@@ -33,14 +34,14 @@ architecture bigboy of Register32bit is
 
 begin
 
-process (clk, reset)
+process (clock, i_rst)
 begin
-  if (rising_edge(clk)) then
-    if (not(reset = '1') AND wren = '1') then
-      o_Data <= i_Data;
+  if (rising_edge(clock)) then
+    if (not(i_rst = '1') AND i_we = '1') then
+      o_O <= data;
     end if;
-    if (reset = '1') then
-      o_Data <= std_logic_vector(to_unsigned(0, N));
+    if (i_rst = '1') then
+      o_O <= std_logic_vector(to_unsigned(0, N));
     end if;
   end if;
 end process;
