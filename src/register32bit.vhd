@@ -16,34 +16,34 @@ use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 use work.reg_array_type.all;
 
-entity register32bit is
-   generic(N: integer := 32);
-   port(clock        : in std_logic;
-        i_rst        : in std_logic;
-        i_we         : in std_logic;
-        data         : in std_logic_vector(N-1 downto 0);
-        o_O          : out std_logic_vector(N-1 downto 0));
+entity Register32bit is
+	generic(N : integer := 32);
+	port(i_Data : in std_logic_vector(N-1 DOWNTO 0) := (others => '0');
+             clk : in std_logic := '0';
+             wren : in std_logic := '0';
+             reset : in std_logic := '0';
+             o_Data : out std_logic_vector(N-1 DOWNTO 0) := (others => '0')
+	     );
 
-end register32bit;
+end Register32bit;
 
-architecture structural of register32bit is
+--  Architecture Body
 
- component dffg
-   port(i_CLK        : in std_logic;     -- Clock input
-        i_RST        : in std_logic;     -- Reset input
-        i_WE         : in std_logic;     -- Write enable input
-        i_D          : in std_logic;     -- Data value input
-        o_Q          : out std_logic);   -- Data value output
- end component;
+architecture bigboy of Register32bit is
 
 begin
-    M1: for i in 0 to N-1 generate
-        generic_dffg: dffg
-        port MAP(i_CLK => clock,
-                 i_RST => i_rst,
-                 i_WE => i_we,
-                 i_D => data(i),
-                 o_Q => o_O(i));
-    end generate;
-end structural;
+
+process (clk, reset)
+begin
+  if (rising_edge(clk)) then
+    if (not(reset = '1') AND wren = '1') then
+      o_Data <= i_Data;
+    end if;
+    if (reset = '1') then
+      o_Data <= std_logic_vector(to_unsigned(0, N));
+    end if;
+  end if;
+end process;
+
+end bigboy;
 
