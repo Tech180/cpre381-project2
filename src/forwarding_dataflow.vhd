@@ -19,9 +19,9 @@ entity forwarding_dataflow is
 
        forwarding_mux  					: out std_logic;
 
-       forwarding_mux1				    : out std_logic_vector(1 downto 0));
-       forwarding_mux2				    : out std_logic_vector(1 downto 0));
-       forwarding_mux3				    : out std_logic_vector(1 downto 0));
+       forwarding_mux1				    : out std_logic_vector(1 downto 0);
+       forwarding_mux2				    : out std_logic_vector(1 downto 0);
+       forwarding_mux3				    : out std_logic_vector(1 downto 0);
        forwarding_mux4				    : out std_logic_vector(1 downto 0));
 end forwarding_dataflow;
 
