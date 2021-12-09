@@ -26,7 +26,7 @@ bne $3, $3, branch
 bne $3, $4, branchnotequal2
 addi $16, $1, 1
 
-bne2_here:
+branchnotequal2:
 beq $1, $2, branch
 beq $1, $1, branchequal
 addi $17, $1, 1
