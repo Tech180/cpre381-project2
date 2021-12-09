@@ -368,10 +368,5 @@ s_sl2_2        <= s_Ext32(29 downto 0) & "00";
              o_O  => s_D0);
 
 
-  -- TODO: Ensure that s_Halt is connected to an output control signal produced from decoding the Halt instruction (Opcode: 01 0100)
-  -- TODO: Ensure that s_Ovfl is connected to the overflow output of your ALU
-
-  -- TODO: Implement the rest of your processor below this comment! 
-
 end structure;
 
