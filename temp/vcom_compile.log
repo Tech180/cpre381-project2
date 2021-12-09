@@ -1,5 +1,5 @@
 QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
-Start time: 01:32:01 on Dec 09,2021
+Start time: 01:38:20 on Dec 09,2021
 vcom -2008 -work internal/ModelSimContainer/work src/*.vhd 
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -36,7 +36,49 @@ vcom -2008 -work internal/ModelSimContainer/work src/*.vhd
 -- Compiling entity mux8to1_32bit_data
 -- Compiling architecture dataflow of mux8to1_32bit_data
 -- Compiling entity forwarding_dataflow
-** Error: src/forwarding_dataflow.vhd(23): near "forwarding_mux2": (vcom-1576) expecting END.
-** Note: src/forwarding_dataflow.vhd(23): VHDL Compiler exiting
-End time: 01:32:01 on Dec 09,2021, Elapsed time: 0:00:00
-Errors: 1, Warnings: 0
+-- Compiling architecture behavioral of forwarding_dataflow
+-- Compiling entity xorg2
+-- Compiling architecture dataflow of xorg2
+-- Compiling entity controlUnit
+-- Compiling architecture behavioral of controlUnit
+-- Compiling entity mem
+-- Compiling architecture rtl of mem
+-- Loading package std_logic_textio
+-- Loading package ENV
+-- Compiling entity tb
+-- Compiling architecture mixed of tb
+-- Compiling entity tb_pipeline
+-- Compiling architecture mixed of tb_pipeline
+-- Loading package reg_array_type
+-- Compiling entity Register32bit
+-- Compiling architecture bigboy of Register32bit
+-- Compiling entity extender_N
+-- Compiling architecture behavior of extender_N
+-- Compiling entity Fulladder_N
+-- Compiling architecture pizza_N of Fulladder_N
+-- Compiling entity MIPS_Processor
+-- Compiling architecture structure of MIPS_Processor
+-- Compiling entity control_hazard_dataflow
+-- Compiling architecture dataflow of control_hazard_dataflow
+-- Compiling entity register_EXMEM
+-- Compiling architecture structural of register_EXMEM
+-- Compiling entity barrel_shifter
+-- Compiling architecture bsh of barrel_shifter
+-- Compiling entity dffg
+-- Compiling architecture mixed of dffg
+-- Compiling entity org2
+-- Compiling architecture dataflow of org2
+-- Compiling entity register_MEMWB
+-- Compiling architecture structural of register_MEMWB
+-- Compiling entity Reg_N
+-- Compiling architecture abc of Reg_N
+-- Compiling entity xor_32bit_data
+-- Compiling architecture dataflow of xor_32bit_data
+-- Compiling entity mux32t1_array
+-- Compiling architecture dataflow of mux32t1_array
+-- Compiling entity Fulladder
+-- Compiling architecture pizza of Fulladder
+-- Compiling entity addsub
+-- Compiling architecture behavior of addsub
+End time: 01:38:20 on Dec 09,2021, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
