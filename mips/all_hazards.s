@@ -67,7 +67,7 @@ addi   $4, $0, -4
 bne    $1, $1, b
 NOP
 NOP
-bne    $1, $2, bne
+bne    $1, $2, branchnotequal
 NOP
 NOP
 

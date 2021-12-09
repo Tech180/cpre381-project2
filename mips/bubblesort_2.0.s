@@ -16,14 +16,14 @@ addi $t2, $0, 0
 ori $t0, $at, 0
 NOP
 
-j count_loop
+j count
 NOP
 NOP
 
 swap:
 	sw $s0, 4($t4)		# swap
 	sw $s1, 0($t4)
-	j continue
+	j sort1_1
 	NOP
 	NOP
 
