@@ -18,7 +18,7 @@ barrel_shifter: process(i_clk)
 begin
    if rising_edge(i_clk) then
 		if i_A = '1' then	
-			if i_L = '1' then	
+			if i_L = '1' then
 				o_O <= std_logic_vector(shift_left(unsigned(i_I), to_integer(unsigned(i_S))));
 			else
 				o_O <= std_logic_vector(shift_right(signed(i_I), to_integer(unsigned(i_S))));

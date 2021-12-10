@@ -53,65 +53,181 @@ architecture structure of MIPS_Processor is
   -- Required overflow signal -- for overflow exception detection
   signal s_Ovfl         : std_logic;  -- TODO: this signal indicates an overflow exception would have been initiated
 
-  signal s_reg0         : std_logic_vector(31 downto 0);
-  signal s_Ext32        : std_logic_vector(31 downto 0);
-  signal s_reg1         : std_logic_vector(31 downto 0);
-  signal s_NextPC       : std_logic_vector(31 downto 0);
-  signal s_jAddress     : std_logic_vector(31 downto 0);
-  signal s_PCAddr       : std_logic_vector(31 downto 0);
-  signal s_ALU1         : std_logic_vector(31 downto 0); --Q1
-  signal s_O            : std_logic_vector(31 downto 0); --ALU Output
-  signal s_pc4          : std_logic_vector(31 downto 0);
-  signal s_sl2_1        : std_logic_vector(31 downto 0);
-  signal s_sl2_2        : std_logic_vector(31 downto 0);
-  signal s_jadd         : std_logic_vector(31 downto 0);
-  signal s_branchtomux  : std_logic_vector(31 downto 0);
-  signal s_jtoMux       : std_logic_vector(31 downto 0);
-  signal s_D0           : std_logic_vector(31 downto 0);
-  signal s_jaltoMux     : std_logic_vector(4 downto 0);
-  signal s_regDst       : std_logic;
+  signal s_reg0                  : std_logic_vector(31 downto 0);
+  signal s_Ext32                 : std_logic_vector(31 downto 0);
+  signal s_reg1                  : std_logic_vector(31 downto 0);
+  signal s_NextPC                : std_logic_vector(31 downto 0);
+  signal s_jAddress              : std_logic_vector(31 downto 0);
+  signal s_PCAddr                : std_logic_vector(31 downto 0);
+  signal s_ALU1                  : std_logic_vector(31 downto 0); --Q1
+  signal s_O                     : std_logic_vector(31 downto 0); --ALU Output
+  signal s_pc4                   : std_logic_vector(31 downto 0);
+  signal s_sl2_1                 : std_logic_vector(31 downto 0);
+  signal s_sl2_2                 : std_logic_vector(31 downto 0);
+  signal s_jadd                  : std_logic_vector(31 downto 0);
+  signal s_branchtomux           : std_logic_vector(31 downto 0);
+  signal s_jtoMux                : std_logic_vector(31 downto 0);
+  signal s_D0                    : std_logic_vector(31 downto 0);
+  signal s_jaltoMux              : std_logic_vector(4 downto 0);
+  signal s_regDst                : std_logic;
 
-  signal s_j            : std_logic; --jump
-  signal s_bne          : std_logic;
-  signal s_beq          : std_logic;
-  signal s_memToReg     : std_logic;
+  signal s_j                     : std_logic; --jump
+  signal s_bne                   : std_logic;
+  signal s_beq                   : std_logic;
+  signal s_memToReg              : std_logic;
 
-  signal op_Code        : std_logic_vector(5 downto 0);
-  signal funct	        : std_logic_vector(5 downto 0);
+  signal op_Code                 : std_logic_vector(5 downto 0);
+  signal funct	                 : std_logic_vector(5 downto 0);
 
-  signal s_ALUSrc       : std_logic;
-  signal s_Signed       : std_logic;
-  signal s_no           : std_logic;
-  signal s_AND          : std_logic;
-  signal s_jr           : std_logic;
-  signal s_jal          : std_logic;
-  signal s_sv           : std_logic;
-  signal s_ui           : std_logic;
-  signal s_ALUControl   : std_logic_vector(3 downto 0);
-  signal s_sltu         : std_logic;
-  signal s_branch       : std_logic;
-  signal s_Overflow     : std_logic;
-  signal s_Zero         : std_logic;
-  signal s_jalmux       : std_logic_vector(31 downto 0);
+  signal s_ALUSrc                : std_logic;
+  signal s_Signed                : std_logic;
+  signal s_no                    : std_logic;
+  signal s_AND                   : std_logic;
+  signal s_jr                    : std_logic;
+  signal s_jal                   : std_logic;
+  signal s_sv                    : std_logic;
+  signal s_ui                    : std_logic; --upperImmediate
+  signal s_ALUControl            : std_logic_vector(3 downto 0);
+  signal s_sltu                  : std_logic;
+  signal s_branch                : std_logic;
+  signal s_Overflow              : std_logic;
+  signal s_Zero                  : std_logic;
+  signal s_jalmux                : std_logic_vector(31 downto 0);
+
+
+
+
+  signal s_ALUSrc1	             : std_logic_vector(31 downto 0);
+  signal s_immediateExtend	     : std_logic_vector(31 downto 0);
+  signal s_rt	                 : std_logic_vector(31 downto 0);
+  signal s_rd	                 : std_logic_vector(31 downto 0);
+  signal s_ALUOut	             : std_logic_vector(31 downto 0);
+  signal s_upper_immediate1	     : std_logic_vector(31 downto 0);
+  signal s_j_addresses_to_top	 : std_logic_vector(31 downto 0);
+  signal s_O_PC	                 : std_logic_vector(31 downto 0);
+  signal s_memToReg1	         : std_logic_vector(31 downto 0);
+  signal s_upper_immediate_mux1	 : std_logic_vector(31 downto 0);
+  signal s_sltu1	             : std_logic_vector(31 downto 0);
+  signal s_j_address	         : std_logic_vector(31 downto 0);
+  signal s_jumpandregister_mux1	 : std_logic_vector(31 downto 0);
+  signal s_jump_mux1	         : std_logic_vector(31 downto 0);
+  signal s_sltu_mux1	         : std_logic_vector(31 downto 0);
+  signal s_branch_mux1	         : std_logic_vector(31 downto 0);
+  signal s_O_branch	             : std_logic_vector(31 downto 0);
+  signal s_immediateShiftLeft	 : std_logic_vector(31 downto 0);
+  signal s_forward_data	         : std_logic_vector(31 downto 0);
+
+
+  signal s_PC_IFID		         : std_logic_vector(31 downto 0);
+  signal s_inst_IFID		     : std_logic_vector(31 downto 0);
+  signal s_rt1_IDEX		         : std_logic_vector(31 downto 0);
+  signal s_rd1_IDEX		         : std_logic_vector(31 downto 0);
+  signal s_immediateExtend_IDEX  : std_logic_vector(31 downto 0);
+  signal s_PC_IDEX		         : std_logic_vector(31 downto 0);
+  signal s_sltu1_EXMEM		     : std_logic_vector(31 downto 0);
+  signal s_upper_immediate1_EXMEM: std_logic_vector(31 downto 0);
+  signal s_PC_EXMEM		         : std_logic_vector(31 downto 0);
+  signal s_O_Dmem_MEMWB		     : std_logic_vector(31 downto 0);
+  signal s_ALUOut_MEMWB		     : std_logic_vector(31 downto 0);
+  signal s_upper_immediate1_MEMWB: std_logic_vector(31 downto 0);
+  signal s_sltu1_MEMWB		     : std_logic_vector(31 downto 0);
+  signal s_PC_MEMWB		         : std_logic_vector(31 downto 0);
+  signal s_ALU_1_1		         : std_logic_vector(31 downto 0);
+  signal s_ALU_2_1		         : std_logic_vector(31 downto 0);
+  signal s_forwardingExtend_data : std_logic_vector(31 downto 0);
+
+  signal s_D0_IFID	             : std_logic_vector(31 downto 0);
+  signal s_D0_IDEX	             : std_logic_vector(31 downto 0);
+  signal s_D0_EXMEM	             : std_logic_vector(31 downto 0);
+  signal s_PC_mux1	             : std_logic_vector(31 downto 0);
+  signal s_inst_IDEX	         : std_logic_vector(31 downto 0);
+  signal s_inst_EXMEM	         : std_logic_vector(31 downto 0);
+  signal s_inst1	             : std_logic_vector(31 downto 0);
+  signal s_rt1	                 : std_logic_vector(31 downto 0);
+  signal s_rd1	                 : std_logic_vector(31 downto 0);
+
+  signal s_j_temp		         : std_logic_vector(27 downto 0);
+  signal s_j_address_bottom	     : std_logic_vector(27 downto 0);
+
+  signal s_shift		         : std_logic_vector(4 downto 0);
+  signal s_regdst_mux1		     : std_logic_vector(4 downto 0);
+  signal s_regdst_mux1_EXMEM	 : std_logic_vector(4 downto 0);
+  signal s_rt_IDEX			     : std_logic_vector(4 downto 0);
+  signal s_rd_IDEX			     : std_logic_vector(4 downto 0);
+  signal s_shamt_IDEX			 : std_logic_vector(4 downto 0);
+  signal s_writeAddress_EXMEM	 : std_logic_vector(4 downto 0);
+  signal s_writeAddress_IDEX	 : std_logic_vector(4 downto 0);
+
+  --signal s_ALUOp            : std_logic_vector(2 downto 0);
+  signal s_forwarding_mux1	     : std_logic_vector(1 downto 0);
+  signal s_forwarding_mux2	     : std_logic_vector(1 downto 0);
+  signal s_forwarding_mux3	     : std_logic_vector(1 downto 0);
+  signal s_forwarding_mux4	     : std_logic_vector(1 downto 0);
+  signal s_ALUOP_IDEX			 : std_logic_vector(2 downto 0);
+
+  signal s_branch			     : std_logic; --replaces other branch types
+  signal s_flush_IFID			 : std_logic;
+  signal s_stall_IFID			 : std_logic;
+  signal s_stall_IDEX			 : std_logic;
+
+  signal s_stall_PC			     : std_logic;
+
+  signal s_reset_IFID			 : std_logic;
+  signal s_reset_IDEX			 : std_logic;
+
+  signal s_memWrite	             : std_logic;
+
+  signal s_upperImmediate_IDEX	 : std_logic;
+  signal s_regdst_IDEX	         : std_logic;
+  signal s_sltu_IDEX	         : std_logic;
+  signal s_j_IDEX	             : std_logic;
+  signal s_memToReg_IDEX	     : std_logic;
+  signal s_regWrite_IDEX	     : std_logic;
+  signal s_memWrite_IDEX	     : std_logic;
+  signal s_ALUSrc_IDEX	         : std_logic;
+  signal s_sl_IDEX	             : std_logic; --shift left
+  signal s_sr_IDEX	             : std_logic; --shift right
+  signal s_ALUControl_IDEX	     : std_logic;
+  signal s_sv_IDEX	             : std_logic; --shift variable
+  signal s_jr_IDEX	             : std_logic;
+
+  signal s_upperImmediate_EXMEM	 : std_logic;
+  signal s_sltu_EXMEM	         : std_logic;
+  signal s_j_EXMEM	             : std_logic;
+  signal s_memToReg_EXMEM	     : std_logic;
+  signal s_regWrite_EXMEM	     : std_logic;
+
+  signal s_upperImmediate_MEMWB	 : std_logic;
+  signal s_sltu_MEMWB	         : std_logic;
+  signal s_j_MEMWB	             : std_logic;
+  signal s_memToReg_MEMWB	     : std_logic;
+
+  signal s_registerWrite_IFID	 : std_logic;
+
+  signal s_select_PC	         : std_logic;
+
+  signal s_branch_IDEX	         : std_logic;
+  signal s_forwarding_mux	     : std_logic;
+  signal s_flush_IDEX	         : std_logic;
 
 
   component controlUnit is
   port(op_Code	    		: in std_logic_vector(5 downto 0);
-	Funct		    	: in std_logic_vector(5 downto 0);
-	RegDst		    	: out std_logic;
-	MemtoReg 	   	: out std_logic;
-	MemWrite 	    	: out std_logic;
-	ALUSrc 		   	: out std_logic;
-	RegWrite 	   	: out std_logic;
-	ALUControl	    	: out std_logic_vector(3 downto 0);
-	beq 		    	: out std_logic;
- 	bne 		    	: out std_logic;
-	j  		        : out std_logic;
-	jr 		        : out std_logic;
-	sltu            	: out std_logic;
-	shiftVariable   	: out std_logic;
-	upper_immediate 	: out std_logic;
-	halt                    : out std_logic);
+	   Funct		    	: in std_logic_vector(5 downto 0);
+	   RegDst		    	: out std_logic;
+	   MemtoReg 	   	: out std_logic;
+	   MemWrite 	    	: out std_logic;
+	   ALUSrc 		   	: out std_logic;
+	   RegWrite 	   	: out std_logic;
+	   ALUControl	    	: out std_logic_vector(3 downto 0);
+	   beq 		    	: out std_logic;
+ 	   bne 		    	: out std_logic;
+	   j  		        : out std_logic;
+	   jr 		        : out std_logic;
+	   sltu            	: out std_logic;
+	   shiftVariable   	: out std_logic;
+	   upper_immediate 	: out std_logic;
+	   halt                    : out std_logic);
   end component;
   
   component andg2 is
@@ -172,8 +288,7 @@ end component;
 component mem is
     generic(ADDR_WIDTH : integer;
             DATA_WIDTH : integer);
-    port(
-          clk          : in std_logic;
+    port( clk          : in std_logic;
           addr         : in std_logic_vector((ADDR_WIDTH-1) downto 0);
           data         : in std_logic_vector((DATA_WIDTH-1) downto 0);
           we           : in std_logic := '1';
@@ -196,18 +311,184 @@ port(i_RST       : in std_logic;
      o_instr	 : out std_logic_vector(31 downto 0));--gets next instruction if anothaOne = 1 and rising edge of clock
 end component;
 
-  -- TODO: You may add any additional signals or components your implementation 
-  --       requires below this comment
+component register_EXMEM is
+   generic(N: integer := 32);
+   port(clock       			: in std_logic;
+        i_rst        			: in std_logic;
+        i_we         			: in std_logic;
+        upperImmediate          : in std_logic;
+        sltu                    : in std_logic;
+        jal                     : in std_logic;
+        memToReg                : in std_logic;
+        regWrite                : in std_logic;
+        memWrite                : in std_logic;
+        ALUout			        : in std_logic_vector(N-1 downto 0);
+        ALU	     			    : in std_logic_vector(N-1 downto 0);
+        i_writeaddr			    : in std_logic_vector(4 downto 0);
+        sltu1	                : in std_logic_vector(N-1 downto 0);
+        upperImmediate1	        : in std_logic_vector(N-1 downto 0);
+        PC	                : in std_logic_vector(N-1 downto 0);
+        D0	                    : in std_logic_vector(N-1 downto 0);
+        inst	                : in std_logic_vector(N-1 downto 0);
 
+        o_upperImmediate             : out std_logic;
+        o_sltu                  : out std_logic;
+        o_jal                   : out std_logic;
+        o_memToReg              : out std_logic;
+        o_RegWrite              : out std_logic;
+        o_MemWrite              : out std_logic;
+        o_ALUout        		: out std_logic_vector(N-1 downto 0);
+        o_ALU	     			: out std_logic_vector(N-1 downto 0);
+        o_writeaddr			    : out std_logic_vector(4 downto 0);
+        o_sltu1	                : out std_logic_vector(N-1 downto 0);
+        o_upperImmediate1	    : out std_logic_vector(N-1 downto 0);
+        o_PC	                : out std_logic_vector(N-1 downto 0);
+        o_D0	                : out std_logic_vector(N-1 downto 0);
+        o_inst	                : out std_logic_vector(N-1 downto 0));
+end component;
 
+component register_IDEX is
+   generic(N: integer := 32);
+   port(clock       			: in std_logic;
+        i_rst        			: in std_logic;
+        i_we         			: in std_logic;
+        upperImmediate          : in std_logic;
+        regdst                  : in std_logic;
+        sltu                  : in std_logic;
+        jal                   : in std_logic;
+        memtoreg                : in std_logic;
+        regWrite                : in std_logic;
+        memWrite                : in std_logic;
+        ALUSrc                  : in std_logic;
+        sl                    : in std_logic; --shift left
+        sr                    : in std_logic; --shift right
+        ALUControl              : in std_logic;
+        sv                      : in std_logic; --shift variable
+        branch                  : in std_logic;
+        jr                      : in std_logic;
+        op				        : in std_logic_vector(2 downto 0);
+        writeaddr            	: in std_logic_vector(4 downto 0);
+        rd                    	: in std_logic_vector(4 downto 0);
+        rt                      : in std_logic_vector(4 downto 0);
+        shamt	                : in std_logic_vector(4 downto 0);
+        rt1           			: in std_logic_vector(N-1 downto 0);
+        rd1  			        : in std_logic_vector(N-1 downto 0);
+        immediateExtend        : in std_logic_vector(N-1 downto 0);
+        PC			        : in std_logic_vector(N-1 downto 0);
+        D0			        : in std_logic_vector(N-1 downto 0);
+        inst			        : in std_logic_vector(N-1 downto 0);
+
+        o_upperImmediate        : out std_logic;
+        o_RegDst                : out std_logic;
+        o_sltu                  : out std_logic;
+        o_jal                   : out std_logic;
+        o_MemtoReg              : out std_logic;
+        o_RegWrite              : out std_logic;
+        o_MemWrite              : out std_logic;
+        o_ALUSrc                : out std_logic;
+        o_sl                    : out std_logic;
+        o_sr                    : out std_logic;
+        o_ALUControl            : out std_logic;
+        o_sv                    : out std_logic;
+        o_branch                : out std_logic;
+        o_jr                    : out std_logic;
+        o_op				    : out std_logic_vector(2 downto 0);
+        o_writeaddr	            : out std_logic_vector(4 downto 0);
+        o_rd	                : out std_logic_vector(4 downto 0);
+        o_rt	                : out std_logic_vector(4 downto 0);
+        o_shamt	                : out std_logic_vector(4 downto 0);
+        o_rt1			        : out std_logic_vector(N-1 downto 0);
+        o_rd1			        : out std_logic_vector(N-1 downto 0);
+        o_immediateExtend			    : out std_logic_vector(N-1 downto 0);
+        o_PC		            : out std_logic_vector(N-1 downto 0);
+        o_D0			        : out std_logic_vector(N-1 downto 0);
+        o_inst			        : out std_logic_vector(N-1 downto 0));
+end component;
+
+component register_IFID is
+
+   generic(N: integer := 32);
+   port(clock         : in std_logic;
+        i_rst         : in std_logic;
+        i_we          : in std_logic;
+        PC	      : in std_logic_vector(N-1 downto 0);
+        inst	      : in std_logic_vector(N-1 downto 0);
+        o_PC          : out std_logic_vector(N-1 downto 0);
+        o_inst	      : out std_logic_vector(N-1 downto 0));
+end component;
+
+component register_MEMWB is
+   port(clock					      : in std_logic;
+        i_rst					      : in std_logic;
+        i_WE					      : in std_logic;
+        upperImmediate	              : in std_logic;
+        sltu	                      : in std_logic;
+        jal	                          : in std_logic;
+        memToReg	                  : in std_logic;
+        regWrite	                  : in std_logic;
+        Dmem			              : in std_logic_vector(31 downto 0);
+        ALU			                  : in std_logic_vector(31 downto 0);
+        upperImmediate1			      : in std_logic_vector(31 downto 0);
+        sltu1			              : in std_logic_vector(31 downto 0);
+        PC			                  : in std_logic_vector(31 downto 0);
+        D0			                  : in std_logic_vector(31 downto 0);
+        inst			              : in std_logic_vector(31 downto 0);
+        writeaddr				      : in std_logic_vector(4 downto 0);
+        o_upperImmediate	          : out std_logic;
+        o_sltu	                      : out std_logic;
+        o_jal	                      : out std_logic;
+        o_memToReg	                  : out std_logic;
+        o_RegWrite	            : out std_logic;
+        o_Dmem			        : out std_logic_vector(31 downto 0);
+        o_ALU			        : out std_logic_vector(31 downto 0);
+        o_upperImmediate1			: out std_logic_vector(31 downto 0);
+        o_sltu1			        : out std_logic_vector(31 downto 0);
+        o_PC			        : out std_logic_vector(31 downto 0);
+        o_D0			        : out std_logic_vector(31 downto 0);
+        o_Inst			        : out std_logic_vector(31 downto 0);
+        o_writeaddr				: out std_logic_vector(4 downto 0));
+end component;
+
+component forwarding_dataflow is
+  port(regWrite_EXMEM				: in std_logic;
+       regWrite_MEMWB				: in std_logic;
+       jr				            : in std_logic;
+       beq				            : in std_logic;
+       bne				            : in std_logic;
+       sltu				            : in std_logic;
+       upperImmediate				    : in std_logic;
+       rd_IDEX		                : in std_logic_vector(4 downto 0);
+       rt_IDEX		                : in std_logic_vector(4 downto 0);
+       writeAddr_EXMEM		        : in std_logic_vector(4 downto 0);
+       writeAddr_MEMWB		        : in std_logic_vector(4 downto 0);
+       rt_IFID		                : in std_logic_vector(4 downto 0);
+       rd_IFID		                : in std_logic_vector(4 downto 0);
+       regdst_EX		            : in std_logic_vector(4 downto 0);
+
+       forwarding_mux  					: out std_logic;
+
+       forwarding_mux1				    : out std_logic_vector(1 downto 0);
+       forwarding_mux2				    : out std_logic_vector(1 downto 0);
+       forwarding_mux3				    : out std_logic_vector(1 downto 0);
+       forwarding_mux4				    : out std_logic_vector(1 downto 0));
+end component;
+
+component mux4to1 is
+	generic(N : integer := 32);
+	port(i_D0 : in std_logic_vector(N-1 downto 0);
+         i_D1 : in std_logic_vector(N-1 downto 0);
+	     i_D2 : in std_logic_vector(N-1 downto 0);
+	     i_D3 : in std_logic_vector(N-1 downto 0);
+         i_F  : in std_logic_vector(1 downto 0);
+         o_O  : out std_logic_vector(N-1 downto 0));
+end component;
+
+--hazard unit
 begin
 
     op_Code		   <= s_Inst (31 downto 26);
 	Funct	       <= s_Inst (5 downto 0);
 
-
-
-  -- TODO: This is required to be your final input to your instruction memory. This provides a feasible method to externally load the memory module which means that the synthesis tool must assume it knows nothing about the values stored in the instruction memory. If this is not included, much, if not all of the design is optimized out because the synthesis tool will believe the memory to be all zeros.
   with iInstLd select
     s_IMemAddr <= s_NextInstAddr when '0',
       iInstAddr when others;
@@ -231,142 +512,506 @@ begin
              we   => s_DMemWr,
              q    => s_DMemOut);
 
-    generic_controlUnit: controlUnit
-    port map(RegDst             => s_RegDst,
-             j                  => s_j,
-             beq                => s_beq,
-             bne                => s_bne,
-             MemtoReg           => s_memtoReg,
-             op_Code            => op_Code,
-             MemWrite           => s_DMemWr,
-             ALUSrc             => s_ALUSrc,
-             RegWrite           => s_RegWr,
-             ALUControl         => s_ALUControl,
-             halt               => s_Halt,
-             jr                 => s_jr,
-             shiftVariable      => s_sv,
-             upper_immediate    => s_ui,
-             Funct              => Funct,
-             sltu               => s_sltu);
 
-    generic_jumpandregister_mux_32bit : mux_32bit_dataflow
-        port map (i_D0  => s_jtoMux,
-                  i_D1  => s_reg0,
-                  i_S   => s_jr,
-                  o_O   => s_NextPC);
-
-    generic_PC: programCounter
-        port map(i_RST       => iRST,--reset
-                 i_CLK       => iCLK,--clock
-                 i_addr      => s_nextPC,
-                 o_instr     => s_NextInstAddr
-    );
-
-
-    generic_fullAdder : Fulladder_N
-        port map (i_fA          => s_NextInstAddr,
-                  i_fB          => x"00000004",
-                  i_fC          => '0',
-                  o_Cry         => open,
-                  o_Sum         => s_pc4);
-
-                  
-s_sl2_1        <= s_pc4(31 downto 28) & s_Inst(25 downto 0) & "00";
-s_sl2_2        <= s_Ext32(29 downto 0) & "00";
-  
-    generic_branch_adding_fullAdder : Fulladder_N
-        port map (i_fA          => s_pc4,
-                  i_fB          => s_sl2_2,
-                  i_fC          => '0',
-                  o_Cry         => open,
-                  o_Sum         => s_jadd);
-
-    generic_branch_AND : andg2
-        port map (i_A           => s_branch,
-                  i_B           => s_no,
-                  o_F           => s_AND);
-
-    generic_PCbranch_32bit_mux : mux_32bit_dataflow
-        port map(i_D0           => s_pc4,
-                 i_D1           => s_jadd,
-                 i_S            => s_AND,
-                 o_O            => s_branchtomux);
-
-    generic_branch_to_mux_32bit_dataflow: mux_32bit_dataflow
-        port map(i_D0           => s_branchtomux,
-                 i_D1           => s_sl2_1,
-                 i_S            => s_j,
-                 o_O            => s_jtoMux);
-                 
-    generic_signedextend : extender_N
-    port map(i_D => s_Inst(15 downto 0),
-             i_S  => s_Signed,
-             o_O => s_Ext32
-    );
-
-
-    generic_jaldatamux: mux_32bit_dataflow
-    port map(i_D0 => s_D0,
-             i_D1 => s_pc4,
-             i_S  => s_jal,
-             o_O  => s_RegWrData
-    );
-    
-    generic_jaladdrmux: mux_32bit_dataflow
-    generic map(N => 5)
-    port map(i_D0 => s_Inst(15 downto 11),
-             i_D1 => "11111",
-             i_S  => s_jal,
-             o_O  => s_jaltoMux
-    );
-    
-    generic_register_32bit_mux : mux_32bit_dataflow
-    generic map(N => 5)
-    port map(i_D0 => s_Inst(20 downto 16),
-             i_D1 => s_jaltoMux,
-             i_S  => s_RegDst,
-             o_O  => s_RegWrAddr
-    );
-    
-
-    generic_register_file : Register_File
-    port map(i_CLK      => iCLK,
-             i_RST      => iRST,
-             r_1         => s_Inst(25 downto 21),
-             r_2         => s_Inst(20 downto 16),
-             i_w         => s_RegWrAddr,
-             WE         => s_RegWr,
-             i_data       => s_RegWrData,
-             o_r_1       => s_reg0,     --alu1
-             o_r_2       => s_DMemData); --alu2
-                  
-
-    generic_32bit_ALU_and_mux_32bit: mux_32bit_dataflow
+    --starts pipeline
+    -- IF
+    PC_increment : Fulladder_N
     generic map(N => 32)
-    port map(i_D0 => s_DMemData,
-             i_D1 => s_Ext32,
-             i_S  => s_ALUSrc,
-             o_O  => s_ALU1);
+    port map(i_fA => s_O_PC,
+             i_fB => x"00000004",
+             i_FC => '0',
+             o_Cry => open,
+             --o_Cout_1 => open,
+             o_Sum => s_j_addresses_to_top);
 
-    generic_32bit_ALU : ALU_32bit
-    port map(i_D0           => s_reg0,
-             i_D1           => s_ALU1,
-             i_D3           => s_Inst(10 downto 6),
-             i_D2           => s_ALUControl,
-             i_Overflow     => s_Overflow,
+    s_NextInstAddr <= s_O_PC;
+    s_select_PC <= s_branch or s_Jump or s_jr;
 
-             o_O            => s_DMemAddr,
-             o_Overflow     => s_Overflow,
-             o_zero         => s_Zero);
-    oALUOut <= s_DMemAddr;
-
-    generic_memory_output : mux_32bit_dataflow
+    PC_mux : mux_32bit_dataflow
     generic map(N => 32)
-    port map(i_D0 => s_DMemAddr,
-             i_D1 => s_DMemOut,
-             i_S  => s_MemToReg,
-             o_O  => s_D0);
+    port map(i_D0 => s_j_addresses_to_top,
+             i_D1 => s_jumpandregister_mux1,
+             i_S => s_select_PC,
+             o_F => s_PC_mux1);
 
+
+    -- IF/ID
+    generic_IFID : register_IFID
+    generic map(N => 32)
+    port map(clock => iCLK,
+             i_rst => s_reset_IFID,
+             i_we => s_stall_IFID,
+             PC => s_j_addresses_to_top,
+             inst => s_inst1,
+             o_PC => s_PC_IFID,
+             o_inst => s_inst_IFID);
+
+    generic_flush_IFID : process (iRST,
+                                  s_flush_IFID,
+                                  iCLK)
+    begin
+        if (iRST = '1')
+            then s_reset_IFID <= '1';
+        else
+            s_reset_IFID <= s_flush_IFID;
+        end if;
+    end process;
+
+    --ID Stage
+    reg : Register_File
+        generic map(N => 32)
+        port map(i_CLK => iCLK,
+                 i_RST => iRST,
+                 r_1 => s_inst_IFID(25 downto 21),
+                 r_2 => s_inst_IFID(20 downto 16),
+                 i_w => s_RegWrAddr,
+                 WE => s_RegWr,
+                 i_Data => s_RegWrData,
+                 --o_2 => v0,
+                 o_r_1 => s_rt,
+                 o_r_2 => s_rd);
+
+    generic_forwarding_mux3 : mux4to1
+        generic map(N => 32)
+        port map(i_D0 => s_rt,
+                 i_D1 => s_RegWrData,
+                 i_D2 => s_forwardingExtend_data,
+                 i_D3 => s_forward_data,
+                 i_F => s_forwarding_mux3,
+                 o_O => s_rt1);
+
+    generic_forwarding_mux4 : mux4to1
+        generic map(N => 32)
+        port map(i_D0 => s_rd,
+                 i_D1 => s_RegWrData,
+                 i_D2 => s_forwardingExtend_data,
+                 i_D3 => s_forward_data,
+                 i_F => s_forwarding_mux4,
+                 o_O => s_rd1);
+
+    jal_read_mux : Nmux_dataflow
+        generic map(N => 5)
+        port map(i_D0 => s_regdst_mux1,
+                 i_D1 => "11111",
+                 i_S => s_j_MEMWB,
+                 o_O => s_RegWrAddr);
+
+    generic_controlUnit : controlUnit
+        port map(op_Code => s_inst_IFID(31 downto 26),
+                 Funct => s_inst_IFID(5 downto 0),
+                 j => s_j, -
+                 halt => s_Halt,
+                 MemtoReg => s_MemtoReg,
+                 MemWrite => s_memWrite,
+                 ALUSrc => s_ALUSrc,
+                 RegWrite => s_registerWrite_IFID,
+                 ALUControl => s_ALUControl,
+                 shiftVariable => s_ShiftVariable,
+                 upperImmediate => s_ui,
+                 sltu => s_sltu,
+                 bne => s_bne,
+                 beq => s_beq,
+                 jr => s_jr);
+
+
+
+
+    generic_immediate_extend : extender_N
+        generic map(N => 16)
+        port map(i_D => s_inst_IFID(15 downto 0),
+                 i_S => s_Signed,
+                 o_O => s_immediateExtend);
+
+    --temporary jumps for bit extensions
+    s_j_temp(27 downto 26) <= "00";
+    s_j_temp(25 downto 0) <= s_inst_IFID(25 downto 0);
+
+
+
+    generic_barrel_shifter : BarrelShifter
+        generic map(N => 28)
+        port map(i_I => s_j_temp,
+                 i_S => "00010",
+                 i_A => '1',
+                 i_L => '1',
+                 o_O => s_j_address_bottom);
+
+    s_j_address(31 downto 28) <= s_PC_IFID(31 downto 28);
+    s_j_address(27 downto 0) <= s_j_address_bottom;
+
+    jump_mux : mux_32bit_dataflow
+        port map(i_D0 => s_branch_mux1,
+                 i_D1 => s_j_address,
+                 i_S => s_Jump,
+                 o_O => s_jump_mux1);
+
+    generic_jr_mux : mux_32bit_dataflow
+        port map(i_A => s_jump_mux1,
+                 i_B => s_rt1,
+                 i_S => s_jr,
+                 o_F => s_jumpandregister_mux1);
+
+    generic_branch_barrel_shifter: BarrelShifter
+        generic map(N => 32)
+        port map(i_I => s_immediateExtend,
+                 i_S => "00010",
+                 i_A => '1',
+                 i_L => '1',
+                 o_O => s_immediateShiftLeft);
+
+    generic_branch_full_adder : Fulladder_N
+        port map(i_fA => s_PC_IFID,
+                 i_fB => s_immediateShiftLeft,
+                 i_fC => '0',
+                 o_Cry => open,
+                 o_Sum => s_O_branch);
+
+    branch_mux : Nmux_dataflow
+        port map(i_D0 => s_PC_IFID,
+                 i_D1 => s_O_branch,
+                 i_S => s_branch,
+                 o_O => s_branch_mux1);
+
+    --hazard unit!
+    --TODO
+
+    generic_forwarding : forwarding_dataflow
+        port map(regWrite_EXMEM => s_regWrite_EXMEM,
+                 regWrite_MEMWB => s_RegWr,
+                 rd_IDEX => s_rd_IDEX,
+                 rt_IDEX => s_rt_IDEX,
+                 rt_IFID => s_inst_IFID(25 downto 21),
+                 rd_IFID => s_inst_IFID(20 downto 16),
+                 jr => s_jr,
+                 beq => s_beq,
+                 bne => s_bne,
+                 sltu => s_sltu,
+                 upperImmediate => s_ui
+                 EX_RegDst => s_regdst_mux1_EXMEM,
+                 EX_MEM_WrAddr => s_writeAddress_EXMEM,
+                 MEM_WB_WrAddr => s_RegWrAddr,
+                 s_forwarding_mux => s_forwarding_mux,
+                 s_forwarding_mux1 => s_forwarding_mux1,
+                 s_forwarding_mux2 => s_forwarding_mux2,
+                 s_forwarding_mux3 => s_forwarding_mux3,
+                 s_forwarding_mux4 => s_forwarding_mux4);
+
+
+    -- barrel shifter
+    generic_barrel_shifter_32bit : barrelshifter_32bit
+    port map(i_A => s_rt1,
+             i_B => s_rd1,
+             i_S => "00000",
+             i_A => '0',
+             i_L => '0',
+             i_ALUControl => '0',
+             o_O => open,
+             o_Cout => open,
+             o_OF => open,
+             zero => s_zero);
+
+    generic_branch : process (s_beq,
+                              s_bne,
+                              s_zero)
+    begin
+        if ((s_zero = '1') and (s_beq = '1'))
+            then s_branch <= '1';
+        elsif ((s_zero = '0') and (s_bne = '1'))
+            then s_branch <= '1';
+        else
+            s_branch <= '0';
+        end if;
+    end process;
+
+
+    -- ID/EX
+    generic_register_IDEX : register_IDEX
+    generic map(N => 32)
+    port map(clock => iCLK,
+             i_rst => s_reset_IDEX,
+             i_we => s_stall_IDEX,
+             upperImmediate => s_upper_imm,
+             regdst => s_RegDst,
+             sltu => s_sltu,
+             jal => s_Jump,
+             memtoReg => s_MemtoReg,
+             regWrite => s_registerWrite_IFID,
+             memWrite => s_memWrite,
+             ALUSrc => s_ALUSrc,
+             sl => s_AorL,
+             sr => s_RorL,
+             i_ALUControl => s_ALUorShifter,
+             sv => s_ShiftVariable,
+             branch => s_branch,
+             op => s_ALUOp,
+             writeaddr => s_inst_IFID(15 downto 11),
+             rt => s_inst_IFID(25 downto 21),
+             rd => s_inst_IFID(20 downto 16),
+             shamt => s_inst_IFID(10 downto 6),
+             rt1 => s_rt1,
+             rd1 => s_rd1,
+             immediateExtend => s_immediateExtend,
+             PC => s_PC_IFID,
+             D0 => s_D0_IFID,
+             inst => s_inst_IFID,
+             jr => s_jr,
+             o_upperImmediate => s_upperImmediate_IDEX,
+             o_RegDst => s_regdst_IDEX,
+             o_sltu => s_sltu_IDEX,
+             o_jal => s_j_IDEX,
+             o_MemtoReg => s_memToReg_IDEX,
+             o_RegWrite => s_regWrite_IDEX,
+             o_MemWrite => s_memWrite_IDEX,
+             o_ALUSrc => s_ALUSrc_IDEX,
+             o_sl => s_sl_IDEX,
+             o_sr => s_sr_IDEX,
+             o_ALUControl => s_ALUControl_IDEX,
+             o_sv => s_sv_IDEX,
+             o_branch => s_branch_IDEX,
+             o_jr => s_jr_IDEX,
+             o_op => s_ALUOP_IDEX,
+             o_writeaddr => s_writeAddress_IDEX,
+             o_rd => s_rd_IDEX,
+             o_rt => s_rt_IDEX,
+             o_shamt => s_shamt_IDEX,
+             o_rt1 => s_rt1_IDEX,
+             o_rd1 => s_rd1_IDEX,
+             o_immediateExtend => s_immediateExtend_IDEX,
+             o_PC => s_PC_IDEX,
+             o_D0 => s_D0_IDEX,
+             o_inst => s_inst_IDEX);
+
+    generic_flush_IDEX :
+    process (iRST,
+             s_flush_IDEX,
+             iCLK)
+    begin
+        if (iRST = '1')
+            then s_reset_IDEX <= '1';
+        else
+            s_reset_IDEX <= s_flush_IDEX;
+        end if;
+    end process;
+
+
+    -- EX
+    generic_regDst_mux : mux_32bit_dataflow
+        generic map(N => 5)
+        port map(i_D0 => s_rd_IDEX,
+                 i_D1 => s_writeAddress_IDEX,
+                 i_S => s_regdst_IDEX,
+                 o_O => s_regdst_mux1_EXMEM);
+
+    ALUSrc_mux : mux_32bit_dataflow
+        generic map(N => 32)
+        port map(i_D0 => s_ALU_2_1,
+                 i_D1 => s_immediateExtend_IDEX,
+                 i_S => s_ALUSrc_IDEX,
+                 o_O => s_ALUSrc1);
+
+    generic_sv_mux : mux_32bit_dataflow
+        generic map(N => 5)
+        port map(i_D0 => s_shamt_IDEX,
+                 i_D1 => s_ALU_1_1(4 downto 0),
+                 i_S => s_sv_IDEX,
+                 o_O => s_shift);
+
+    generic_ALU_mux_1 : mux4to1
+        generic map(N => 32)
+        port map(i_D0 => s_rt1_IDEX,
+                 i_D1 => s_RegWrData,
+                 i_D2 => s_forward_data,
+                 i_D3 => x"00000000",
+                 i_F => s_forwarding_mux1,
+                 o_O => s_ALU_1_1);
+
+    generic_ALU_mux_2 : mux4to1
+        generic map(N => 32)
+        port map(i_D0 => s_rd1_IDEX,
+                 i_D1 => s_RegWrData,
+                 i_D2 => s_forward_data,
+                 i_D3 => x"00000000",
+                 i_F => s_forwarding_mux2,
+                 o_O => s_ALU_2_1);
+
+
+    --unsure most likely wrong
+--    generic_ALU : barrelshifter_32bit
+--        port map(i_A => s_ALU_1_1,
+--                 i_B => s_ALUSrc1,
+--                 i_Op => s_ALUOP_IDEX,
+--                 i_S => s_shift,
+--                 i_A => s_sl_IDEX,
+--                 i_L => s_sr_IDEX,
+--                 i_ALUControlr => s_ALUControl_IDEX,
+--                 o_O => s_ALUOut,
+--                 o_Cout => open,
+--                 o_OF => open,
+--                 zero => open);
+
+    oALUOut <= s_ALUOut;
+
+    generic_immediate_barrel_shift : BarrelShifter
+        port map(i_I => s_immediateExtend_IDEX,
+                 i_S => "10000",
+                 i_A => '1',
+                 i_L => '1',
+                 o_F => s_upper_immediate1);
+
+    generic_forwarding_extension_select : process (s_sltu_IDEX,
+                                                   s_upperImmediate_IDEX,
+                                                   s_sltu1,
+                                                   s_upper_immediate1,
+                                                   s_ALUOut,
+                                                   s_PC_IDEX,
+                                                   s_j_IDEX)
+        begin
+            if (s_sltu_IDEX = '1')
+                then s_forwardingExtend_data <= s_sltu1;
+            elsif (s_upperImmediate_IDEX = '1')
+                then s_forwardingExtend_data <= s_upper_immediate1;
+            elsif (s_j_IDEX = '1')
+                then s_forwardingExtend_data <= s_PC_IDEX;
+            else
+                s_forwardingExtend_data <= s_ALUOut;
+            end if;
+        end process;
+
+        process (s_rt1_IDEX, s_ALUSrc1, s_ALUOut)
+        begin
+            if ((s_rt1_IDEX(31) = '0') and (s_ALUSrc1(31) = '1'))
+                then s_sltu1 <= x"00000001";
+            elsif ((s_rt1_IDEX(31) = '1') and (s_ALUSrc1(31) = '0'))
+                then s_sltu1 <= x"00000000";
+            else
+                s_sltu1 <= s_ALUOut;
+            end if;
+        end process;
+
+    -- EX/MEM
+    generic_register_EXMEM : register_EXMEM
+    generic map(N => 32)
+    port map(clock => iCLK,
+             i_rst => iRST,
+             i_WE => '1',
+             upperImmediate => s_upperImmediate_IDEX,
+             sltu => s_sltu_IDEX,
+             jal => s_j_IDEX,
+             memtoReg => s_memToReg_IDEX,
+             regWrite => s_regWrite_IDEX,
+             memWrite => s_memWrite_IDEX,
+             ALUout => s_ALUOut,
+             ALU => s_ALU_2_1,
+             i_writeaddr => s_regdst_mux1_EXMEM,
+             sltu1 => s_sltu1,
+             upperImmediate1 => s_upper_immediate1,
+             PC => s_PC_IDEX,
+             D0 => s_D0_IDEX,
+             inst => s_inst_IDEX,
+             o_upperImmediate => s_upperImmediate_EXMEM,
+             o_sltu => s_sltu_EXMEM,
+             o_jal => s_j_EXMEM,
+             o_memtoReg => s_memToReg_EXMEM,
+             o_regWrite => s_regWrite_EXMEM,
+             o_memWrite => s_DMemWr,
+             o_ALUout => s_DmemAddr,
+             o_ALU => s_DMemData,
+             o_writeraddr => s_writeAddress_EXMEM,
+             o_sltu1 => s_sltu1_EXMEM,
+             o_upperImmediate1 => s_upper_immediate1_EXMEM,
+             o_PC => s_PC_EXMEM,
+             o_D0 => s_D0_EXMEM,
+             o_inst => s_inst_EXMEM);
+
+
+    -- MEM
+    mem_fwd_sel : process (s_sltu_EXMEM,
+                           s_upperImmediate_EXMEM,
+                           s_sltu1_EXMEM,
+                           s_upper_immediate1_EXMEM,
+                           s_DMemAddr,
+                           s_PC_EXMEM,
+                           s_j_EXMEM)
+    begin
+        if (s_sltu_EXMEM = '1')
+            then s_forward_data <= s_sltu1_EXMEM;
+        elsif (s_upperImmediate_EXMEM = '1')
+            then s_forward_data <= s_upper_immediate1_EXMEM;
+        elsif (s_j_EXMEM = '1')
+            then s_forward_data <= s_PC_EXMEM;
+        else
+            s_forward_data <= s_DMemAddr;
+        end if;
+    end process;
+
+     -- MEM/WB
+    generic_register_MEMWB : register_MEMWB
+    port map(clock => iCLK,
+             i_rst => iRST,
+             i_we => '1',
+             upperImmediate => s_upperImmediate_EXMEM,
+             sltu => s_sltu_EXMEM,
+             jal => s_j_EXMEM,
+             memtoReg => s_memToReg_EXMEM,
+             regWrite => s_regWrite_EXMEM,
+             Dmem => s_DMemOut,
+             ALU => s_DMemAddr,
+             upperImmediate1 => s_upper_immediate1_EXMEM,
+             sltu1 => s_sltu1_EXMEM,
+             PC => s_PC_EXMEM,
+             writeaddr => s_writeAddress_EXMEM,
+             D0 => s_D0_EXMEM,
+             inst => s_inst_EXMEM,
+             upperImmediate => s_upperImmediate_MEMWB,
+             o_sltu => s_sltu_MEMWB,
+             o_jal => s_j_MEMWB,
+             o_memtoReg => s_memToReg_MEMWB,
+             o_regWrite => s_RegWr,
+             o_Dmem => s_O_Dmem_MEMWB,
+             o_ALU => s_ALUOut_MEMWB,
+             o_upperImmediate1 => s_upper_immediate1_MEMWB,
+             o_sltu1 => s_sltu1_MEMWB,
+             o_PC => s_PC_MEMWB,
+             o_writeaddr => s_regdst_mux1,
+             o_D0 => open,
+             o_Inst => s_Inst);
+
+    generic_memtoReg_mux : mux_32bit_dataflow
+        generic map(N => 32)
+        port map(i_D0 => s_ALUOut_MEMWB,
+                 i_D1 => s_O_Dmem_MEMWB,
+                 i_S => s_memToReg_MEMWB,
+                 o_O => s_memToReg1);
+
+    generic_upperImmediate_mux : mux_32bit_dataflow
+        generic map(N => 32)
+        port map(i_D0 => s_memToReg1,
+                 i_D1 => s_upper_immediate1_MEMWB,
+                 i_S => s_upperImmediate_MEMWB,
+                 o_O => s_upper_immediate_mux1);
+
+    generic_sltu_mux : mux_32bit_dataflow
+        generic map(N => 32)
+        port map(i_D0 => s_upper_immediate_mux1,
+                 i_D1 => s_sltu1_MEMWB,
+                 i_S => s_sltu_MEMWB,
+                 o_O => s_sltu_mux1);
+
+    generic_jal_mux : mux_32bit_dataflow
+        port map(i_D0 => s_sltu_mux1,
+                 i_D1 => s_PC_MEMWB,
+                 i_S => s_j_MEMWB,
+                 o_O => s_RegWrData);
+
+    halt : process (v0,
+                    s_Halt)
+    begin
+        if (v0 = x"0000000A")
+            then s_Halt <= '1';
+        else
+            s_Halt <= '0';
+        end if;
+    end process;
 
 end structure;
 
