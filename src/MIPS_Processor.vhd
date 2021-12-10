@@ -628,6 +628,8 @@ begin
 
 
 
+    --TODO
+    --FIXME
     generic_barrel_shifter : BarrelShifter
         generic map(N => 28)
         port map(i_I => s_j_temp,
@@ -651,6 +653,7 @@ begin
                  i_S => s_jr,
                  o_F => s_jumpandregister_mux1);
 
+    --TODO
     generic_branch_barrel_shifter: BarrelShifter
         generic map(N => 32)
         port map(i_I => s_immediateExtend,
@@ -698,17 +701,15 @@ begin
 
 
     -- barrel shifter
+    --TODO
     generic_barrel_shifter_32bit : barrelshifter_32bit
-    port map(i_A => s_rt1,
-             i_B => s_rd1,
+    port map(i_I => s_rt1, --s_rd1
              i_S => "00000",
              i_A => '0',
              i_L => '0',
-             i_ALUControl => '0',
+             --i_ALUControl => '0',
              o_O => open,
-             o_Cout => open,
-             o_OF => open,
-             zero => s_zero);
+             o_OF => open);
 
     generic_branch : process (s_beq,
                               s_bne,
@@ -836,18 +837,15 @@ begin
 
 
     --unsure most likely wrong
---    generic_ALU : barrelshifter_32bit
---        port map(i_A => s_ALU_1_1,
---                 i_B => s_ALUSrc1,
---                 i_Op => s_ALUOP_IDEX,
---                 i_S => s_shift,
---                 i_A => s_sl_IDEX,
---                 i_L => s_sr_IDEX,
---                 i_ALUControlr => s_ALUControl_IDEX,
---                 o_O => s_ALUOut,
---                 o_Cout => open,
---                 o_OF => open,
---                 zero => open);
+    --TODO
+    generic_ALU : barrelshifter_32bit
+        port map(i_I => s_ALU_1_1, --s_ALUSrc1
+                 i_S => s_shift,
+                 i_A => s_sl_IDEX,
+                 i_L => s_sr_IDEX,
+                 --i_ALUControl => s_ALUControl_IDEX,
+                 o_O => s_ALUOut,
+                 o_OF => open);
 
     oALUOut <= s_ALUOut;
 
