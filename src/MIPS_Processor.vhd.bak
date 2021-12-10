@@ -741,7 +741,7 @@ begin
              ALUSrc => s_ALUSrc,
              sl => sl,
              sr => sr,
-             ALUControl => s_ALUControl,
+             --ALUControl => s_ALUControl,
              sv => s_sv,
              branch => s_branch,
              op => s_ALUOp,

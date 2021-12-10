@@ -41,7 +41,7 @@ entity register_IDEX is
         o_MemWrite              : out std_logic;
         o_ALUSrc                : out std_logic;
         o_sl                    : out std_logic;
-        o_sr                    : out std_logic;
+        o_sr                    : out std_logic_vector(3 downto 0);
         o_ALUControl            : out std_logic;
         o_sv                    : out std_logic;
         o_branch                : out std_logic;
@@ -168,7 +168,7 @@ generic_upperImmediate : dffg
              o_Q => o_upperImmediate);
 
 generic_sltu : dffg
-    port map(clock => clock,
+    port map(i_CLK => clock,
              i_RST => i_rst,
              i_WE => i_we,
              i_D => sltu,
