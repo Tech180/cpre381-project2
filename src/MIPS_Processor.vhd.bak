@@ -89,7 +89,8 @@ architecture structure of MIPS_Processor is
   signal s_jal                   : std_logic;
   signal s_sv                    : std_logic;
   signal s_ui                    : std_logic; --upperImmediate
-  signal s_ALUControl            : std_logic_vector(3 downto 0);
+  --signal s_ALUControl            : std_logic_vector(3 downto 0);
+  signal s_ALUControl 		 : std_logic;
   signal s_sltu                  : std_logic;
   signal s_branch                : std_logic;
   signal s_Overflow              : std_logic;
@@ -148,7 +149,7 @@ architecture structure of MIPS_Processor is
   signal s_rt1	                 : std_logic_vector(31 downto 0);
   signal s_rd1	                 : std_logic_vector(31 downto 0);
 
-  signal s_j_temp		         : std_logic_vector(32 downto 0);
+  signal s_j_temp		         : std_logic_vector(31 downto 0);
   signal s_j_address_bottom	     : std_logic_vector(31 downto 0);
 
   signal s_shift		         : std_logic_vector(4 downto 0);
@@ -517,7 +518,6 @@ begin
     --starts pipeline
     -- IF
     PC_increment : Fulladder_N
-    generic map(N => 32)
     port map(i_fA => s_O_PC,
              i_fB => x"00000004",
              i_FC => '0',
@@ -559,7 +559,6 @@ begin
 
     --ID Stage
     reg : Register_File
-        generic map(N => 32)
         port map(i_CLK => iCLK,
                  i_RST => iRST,
                  r_1 => s_inst_IFID(25 downto 21),
@@ -589,7 +588,7 @@ begin
                  i_F => s_forwarding_mux4,
                  o_O => s_rd1);
 
-    jal_read_mux : Nmux_dataflow
+    jal_read_mux : mux_32bit_dataflow
         generic map(N => 5)
         port map(i_D0 => s_regdst_mux1,
                  i_D1 => "11111",
@@ -617,7 +616,6 @@ begin
 
 
     generic_immediate_extend : extender_N
-        generic map(N => 16)
         port map(i_D => s_inst_IFID(15 downto 0),
                  i_S => s_Signed,
                  o_O => s_immediateExtend);
@@ -669,7 +667,7 @@ begin
                  o_Cry => open,
                  o_Sum => s_O_branch);
 
-    branch_mux : Nmux_dataflow
+    branch_mux : mux_32bit_dataflow
         port map(i_D0 => s_PC_IFID,
                  i_D1 => s_O_branch,
                  i_S => s_branch,
@@ -741,7 +739,7 @@ begin
              ALUSrc => s_ALUSrc,
              sl => sl,
              sr => sr,
-             --ALUControl => s_ALUControl,
+             ALUControl => s_ALUControl,
              sv => s_sv,
              branch => s_branch,
              op => s_ALUOp,
