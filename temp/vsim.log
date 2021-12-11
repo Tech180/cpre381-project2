@@ -3,12 +3,12 @@ Reading pref.tcl
 # 2021.2
 
 # vsim -c -voptargs="+acc" tb -do "../testpy/modelsim_framework.do" 
-# Start time: 01:38:22 on Dec 09,2021
-# ** Error: (vsim-7) Failed to open  file "/home/rjlawson/Downloads/project-2/internal/ModelSimContainer/work/@_opt/_deps" in read mode.
+# Start time: 18:19:50 on Dec 10,2021
+# ** Error: (vsim-7) Failed to open  file "/home/longz/Desktop/Cpre381/project-2/internal/ModelSimContainer/work/@_opt/_deps" in read mode.
 # No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "/home/rjlawson/Downloads/project-2/internal/ModelSimContainer/work/@_opt/_deps" - file open failed.
+# ** Warning: (vsim-56) Problem with optimized design dependency file "/home/longz/Desktop/Cpre381/project-2/internal/ModelSimContainer/work/@_opt/_deps" - file open failed.
 # No such file or directory. (errno = ENOENT)
-# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim-64
 # //  Version 2021.2 linux_x86_64 Apr 14 2021
 # //
@@ -32,43 +32,38 @@ Reading pref.tcl
 # Loading work.mips_processor(structure)#1
 # Loading ieee.numeric_std(body)
 # Loading work.mem(rtl)#1
-# Loading work.controlunit(behavioral)#1
-# Loading work.mux_32bit_dataflow(dataflow)#1
-# Loading work.programcounter(behavorial)#1
 # Loading work.fulladder_n(pizza_n)#1
 # Loading work.fulladder(pizza)#1
 # Loading work.xorg2(dataflow)#1
 # Loading work.andg2(dataflow)#1
 # Loading work.org2(dataflow)#1
-# Loading work.extender_n(behavior)#1
+# Loading work.mux_32bit_dataflow(dataflow)#1
+# Loading work.register_ifid(structural)#1
+# Loading work.register32bit(bigboy)#1
+# Loading work.reg_array_type
+# Loading work.register_file(structural)#1
+# Loading work.decoder5t32(dataflow)#1
+# Loading work.reg_n(abc)#1
+# Loading work.dffg(mixed)#1
+# Loading work.mux32t1_array(dataflow)#1
+# Loading work.mux4to1(structural)#1
 # Loading work.mux_32bit_dataflow(dataflow)#2
-# ** Warning: (vsim-3473) Component instance "generic_register_file : Register_File" is not bound.
-#    Time: 0 ns  Iteration: 0  Instance: /tb/MyMips File: /home/rjlawson/Downloads/project-2/src/MIPS_Processor.vhd
-# Loading work.alu_32bit(structural)#1
-# ** Warning: (vsim-3473) Component instance "generic_32bit_and : and_32bit_data" is not bound.
-#    Time: 0 ns  Iteration: 0  Instance: /tb/MyMips/generic_32bit_ALU File: /home/rjlawson/Downloads/project-2/src/ALU_32bit.vhd
-# Loading work.xor_32bit_data(dataflow)#1
-# Loading work.nor_32bit_data(dataflow)#1
-# Loading work.addsub(behavior)#1
-# ** Warning: (vsim-3473) Component instance "onescomp0 : OnesComp_N" is not bound.
-#    Time: 0 ns  Iteration: 0  Instance: /tb/MyMips/generic_32bit_ALU/generic_add File: /home/rjlawson/Downloads/project-2/src/addsub.vhd
-# ** Warning: (vsim-3473) Component instance "mux0 : mux2t1_N" is not bound.
-#    Time: 0 ns  Iteration: 0  Instance: /tb/MyMips/generic_32bit_ALU/generic_add File: /home/rjlawson/Downloads/project-2/src/addsub.vhd
-# ** Warning: (vsim-3473) Component instance "onescomp0 : OnesComp_N" is not bound.
-#    Time: 0 ns  Iteration: 0  Instance: /tb/MyMips/generic_32bit_ALU/generic_sub File: /home/rjlawson/Downloads/project-2/src/addsub.vhd
-# ** Warning: (vsim-3473) Component instance "mux0 : mux2t1_N" is not bound.
-#    Time: 0 ns  Iteration: 0  Instance: /tb/MyMips/generic_32bit_ALU/generic_sub File: /home/rjlawson/Downloads/project-2/src/addsub.vhd
+# Loading work.controlunit(behavioral)#1
+# Loading work.extender_n(behavior)#1
 # Loading work.barrel_shifter(bsh)#1
+# Loading work.forwarding_dataflow(behavioral)#1
+# Loading work.register_idex(structural)#1
+# Loading work.register32bit(bigboy)#2
+# Loading work.register32bit(bigboy)#3
 # Loading work.barrel_shifter(bsh)#2
-# Loading work.barrel_shifter(bsh)#3
+# Loading work.register_exmem(structural)#1
+# Loading work.register_memwb(structural)#1
 # do ../testpy/modelsim_framework.do
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ns  Iteration: 0  Instance: /tb/MyMips/DMem
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 0 ns  Iteration: 0  Instance: /tb/MyMips/IMem
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ns  Iteration: 6  Instance: /tb/MyMips/DMem
+#    Time: 0 ns  Iteration: 1  Instance: /tb/MyMips/generic_ALU
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 40 ns  Iteration: 3  Instance: /tb/MyMips/IMem
-# End time: 01:38:23 on Dec 09,2021, Elapsed time: 0:00:01
-# Errors: 1, Warnings: 11
+#    Time: 0 ns  Iteration: 2  Instance: /tb/MyMips/DMem
+# End time: 18:19:53 on Dec 10,2021, Elapsed time: 0:00:03
+# Errors: 1, Warnings: 4

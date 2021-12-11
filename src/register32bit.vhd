@@ -14,7 +14,6 @@
 library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
-use work.reg_array_type.all;
 
 entity Register32bit is
 	generic(N : integer := 32);
@@ -41,7 +40,7 @@ begin
       o_O <= data;
     end if;
     if (i_rst = '1') then
-      o_O <= std_logic_vector(to_unsigned(0, N));
+      o_O <= (others => '0');
     end if;
   end if;
 end process;

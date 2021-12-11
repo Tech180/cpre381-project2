@@ -215,7 +215,7 @@ generic_register_IFID : register_IFID
 	   i_rst => flush_IFID,
 	   i_we => stall_IFID,
 	   PC => x"00400000",
-	   inst => x"FFFFFFFF",
+	   inst => x"CFF02312",
 	   o_PC => s_PC,
 	   o_inst => s_inst);
 
@@ -237,17 +237,17 @@ generic_register_IDEX : register_IDEX
 	   regdst => '0',
 	   branch => '0',
  	   jr => '0',
-	   PC => x"00030000",
-	   D0 => x"00030000",
+	   PC => x"00400004",
+	   D0 => x"0000FFFF",
 	   inst => s_inst,
 	   op => "000",
 	   writeAddr => s_inst(15 downto 11),
 	   rd => s_inst(20 downto 16),
 	   rt => s_inst(25 downto 21),
 	   shamt => s_inst(10 downto 6),
-	   rt1 => x"ff00ff00",
-	   rd1 => x"00ff00ff",
-	   immediateExtend => x"0000ffff",
+	   rt1 => x"FFF000FF",
+	   rd1 => x"00FF00FF",
+	   immediateExtend => x"00001111",
 	   o_upperImmediate => s_upperImmediate_EX,
 	   o_sltu => s_sltu_EX,
 	   o_jal => s_jal_EX,
@@ -284,8 +284,8 @@ generic_register_EXMEM : register_EXMEM
            memToReg => s_memToReg_EX,
            regWrite => s_regWrite_EX,
            memWrite => s_memWrite_EX,
-           PC => x"00200000",
-           D0 => x"00020000",
+           PC => x"00400008",
+           D0 => x"00DD00DD",
            inst => s_inst,
            ALUOut => x"11111111",
            ALU => x"00001111",
@@ -316,7 +316,7 @@ generic_register_MEMWB : register_MEMWB
            jal => s_jal_MEM,
            memToReg => s_memToReg_MEM,
            regWrite => s_regWrite_MEM,
-           PC => x"00100000",
+           PC => x"0040000C",
            D0 => x"00010000",
            inst => s_inst,
            Dmem => x"22222222",
@@ -381,6 +381,69 @@ generic_register_MEMWB : register_MEMWB
         flush_EXMEM <= '0';
         flush_MEMWB <= '0';
         wait for helper;
+        wait for helper;
+        
+        flush_IFID <= '1';
+        flush_IDEX <= '0';
+        flush_EXMEM <= '0';
+        flush_MEMWB <= '0';
+        wait for helper;
+        wait for helper;
+        flush_IFID <= '1';
+        flush_IDEX <= '1';
+        flush_EXMEM <= '0';
+        flush_MEMWB <= '0';
+        wait for helper;
+        wait for helper;
+        flush_IFID <= '1';
+        flush_IDEX <= '1';
+        flush_EXMEM <= '1';
+        flush_MEMWB <= '0';
+        wait for helper;
+        wait for helper;
+        flush_IFID <= '1';
+        flush_IDEX <= '1';
+        flush_EXMEM <= '1';
+        flush_MEMWB <= '1';
+        wait for helper;
+        wait for helper;
+        flush_IFID <= '0';
+        flush_IDEX <= '0';
+        flush_EXMEM <= '0';
+        flush_MEMWB <= '0';
+        stall_IFID <= '0';
+        stall_IDEX <= '0';
+        stall_EXMEM <= '0';
+        stall_MEMWB <= '0';
+        wait for helper;
+        wait for helper;
+        
+        stall_IFID <= '1';
+        stall_IDEX <= '0';
+        stall_EXMEM <= '0';
+        stall_MEMWB <= '0';
+        wait for helper;
+        wait for helper;
+        stall_IFID <= '1';
+        stall_IDEX <= '1';
+        stall_EXMEM <= '0';
+        stall_MEMWB <= '0';
+        wait for helper;
+        wait for helper;
+        stall_IFID <= '1';
+        stall_IDEX <= '1';
+        stall_EXMEM <= '1';
+        stall_MEMWB <= '0';
+        wait for helper;
+        wait for helper;
+        stall_IFID <= '1';
+        stall_IDEX <= '1';
+        stall_EXMEM <= '1';
+        stall_MEMWB <= '1';
+        wait for helper;
+        wait for helper;
+
+        
 
    end process;
 
