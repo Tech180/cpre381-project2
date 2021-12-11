@@ -60,7 +60,7 @@ begin
          i_D0         => i_fB,
 	 o_O          => s_oc);
 	 
-    mux0: mux_32bit_dataflow port map(
+    mux0: mux2t1_N port map(
          i_S          => i_fC, 
          i_D0         => i_fB,
          i_D1         => s_oc,
