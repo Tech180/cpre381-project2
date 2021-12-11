@@ -20,7 +20,7 @@ entity register_IDEX is
         sv                      : in std_logic; --shift variable
         branch                  : in std_logic;
         jr                      : in std_logic;
-        op				        : in std_logic_vector(2 downto 0);
+        op			: in std_logic_vector(4 downto 0);
         writeaddr            	: in std_logic_vector(4 downto 0);
         rd                    	: in std_logic_vector(4 downto 0);
         rt                      : in std_logic_vector(4 downto 0);
@@ -41,12 +41,12 @@ entity register_IDEX is
         o_MemWrite              : out std_logic;
         o_ALUSrc                : out std_logic;
         o_sl                    : out std_logic;
-        o_sr                    : out std_logic_vector(3 downto 0);
+        o_sr                    : out std_logic;
         o_ALUControl            : out std_logic;
         o_sv                    : out std_logic;
         o_branch                : out std_logic;
         o_jr                    : out std_logic;
-        o_op				    : out std_logic_vector(2 downto 0);
+        o_op				    : out std_logic_vector(4 downto 0);
         o_writeaddr	            : out std_logic_vector(4 downto 0);
         o_rd	                : out std_logic_vector(4 downto 0);
         o_rt	                : out std_logic_vector(4 downto 0);
@@ -153,7 +153,7 @@ generic_immediateExtend : register32bit
              o_O => o_immediateExtend);
 
 generic_op : register32bit
-    generic map(N => 3)
+    generic map(N => 4)
     port map(clock => clock,
              i_rst => i_rst,
              i_we => i_we,

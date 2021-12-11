@@ -161,12 +161,12 @@ architecture structure of MIPS_Processor is
   signal s_writeAddress_EXMEM	 : std_logic_vector(4 downto 0);
   signal s_writeAddress_IDEX	 : std_logic_vector(4 downto 0);
 
-  signal s_ALUOp            : std_logic_vector(2 downto 0);
+  signal s_ALUOp            : std_logic_vector(3 downto 0);
   signal s_forwarding_mux1	     : std_logic_vector(1 downto 0);
   signal s_forwarding_mux2	     : std_logic_vector(1 downto 0);
   signal s_forwarding_mux3	     : std_logic_vector(1 downto 0);
   signal s_forwarding_mux4	     : std_logic_vector(1 downto 0);
-  signal s_ALUOP_IDEX			 : std_logic_vector(2 downto 0);
+  signal s_ALUOP_IDEX			 : std_logic_vector(3 downto 0);
 
   signal s_flush_IFID			 : std_logic;
   signal s_stall_IFID			 : std_logic;
@@ -368,7 +368,7 @@ component register_IDEX is
         sv                      : in std_logic; --shift variable
         branch                  : in std_logic;
         jr                      : in std_logic;
-        op				        : in std_logic_vector(2 downto 0);
+        op				        : in std_logic_vector(4 downto 0);
         writeaddr            	: in std_logic_vector(4 downto 0);
         rd                    	: in std_logic_vector(4 downto 0);
         rt                      : in std_logic_vector(4 downto 0);
@@ -394,7 +394,7 @@ component register_IDEX is
         o_sv                    : out std_logic;
         o_branch                : out std_logic;
         o_jr                    : out std_logic;
-        o_op				    : out std_logic_vector(2 downto 0);
+        o_op				    : out std_logic_vector(3 downto 0);
         o_writeaddr	            : out std_logic_vector(4 downto 0);
         o_rd	                : out std_logic_vector(4 downto 0);
         o_rt	                : out std_logic_vector(4 downto 0);
@@ -604,7 +604,7 @@ begin
                  MemWrite => s_memWrite,
                  ALUSrc => s_ALUSrc,
                  RegWrite => s_registerWrite_IFID,
-                 ALUControl => s_ALUControl,
+                 ALUControl => s_ALUOp,
                  shiftVariable => s_sv,
                  upper_immediate => s_ui,
                  sltu => s_sltu,
@@ -637,7 +637,7 @@ begin
                  o_O => s_j_address_bottom);
 
     s_j_address(31 downto 28) <= s_PC_IFID(31 downto 28);
-    s_j_address(27 downto 0) <= s_j_address_bottom;
+    s_j_address(31 downto 0) <= s_j_address_bottom;
 
     jump_mux : mux_32bit_dataflow
         port map(i_D0 => s_branch_mux1,
