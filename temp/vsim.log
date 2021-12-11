@@ -3,7 +3,7 @@ Reading pref.tcl
 # 2021.2
 
 # vsim -c -voptargs="+acc" tb -do "../testpy/modelsim_framework.do" 
-# Start time: 22:37:47 on Dec 10,2021
+# Start time: 23:16:25 on Dec 10,2021
 # ** Error: (vsim-7) Failed to open  file "/home/longz/Desktop/Cpre381/project-2/internal/ModelSimContainer/work/@_opt/_deps" in read mode.
 # No such file or directory. (errno = ENOENT)
 # ** Warning: (vsim-56) Problem with optimized design dependency file "/home/longz/Desktop/Cpre381/project-2/internal/ModelSimContainer/work/@_opt/_deps" - file open failed.
@@ -54,34 +54,17 @@ Reading pref.tcl
 # Loading work.control_hazard_dataflow(dataflow)#1
 # Loading work.forwarding_dataflow(behavioral)#1
 # Loading work.alu_32bit(structural)#1
-# ** Warning: (vsim-3473) Component instance "generic_32bit_and : and_32bit_data" is not bound.
-#    Time: 0 ns  Iteration: 0  Instance: /tb/MyMips/generic_ALU File: /home/longz/Desktop/Cpre381/project-2/src/ALU_32bit.vhd
+# Loading work.and_32bit_data(dataflow)#1
 # Loading work.xor_32bit_data(dataflow)#1
 # Loading work.nor_32bit_data(dataflow)#1
 # Loading work.addsub(behavior)#1
-# ** Warning: (vsim-3473) Component instance "onescomp0 : OnesComp_N" is not bound.
-#    Time: 0 ns  Iteration: 0  Instance: /tb/MyMips/generic_ALU/generic_add File: /home/longz/Desktop/Cpre381/project-2/src/addsub.vhd
-# ** Warning: (vsim-3473) Component instance "mux0 : mux2t1_N" is not bound.
-#    Time: 0 ns  Iteration: 0  Instance: /tb/MyMips/generic_ALU/generic_add File: /home/longz/Desktop/Cpre381/project-2/src/addsub.vhd
-# ** Warning: (vsim-3473) Component instance "onescomp0 : OnesComp_N" is not bound.
-#    Time: 0 ns  Iteration: 0  Instance: /tb/MyMips/generic_ALU/generic_sub File: /home/longz/Desktop/Cpre381/project-2/src/addsub.vhd
-# ** Warning: (vsim-3473) Component instance "mux0 : mux2t1_N" is not bound.
-#    Time: 0 ns  Iteration: 0  Instance: /tb/MyMips/generic_ALU/generic_sub File: /home/longz/Desktop/Cpre381/project-2/src/addsub.vhd
+# Loading work.onescomp(structural)#1
+# Loading work.invg(dataflow)#1
 # Loading work.barrel_shifter(bsh)#2
 # Loading work.barrel_shifter(bsh)#3
 # Loading work.register_idex(structural)#1
 # Loading work.register32bit(bigboy)#2
 # Loading work.register32bit(bigboy)#3
-# ** Warning: (vsim-3473) Component instance "generic_32bit_and : and_32bit_data" is not bound.
-#    Time: 0 ns  Iteration: 0  Instance: /tb/MyMips/generic_ALU2 File: /home/longz/Desktop/Cpre381/project-2/src/ALU_32bit.vhd
-# ** Warning: (vsim-3473) Component instance "onescomp0 : OnesComp_N" is not bound.
-#    Time: 0 ns  Iteration: 0  Instance: /tb/MyMips/generic_ALU2/generic_add File: /home/longz/Desktop/Cpre381/project-2/src/addsub.vhd
-# ** Warning: (vsim-3473) Component instance "mux0 : mux2t1_N" is not bound.
-#    Time: 0 ns  Iteration: 0  Instance: /tb/MyMips/generic_ALU2/generic_add File: /home/longz/Desktop/Cpre381/project-2/src/addsub.vhd
-# ** Warning: (vsim-3473) Component instance "onescomp0 : OnesComp_N" is not bound.
-#    Time: 0 ns  Iteration: 0  Instance: /tb/MyMips/generic_ALU2/generic_sub File: /home/longz/Desktop/Cpre381/project-2/src/addsub.vhd
-# ** Warning: (vsim-3473) Component instance "mux0 : mux2t1_N" is not bound.
-#    Time: 0 ns  Iteration: 0  Instance: /tb/MyMips/generic_ALU2/generic_sub File: /home/longz/Desktop/Cpre381/project-2/src/addsub.vhd
 # Loading work.register_exmem(structural)#1
 # Loading work.register_memwb(structural)#1
 # do ../testpy/modelsim_framework.do
@@ -101,5 +84,5 @@ Reading pref.tcl
 #    Time: 40 ns  Iteration: 2  Instance: /tb/MyMips/reg/read_mux_d
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 60 ns  Iteration: 2  Instance: /tb/MyMips/DMem
-# End time: 22:37:49 on Dec 10,2021, Elapsed time: 0:00:02
-# Errors: 1, Warnings: 19
+# End time: 23:16:26 on Dec 10,2021, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 9

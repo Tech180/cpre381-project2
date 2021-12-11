@@ -12,230 +12,58 @@
 # //  is prohibited from disclosure under the Trade Secrets Act,
 # //  18 U.S.C. Section 1905.
 # //
-vcom -work work /home/rjlawson/Downloads/project-2/src/MIPS_Processor.vhd
-# QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 18:26:13 on Dec 10,2021
-# vcom -reportprogress 300 -work work /home/rjlawson/Downloads/project-2/src/MIPS_Processor.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity MIPS_Processor
-# -- Compiling architecture structure of MIPS_Processor
-# End time: 18:26:13 on Dec 10,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vsim -voptargs=+acc work.mips_processor
-# vsim -voptargs="+acc" work.mips_processor 
-# Start time: 18:27:13 on Dec 10,2021
-# ** Note: (vsim-3812) Design is being optimized...
-# ** Error (suppressible): /home/rjlawson/Downloads/project-2/src/MIPS_Processor.vhd(727): (vopt-1272) Length of op is 3; length of component port is 4.
-# ** Error (suppressible): /home/rjlawson/Downloads/project-2/src/MIPS_Processor.vhd(727): (vopt-1272) Length of o_op is 3; length of component port is 4.
-# Optimization failed
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=2, Warnings=0.
-# Error loading design
-# End time: 18:27:13 on Dec 10,2021, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vcom -work work /home/rjlawson/Downloads/project-2/src/register_IDEX.vhd
-# QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 18:28:53 on Dec 10,2021
-# vcom -reportprogress 300 -work work /home/rjlawson/Downloads/project-2/src/register_IDEX.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity register_IDEX
-# -- Compiling architecture structural of register_IDEX
-# End time: 18:28:53 on Dec 10,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vsim work.memforwardingunit
-# vsim work.memforwardingunit 
-# Start time: 18:29:22 on Dec 10,2021
-# ** Note: (vsim-3812) Design is being optimized...
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading ieee.math_real(body)
-# Loading work.memforwardingunit(behavorial)#1
-quit -sim
-# End time: 18:29:28 on Dec 10,2021, Elapsed time: 0:00:06
-# Errors: 0, Warnings: 0
-vcom -work work /home/rjlawson/Downloads/project-2/src/MIPS_Processor.vhd
-# QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 18:29:32 on Dec 10,2021
-# vcom -reportprogress 300 -work work /home/rjlawson/Downloads/project-2/src/MIPS_Processor.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity MIPS_Processor
-# -- Compiling architecture structure of MIPS_Processor
-# ** Error (suppressible): /home/rjlawson/Downloads/project-2/src/MIPS_Processor.vhd(745): (vcom-1272) Length of formal "op" is 5; length of actual is 4.
-# ** Error (suppressible): /home/rjlawson/Downloads/project-2/src/MIPS_Processor.vhd(771): (vcom-1272) Length of formal "o_op" is 5; length of actual is 4.
-# ** Note: /home/rjlawson/Downloads/project-2/src/MIPS_Processor.vhd(1014): VHDL Compiler exiting
-# End time: 18:29:33 on Dec 10,2021, Elapsed time: 0:00:01
-# Errors: 2, Warnings: 0
-# /usr/local/mentor/questasim/linux_x86_64/vcom failed.
-vcom -work work /home/rjlawson/Downloads/project-2/src/MIPS_Processor.vhd
-# QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 18:29:52 on Dec 10,2021
-# vcom -reportprogress 300 -work work /home/rjlawson/Downloads/project-2/src/MIPS_Processor.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity MIPS_Processor
-# -- Compiling architecture structure of MIPS_Processor
-# ** Error (suppressible): /home/rjlawson/Downloads/project-2/src/MIPS_Processor.vhd(745): (vcom-1272) Length of formal "op" is 5; length of actual is 4.
-# ** Error (suppressible): /home/rjlawson/Downloads/project-2/src/MIPS_Processor.vhd(771): (vcom-1272) Length of formal "o_op" is 5; length of actual is 4.
-# ** Note: /home/rjlawson/Downloads/project-2/src/MIPS_Processor.vhd(1014): VHDL Compiler exiting
-# End time: 18:29:52 on Dec 10,2021, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-# /usr/local/mentor/questasim/linux_x86_64/vcom failed.
-vcom -work work /home/rjlawson/Downloads/project-2/src/MIPS_Processor.vhd
-# QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 18:29:58 on Dec 10,2021
-# vcom -reportprogress 300 -work work /home/rjlawson/Downloads/project-2/src/MIPS_Processor.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity MIPS_Processor
-# -- Compiling architecture structure of MIPS_Processor
-# ** Error (suppressible): /home/rjlawson/Downloads/project-2/src/MIPS_Processor.vhd(745): (vcom-1272) Length of formal "op" is 5; length of actual is 4.
-# ** Error (suppressible): /home/rjlawson/Downloads/project-2/src/MIPS_Processor.vhd(771): (vcom-1272) Length of formal "o_op" is 5; length of actual is 4.
-# ** Note: /home/rjlawson/Downloads/project-2/src/MIPS_Processor.vhd(1014): VHDL Compiler exiting
-# End time: 18:29:58 on Dec 10,2021, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-# /usr/local/mentor/questasim/linux_x86_64/vcom failed.
-vcom -work work /home/rjlawson/Downloads/project-2/src/MIPS_Processor.vhd
-# QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 18:30:14 on Dec 10,2021
-# vcom -reportprogress 300 -work work /home/rjlawson/Downloads/project-2/src/MIPS_Processor.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity MIPS_Processor
-# -- Compiling architecture structure of MIPS_Processor
-# ** Error (suppressible): /home/rjlawson/Downloads/project-2/src/MIPS_Processor.vhd(745): (vcom-1272) Length of formal "op" is 5; length of actual is 4.
-# ** Error (suppressible): /home/rjlawson/Downloads/project-2/src/MIPS_Processor.vhd(771): (vcom-1272) Length of formal "o_op" is 5; length of actual is 4.
-# ** Note: /home/rjlawson/Downloads/project-2/src/MIPS_Processor.vhd(1014): VHDL Compiler exiting
-# End time: 18:30:14 on Dec 10,2021, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-# /usr/local/mentor/questasim/linux_x86_64/vcom failed.
-vcom -work work /home/rjlawson/Downloads/project-2/src/MIPS_Processor.vhd
-# QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 18:30:27 on Dec 10,2021
-# vcom -reportprogress 300 -work work /home/rjlawson/Downloads/project-2/src/MIPS_Processor.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity MIPS_Processor
-# -- Compiling architecture structure of MIPS_Processor
-# ** Error (suppressible): /home/rjlawson/Downloads/project-2/src/MIPS_Processor.vhd(745): (vcom-1272) Length of formal "op" is 5; length of actual is 4.
-# ** Error (suppressible): /home/rjlawson/Downloads/project-2/src/MIPS_Processor.vhd(771): (vcom-1272) Length of formal "o_op" is 5; length of actual is 4.
-# ** Note: /home/rjlawson/Downloads/project-2/src/MIPS_Processor.vhd(1014): VHDL Compiler exiting
-# End time: 18:30:27 on Dec 10,2021, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-# /usr/local/mentor/questasim/linux_x86_64/vcom failed.
-vsim -voptargs=+acc work.mips_processor
-# vsim -voptargs="+acc" work.mips_processor 
-# Start time: 18:31:17 on Dec 10,2021
-# ** Note: (vsim-3812) Design is being optimized...
-# ** Error (suppressible): /home/rjlawson/Downloads/project-2/src/MIPS_Processor.vhd(727): (vopt-1272) Length of op is 5; length of component port is 4.
-# ** Error (suppressible): /home/rjlawson/Downloads/project-2/src/MIPS_Processor.vhd(727): (vopt-1272) Length of o_op is 5; length of component port is 4.
-# Optimization failed
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=2, Warnings=0.
-# Error loading design
-# End time: 18:31:17 on Dec 10,2021, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vcom -work work /home/rjlawson/Downloads/project-2/src/MIPS_Processor.vhd
-# QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 18:31:18 on Dec 10,2021
-# vcom -reportprogress 300 -work work /home/rjlawson/Downloads/project-2/src/MIPS_Processor.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity MIPS_Processor
-# -- Compiling architecture structure of MIPS_Processor
-# ** Error (suppressible): /home/rjlawson/Downloads/project-2/src/MIPS_Processor.vhd(745): (vcom-1272) Length of formal "op" is 5; length of actual is 4.
-# ** Error (suppressible): /home/rjlawson/Downloads/project-2/src/MIPS_Processor.vhd(771): (vcom-1272) Length of formal "o_op" is 5; length of actual is 4.
-# ** Note: /home/rjlawson/Downloads/project-2/src/MIPS_Processor.vhd(1014): VHDL Compiler exiting
-# End time: 18:31:19 on Dec 10,2021, Elapsed time: 0:00:01
-# Errors: 2, Warnings: 0
-# /usr/local/mentor/questasim/linux_x86_64/vcom failed.
-vcom -work work /home/rjlawson/Downloads/project-2/src/MIPS_Processor.vhd
-# QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 18:31:35 on Dec 10,2021
-# vcom -reportprogress 300 -work work /home/rjlawson/Downloads/project-2/src/MIPS_Processor.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity MIPS_Processor
-# -- Compiling architecture structure of MIPS_Processor
-# End time: 18:31:35 on Dec 10,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vsim -voptargs=+acc work.mips_processor
-# vsim -voptargs="+acc" work.mips_processor 
-# Start time: 18:31:38 on Dec 10,2021
-# ** Note: (vsim-3812) Design is being optimized...
-# ** Error (suppressible): /home/rjlawson/Downloads/project-2/src/MIPS_Processor.vhd(727): (vopt-1272) Length of op is 5; length of component port is 4.
-# ** Error (suppressible): /home/rjlawson/Downloads/project-2/src/MIPS_Processor.vhd(727): (vopt-1272) Length of o_op is 5; length of component port is 4.
-# Optimization failed
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=2, Warnings=0.
-# Error loading design
-# End time: 18:31:38 on Dec 10,2021, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vcom -work work /home/rjlawson/Downloads/project-2/src/register_IDEX.vhd
-# QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 18:32:07 on Dec 10,2021
-# vcom -reportprogress 300 -work work /home/rjlawson/Downloads/project-2/src/register_IDEX.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity register_IDEX
-# -- Compiling architecture structural of register_IDEX
-# End time: 18:32:07 on Dec 10,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -work work /home/rjlawson/Downloads/project-2/src/MIPS_Processor.vhd
-# QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 18:32:11 on Dec 10,2021
-# vcom -reportprogress 300 -work work /home/rjlawson/Downloads/project-2/src/MIPS_Processor.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity MIPS_Processor
-# -- Compiling architecture structure of MIPS_Processor
-# End time: 18:32:11 on Dec 10,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vsim -voptargs=+acc work.mips_processor
-# vsim -voptargs="+acc" work.mips_processor 
-# Start time: 18:32:12 on Dec 10,2021
-# ** Note: (vsim-3812) Design is being optimized...
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.mips_processor(structure)#1
-# Loading ieee.numeric_std(body)
-# Loading work.mem(rtl)#1
-# Loading work.fulladder_n(pizza_n)#1
-# Loading work.fulladder(pizza)#1
-# Loading work.xorg2(dataflow)#1
-# Loading work.andg2(dataflow)#1
-# Loading work.org2(dataflow)#1
-# Loading work.mux_32bit_dataflow(dataflow)#1
-# Loading work.register_ifid(structural)#1
-# Loading work.reg_array_type
-# Loading work.register32bit(bigboy)#1
-# Loading work.register_file(structural)#1
-# Loading work.decoder5t32(dataflow)#1
-# Loading work.reg_n(abc)#1
-# Loading work.dffg(mixed)#1
-# Loading work.mux32t1_array(dataflow)#1
-# Loading work.mux4to1(structural)#1
-# Loading work.mux_32bit_dataflow(dataflow)#2
-# Loading work.controlunit(behavioral)#1
-# Loading work.extender_n(behavior)#1
-# Loading work.barrel_shifter(bsh)#1
-# Loading work.forwarding_dataflow(behavioral)#1
-# Loading work.register_idex(structural)#1
-# Loading work.register32bit(bigboy)#2
-# Loading work.register32bit(bigboy)#3
-# Loading work.barrel_shifter(bsh)#2
-# Loading work.register_exmem(structural)#1
-# Loading work.register_memwb(structural)#1
+vsim -view vsim.wlf
+# vsim.wlf opened as dataset "vsim"
+add wave -position end  vsim:/tb_pipeline/helper
+add wave -position end  vsim:/tb_pipeline/N
+add wave -position end  vsim:/tb_pipeline/clock
+add wave -position end  vsim:/tb_pipeline/flush_IFID
+add wave -position end  vsim:/tb_pipeline/flush_IDEX
+add wave -position end  vsim:/tb_pipeline/flush_EXMEM
+add wave -position end  vsim:/tb_pipeline/flush_MEMWB
+add wave -position end  vsim:/tb_pipeline/stall_IFID
+add wave -position end  vsim:/tb_pipeline/stall_IDEX
+add wave -position end  vsim:/tb_pipeline/stall_EXMEM
+add wave -position end  vsim:/tb_pipeline/stall_MEMWB
+add wave -position end  vsim:/tb_pipeline/s_PC
+add wave -position end  vsim:/tb_pipeline/s_inst
+add wave -position end  vsim:/tb_pipeline/s_rt1
+add wave -position end  vsim:/tb_pipeline/s_rd1
+add wave -position end  vsim:/tb_pipeline/s_immediateExtend
+add wave -position end  vsim:/tb_pipeline/s_ALUOut_MEM
+add wave -position end  vsim:/tb_pipeline/s_ALUb
+add wave -position end  vsim:/tb_pipeline/s_sltu1_MEM
+add wave -position end  vsim:/tb_pipeline/s_upperImmediateD_MEM
+add wave -position end  vsim:/tb_pipeline/s_DMEM
+add wave -position end  vsim:/tb_pipeline/s_ALU_WB
+add wave -position end  vsim:/tb_pipeline/s_upperImmediateD_WB
+add wave -position end  vsim:/tb_pipeline/s_sltu1_WB
+add wave -position end  vsim:/tb_pipeline/s_writeaddr_EX
+add wave -position end  vsim:/tb_pipeline/s_writeaddr_MEM
+add wave -position end  vsim:/tb_pipeline/s_rd
+add wave -position end  vsim:/tb_pipeline/s_rt
+add wave -position end  vsim:/tb_pipeline/s_shamt
+add wave -position end  vsim:/tb_pipeline/s_writeaddr_WB
+add wave -position end  vsim:/tb_pipeline/s_Op
+add wave -position end  vsim:/tb_pipeline/s_upperImmediate_EX
+add wave -position end  vsim:/tb_pipeline/s_upperImmediate_MEM
+add wave -position end  vsim:/tb_pipeline/s_sltu_EX
+add wave -position end  vsim:/tb_pipeline/s_sltu_MEM
+add wave -position end  vsim:/tb_pipeline/s_jal_EX
+add wave -position end  vsim:/tb_pipeline/s_jal_MEM
+add wave -position end  vsim:/tb_pipeline/s_memToReg_EX
+add wave -position end  vsim:/tb_pipeline/s_memToReg_MEM
+add wave -position end  vsim:/tb_pipeline/s_regWrite_EX
+add wave -position end  vsim:/tb_pipeline/s_regWrite_MEM
+add wave -position end  vsim:/tb_pipeline/s_memWrite_EX
+add wave -position end  vsim:/tb_pipeline/s_memWrite_MEM
+add wave -position end  vsim:/tb_pipeline/s_ALUSrc
+add wave -position end  vsim:/tb_pipeline/s_sl
+add wave -position end  vsim:/tb_pipeline/s_sr
+add wave -position end  vsim:/tb_pipeline/s_ALUControl
+add wave -position end  vsim:/tb_pipeline/s_ShiftVariable
+add wave -position end  vsim:/tb_pipeline/s_upperImmediate_WB
+add wave -position end  vsim:/tb_pipeline/s_sltu_WB
+add wave -position end  vsim:/tb_pipeline/s_jal_WB
+add wave -position end  vsim:/tb_pipeline/s_memToReg_WB
+add wave -position end  vsim:/tb_pipeline/s_regWrite_WB
