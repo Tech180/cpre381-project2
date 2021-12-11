@@ -1,10 +1,10 @@
 # vsim -c -voptargs="+acc" tb -do "../testpy/modelsim_framework.do" 
-# Start time: 21:28:35 on Dec 10,2021
+# Start time: 22:37:47 on Dec 10,2021
 # ** Error: (vsim-7) Failed to open  file "/home/longz/Desktop/Cpre381/project-2/internal/ModelSimContainer/work/@_opt/_deps" in read mode.
 # No such file or directory. (errno = ENOENT)
 # ** Warning: (vsim-56) Problem with optimized design dependency file "/home/longz/Desktop/Cpre381/project-2/internal/ModelSimContainer/work/@_opt/_deps" - file open failed.
 # No such file or directory. (errno = ENOENT)
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
 # //  Questa Sim-64
 # //  Version 2021.2 linux_x86_64 Apr 14 2021
 # //
@@ -49,23 +49,44 @@
 # Loading work.barrel_shifter(bsh)#1
 # Loading work.control_hazard_dataflow(dataflow)#1
 # Loading work.forwarding_dataflow(behavioral)#1
+# Loading work.alu_32bit(structural)#1
+# ** Warning: (vsim-3473) Component instance "generic_32bit_and : and_32bit_data" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb/MyMips/generic_ALU File: /home/longz/Desktop/Cpre381/project-2/src/ALU_32bit.vhd
+# Loading work.xor_32bit_data(dataflow)#1
+# Loading work.nor_32bit_data(dataflow)#1
+# Loading work.addsub(behavior)#1
+# ** Warning: (vsim-3473) Component instance "onescomp0 : OnesComp_N" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb/MyMips/generic_ALU/generic_add File: /home/longz/Desktop/Cpre381/project-2/src/addsub.vhd
+# ** Warning: (vsim-3473) Component instance "mux0 : mux2t1_N" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb/MyMips/generic_ALU/generic_add File: /home/longz/Desktop/Cpre381/project-2/src/addsub.vhd
+# ** Warning: (vsim-3473) Component instance "onescomp0 : OnesComp_N" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb/MyMips/generic_ALU/generic_sub File: /home/longz/Desktop/Cpre381/project-2/src/addsub.vhd
+# ** Warning: (vsim-3473) Component instance "mux0 : mux2t1_N" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb/MyMips/generic_ALU/generic_sub File: /home/longz/Desktop/Cpre381/project-2/src/addsub.vhd
+# Loading work.barrel_shifter(bsh)#2
+# Loading work.barrel_shifter(bsh)#3
 # Loading work.register_idex(structural)#1
 # Loading work.register32bit(bigboy)#2
 # Loading work.register32bit(bigboy)#3
-# Loading work.barrel_shifter(bsh)#2
+# ** Warning: (vsim-3473) Component instance "generic_32bit_and : and_32bit_data" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb/MyMips/generic_ALU2 File: /home/longz/Desktop/Cpre381/project-2/src/ALU_32bit.vhd
+# ** Warning: (vsim-3473) Component instance "onescomp0 : OnesComp_N" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb/MyMips/generic_ALU2/generic_add File: /home/longz/Desktop/Cpre381/project-2/src/addsub.vhd
+# ** Warning: (vsim-3473) Component instance "mux0 : mux2t1_N" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb/MyMips/generic_ALU2/generic_add File: /home/longz/Desktop/Cpre381/project-2/src/addsub.vhd
+# ** Warning: (vsim-3473) Component instance "onescomp0 : OnesComp_N" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb/MyMips/generic_ALU2/generic_sub File: /home/longz/Desktop/Cpre381/project-2/src/addsub.vhd
+# ** Warning: (vsim-3473) Component instance "mux0 : mux2t1_N" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb/MyMips/generic_ALU2/generic_sub File: /home/longz/Desktop/Cpre381/project-2/src/addsub.vhd
 # Loading work.register_exmem(structural)#1
 # Loading work.register_memwb(structural)#1
 # do ../testpy/modelsim_framework.do
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 0 ns  Iteration: 0  Instance: /tb/MyMips/IMem
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ns  Iteration: 1  Instance: /tb/MyMips/generic_ALU
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 0 ns  Iteration: 2  Instance: /tb/MyMips/reg/read_mux_t
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 0 ns  Iteration: 2  Instance: /tb/MyMips/reg/read_mux_d
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ns  Iteration: 2  Instance: /tb/MyMips/DMem
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 5 ns  Iteration: 3  Instance: /tb/MyMips/reg/read_mux_t
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
@@ -75,8 +96,6 @@
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 40 ns  Iteration: 2  Instance: /tb/MyMips/reg/read_mux_d
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 40 ns  Iteration: 2  Instance: /tb/MyMips/DMem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 80 ns  Iteration: 1  Instance: /tb/MyMips/generic_ALU
-# End time: 21:28:38 on Dec 10,2021, Elapsed time: 0:00:03
-# Errors: 1, Warnings: 12
+#    Time: 60 ns  Iteration: 2  Instance: /tb/MyMips/DMem
+# End time: 22:37:49 on Dec 10,2021, Elapsed time: 0:00:02
+# Errors: 1, Warnings: 19

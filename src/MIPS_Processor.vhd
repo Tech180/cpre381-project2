@@ -753,14 +753,15 @@ hazard: control_hazard_dataflow
 
     -- barrel shifter
     --TODO
-    generic_barrel_shifter_32bit : barrel_shifter
-    port map(i_clk => iCLK,
-	     i_I => s_rt1, --s_rd1
-             i_S => "00000",
-             i_A => '0',
-             i_L => '0',
-             --i_ALUControl => '0',
-             o_O => open);
+     generic_ALU : ALU_32bit
+        port map(i_D0 => s_rt1,
+		 i_D1 => s_rd1,
+                 i_D2 => "0110",
+                 i_D3 => "00000",
+                 i_Overflow => '0',
+                 o_O => open,
+                 o_Overflow => open,
+                 o_zero => s_zero);
 
     generic_branch : process (s_beq,
                               s_bne,
@@ -887,18 +888,19 @@ hazard: control_hazard_dataflow
                  o_O => s_ALU_2_1);
 
 
-    --unsure most likely wrong
-    --TODO
-    generic_ALU : barrel_shifter
-        port map(i_clk => iCLK,
-		 i_I => s_ALU_1_1, --s_ALUSrc1
-                 i_S => s_shift,
-                 i_A => s_sl_IDEX,
-                 i_L => s_sr_IDEX,
-                 --i_ALUControl => s_ALUControl_IDEX,
-                 o_O => s_ALUOut);
+  
+    generic_ALU2 : ALU_32bit
+        port map(i_D0 => s_ALU_1_1,
+		 i_D1 => s_ALUSrc1,
+                 i_D2 => s_ALUOP_IDEX,
+                 i_D3 => s_shift,
+                 i_Overflow => '0',
+                 o_O => s_ALUOut,
+                 o_Overflow => open,
+                 o_zero => open);
 
     oALUOut <= s_ALUOut;
+    
 
     generic_immediate_barrel_shift : barrel_shifter
 
