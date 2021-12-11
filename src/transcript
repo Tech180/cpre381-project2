@@ -12,437 +12,66 @@
 # //  is prohibited from disclosure under the Trade Secrets Act,
 # //  18 U.S.C. Section 1905.
 # //
-vcom -reportprogress 300 -work work /home/longz/Desktop/Cpre381/project-1/src/ALU_32bit.vhd
+vcom -reportprogress 300 -work work /home/longz/Desktop/Cpre381/project-2/src/MIPS_Processor.vhd
 # QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 18:39:42 on Nov 12,2021
-# vcom -reportprogress 300 -work work /home/longz/Desktop/Cpre381/project-1/src/ALU_32bit.vhd 
+# Start time: 21:26:55 on Dec 10,2021
+# vcom -reportprogress 300 -work work /home/longz/Desktop/Cpre381/project-2/src/MIPS_Processor.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity ALU_32bit
-# -- Compiling architecture structural of ALU_32bit
-# End time: 18:39:42 on Nov 12,2021, Elapsed time: 0:00:00
+# -- Compiling entity MIPS_Processor
+# -- Compiling architecture structure of MIPS_Processor
+# ** Error: /home/longz/Desktop/Cpre381/project-2/src/MIPS_Processor.vhd(727): near "stall_IDEX": (vcom-1576) expecting ',' or ')'.
+# ** Error: /home/longz/Desktop/Cpre381/project-2/src/MIPS_Processor.vhd(732): Statement cannot be labeled.
+# ** Note: /home/longz/Desktop/Cpre381/project-2/src/MIPS_Processor.vhd(1067): VHDL Compiler exiting
+# End time: 21:26:56 on Dec 10,2021, Elapsed time: 0:00:01
+# Errors: 2, Warnings: 0
+vcom -reportprogress 300 -work work /home/longz/Desktop/Cpre381/project-2/src/MIPS_Processor.vhd
+# QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 21:27:13 on Dec 10,2021
+# vcom -reportprogress 300 -work work /home/longz/Desktop/Cpre381/project-2/src/MIPS_Processor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MIPS_Processor
+# -- Compiling architecture structure of MIPS_Processor
+# ** Error: /home/longz/Desktop/Cpre381/project-2/src/MIPS_Processor.vhd(727): near "stall_IDEX": (vcom-1576) expecting ',' or ')'.
+# ** Error: /home/longz/Desktop/Cpre381/project-2/src/MIPS_Processor.vhd(732): Statement cannot be labeled.
+# ** Note: /home/longz/Desktop/Cpre381/project-2/src/MIPS_Processor.vhd(1067): VHDL Compiler exiting
+# End time: 21:27:13 on Dec 10,2021, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+vcom -reportprogress 300 -work work /home/longz/Desktop/Cpre381/project-2/src/MIPS_Processor.vhd
+# QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 21:27:22 on Dec 10,2021
+# vcom -reportprogress 300 -work work /home/longz/Desktop/Cpre381/project-2/src/MIPS_Processor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MIPS_Processor
+# -- Compiling architecture structure of MIPS_Processor
+# ** Error: /home/longz/Desktop/Cpre381/project-2/src/MIPS_Processor.vhd(708): (vcom-1136) Unknown identifier "s_Jump".
+# ** Note: /home/longz/Desktop/Cpre381/project-2/src/MIPS_Processor.vhd(1067): VHDL Compiler exiting
+# End time: 21:27:22 on Dec 10,2021, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work /home/longz/Desktop/Cpre381/project-2/src/MIPS_Processor.vhd
+# QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 21:27:41 on Dec 10,2021
+# vcom -reportprogress 300 -work work /home/longz/Desktop/Cpre381/project-2/src/MIPS_Processor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MIPS_Processor
+# -- Compiling architecture structure of MIPS_Processor
+# End time: 21:27:41 on Dec 10,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd
+vcom -reportprogress 300 -work work /home/longz/Desktop/Cpre381/project-2/src/MIPS_Processor.vhd
 # QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 18:39:44 on Nov 12,2021
-# vcom -reportprogress 300 -work work /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd 
+# Start time: 21:27:42 on Dec 10,2021
+# vcom -reportprogress 300 -work work /home/longz/Desktop/Cpre381/project-2/src/MIPS_Processor.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity ALU_32bit_tb
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(5): near ":": (vcom-1576) expecting ';' or ')'.
-# ** Note: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(5): VHDL Compiler exiting
-# End time: 18:39:45 on Nov 12,2021, Elapsed time: 0:00:01
-# Errors: 1, Warnings: 0
-vcom -reportprogress 300 -work work /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd
-# QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 18:41:34 on Nov 12,2021
-# vcom -reportprogress 300 -work work /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity ALU_32bit_tb
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(5): near ":": (vcom-1576) expecting ';' or ')'.
-# ** Note: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(5): VHDL Compiler exiting
-# End time: 18:41:34 on Nov 12,2021, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-vcom -reportprogress 300 -work work /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd
-# QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 18:42:25 on Nov 12,2021
-# vcom -reportprogress 300 -work work /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity ALU_32bit_tb
-# -- Compiling architecture structural of ALU_32bit_tb
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(35): (vcom-1484) Unknown formal identifier "i_ALUc".
-# ** Warning: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(46): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(48): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(48): (vcom-1136) Unknown identifier "i_D0".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(49): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(49): (vcom-1136) Unknown identifier "i_D1".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(50): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(50): (vcom-1136) Unknown identifier "i_ALUc".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(51): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(51): (vcom-1136) Unknown identifier "i_D3".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(52): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(52): (vcom-1136) Unknown identifier "i_Overflow".
-# ** Warning: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(55): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(57): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(57): (vcom-1136) Unknown identifier "i_D0".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(58): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(58): (vcom-1136) Unknown identifier "i_B".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(59): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(59): (vcom-1136) Unknown identifier "i_ALUc".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(60): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(60): (vcom-1136) Unknown identifier "i_D3".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(61): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(61): (vcom-1136) Unknown identifier "i_Overflow".
-# ** Warning: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(63): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(66): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(66): (vcom-1136) Unknown identifier "i_D0".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(67): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(67): (vcom-1136) Unknown identifier "i_B".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(68): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(68): (vcom-1136) Unknown identifier "i_ALUc".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(69): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(69): (vcom-1136) Unknown identifier "i_D3".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(70): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(70): (vcom-1136) Unknown identifier "i_Overflow".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(71): (vcom-1136) Unknown identifier "helper".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(74): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(74): (vcom-1136) Unknown identifier "i_D0".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(75): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(75): (vcom-1136) Unknown identifier "i_B".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(76): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(76): (vcom-1136) Unknown identifier "i_ALUc".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(77): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(77): (vcom-1136) Unknown identifier "i_D3".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(79): (vcom-1136) Unknown identifier "helper".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(82): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(82): (vcom-1136) Unknown identifier "i_D0".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(83): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(83): (vcom-1136) Unknown identifier "i_B".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(84): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(84): (vcom-1136) Unknown identifier "i_ALUc".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(85): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(85): (vcom-1136) Unknown identifier "i_D3".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(87): (vcom-1136) Unknown identifier "helper".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(90): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(90): (vcom-1136) Unknown identifier "i_D0".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(91): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(91): (vcom-1136) Unknown identifier "i_B".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(92): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(92): (vcom-1136) Unknown identifier "i_ALUc".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(93): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(93): (vcom-1136) Unknown identifier "i_D3".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(95): (vcom-1136) Unknown identifier "helper".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(98): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(98): (vcom-1136) Unknown identifier "i_D0".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(99): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(99): (vcom-1136) Unknown identifier "i_B".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(100): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(100): (vcom-1136) Unknown identifier "i_ALUc".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(101): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(101): (vcom-1136) Unknown identifier "i_D3".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(103): (vcom-1136) Unknown identifier "helper".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(106): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(106): (vcom-1136) Unknown identifier "i_D0".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(107): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(107): (vcom-1136) Unknown identifier "i_B".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(108): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(108): (vcom-1136) Unknown identifier "i_ALUc".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(109): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(109): (vcom-1136) Unknown identifier "i_D3".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(111): (vcom-1136) Unknown identifier "helper".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(114): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(114): (vcom-1136) Unknown identifier "i_D0".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(115): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(115): (vcom-1136) Unknown identifier "i_B".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(116): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(116): (vcom-1136) Unknown identifier "i_ALUc".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(117): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(117): (vcom-1136) Unknown identifier "i_D3".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(119): (vcom-1136) Unknown identifier "helper".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(122): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(122): (vcom-1136) Unknown identifier "i_D0".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(123): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(123): (vcom-1136) Unknown identifier "i_B".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(124): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(124): (vcom-1136) Unknown identifier "i_ALUc".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(125): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(125): (vcom-1136) Unknown identifier "i_D3".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(127): (vcom-1136) Unknown identifier "helper".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(130): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(130): (vcom-1136) Unknown identifier "i_D0".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(131): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(131): (vcom-1136) Unknown identifier "i_B".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(132): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(132): (vcom-1136) Unknown identifier "i_ALUc".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(133): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(133): (vcom-1136) Unknown identifier "i_D3".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(135): (vcom-1136) Unknown identifier "helper".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(138): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(138): (vcom-1136) Unknown identifier "i_D0".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(139): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(139): (vcom-1136) Unknown identifier "i_B".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(140): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(140): (vcom-1136) Unknown identifier "i_ALUc".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(141): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(141): (vcom-1136) Unknown identifier "i_D3".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(143): (vcom-1136) Unknown identifier "helper".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(146): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(146): (vcom-1136) Unknown identifier "i_D0".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(147): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(147): (vcom-1136) Unknown identifier "i_B".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(148): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(148): (vcom-1136) Unknown identifier "i_ALUc".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(149): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(149): (vcom-1136) Unknown identifier "i_D3".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(151): (vcom-1136) Unknown identifier "helper".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(154): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(154): (vcom-1136) Unknown identifier "i_D0".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(155): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(155): (vcom-1136) Unknown identifier "i_B".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(156): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(156): (vcom-1136) Unknown identifier "i_ALUc".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(157): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(157): (vcom-1136) Unknown identifier "i_D3".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(159): (vcom-1136) Unknown identifier "helper".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(163): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(163): (vcom-1136) Unknown identifier "i_D0".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(164): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(164): (vcom-1136) Unknown identifier "i_B".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(165): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(165): (vcom-1136) Unknown identifier "i_ALUc".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(166): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(166): (vcom-1136) Unknown identifier "i_D3".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(168): (vcom-1136) Unknown identifier "helper".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(171): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(171): (vcom-1136) Unknown identifier "i_D0".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(172): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(172): (vcom-1136) Unknown identifier "i_B".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(173): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(173): (vcom-1136) Unknown identifier "i_ALUc".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(174): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(174): (vcom-1136) Unknown identifier "i_D3".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(176): (vcom-1136) Unknown identifier "helper".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(179): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(179): (vcom-1136) Unknown identifier "i_D0".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(180): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(180): (vcom-1136) Unknown identifier "i_B".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(181): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(181): (vcom-1136) Unknown identifier "i_ALUc".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(182): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(182): (vcom-1136) Unknown identifier "i_D3".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(184): (vcom-1136) Unknown identifier "helper".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(187): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(187): (vcom-1136) Unknown identifier "i_D0".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(188): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(188): (vcom-1136) Unknown identifier "i_B".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(189): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(189): (vcom-1136) Unknown identifier "i_ALUc".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(190): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(190): (vcom-1136) Unknown identifier "i_D3".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(192): (vcom-1136) Unknown identifier "helper".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(195): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(195): (vcom-1136) Unknown identifier "i_D0".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(196): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(196): (vcom-1136) Unknown identifier "i_B".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(197): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(197): (vcom-1136) Unknown identifier "i_ALUc".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(198): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(198): (vcom-1136) Unknown identifier "i_D3".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(200): (vcom-1136) Unknown identifier "helper".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(203): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(203): (vcom-1136) Unknown identifier "i_D0".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(204): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(204): (vcom-1136) Unknown identifier "i_B".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(205): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(205): (vcom-1136) Unknown identifier "i_ALUc".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(206): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(206): (vcom-1136) Unknown identifier "i_D3".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(208): (vcom-1136) Unknown identifier "helper".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(212): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(212): (vcom-1136) Unknown identifier "i_D0".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(213): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(213): (vcom-1136) Unknown identifier "i_B".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(214): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(214): (vcom-1136) Unknown identifier "i_ALUc".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(215): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(215): (vcom-1136) Unknown identifier "i_D3".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(217): (vcom-1136) Unknown identifier "helper".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(220): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(220): (vcom-1136) Unknown identifier "i_D0".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(221): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(221): (vcom-1136) Unknown identifier "i_B".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(222): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(222): (vcom-1136) Unknown identifier "i_ALUc".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(223): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(223): (vcom-1136) Unknown identifier "i_D3".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(225): (vcom-1136) Unknown identifier "helper".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(228): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(228): (vcom-1136) Unknown identifier "i_D0".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(229): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(229): (vcom-1136) Unknown identifier "i_B".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(230): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(230): (vcom-1136) Unknown identifier "i_ALUc".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(231): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(231): (vcom-1136) Unknown identifier "i_D3".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(233): (vcom-1136) Unknown identifier "helper".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(236): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(236): (vcom-1136) Unknown identifier "i_D0".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(237): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(237): (vcom-1136) Unknown identifier "i_B".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(238): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(238): (vcom-1136) Unknown identifier "i_ALUc".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(239): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(239): (vcom-1136) Unknown identifier "i_D3".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(241): (vcom-1136) Unknown identifier "helper".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(244): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(244): (vcom-1136) Unknown identifier "i_D0".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(245): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(245): (vcom-1136) Unknown identifier "i_B".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(246): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(246): (vcom-1136) Unknown identifier "i_ALUc".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(247): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(247): (vcom-1136) Unknown identifier "i_D3".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(249): (vcom-1136) Unknown identifier "helper".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(252): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(252): (vcom-1136) Unknown identifier "i_D0".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(253): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(253): (vcom-1136) Unknown identifier "i_B".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(254): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(254): (vcom-1136) Unknown identifier "i_ALUc".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(255): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(255): (vcom-1136) Unknown identifier "i_D3".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(256): (vcom-1136) Unknown identifier "helper".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(259): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(259): (vcom-1136) Unknown identifier "i_D0".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(260): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(260): (vcom-1136) Unknown identifier "i_B".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(261): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(261): (vcom-1136) Unknown identifier "i_ALUc".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(262): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(262): (vcom-1136) Unknown identifier "i_D3".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(264): (vcom-1136) Unknown identifier "helper".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(267): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(267): (vcom-1136) Unknown identifier "i_D0".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(268): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(268): (vcom-1136) Unknown identifier "i_B".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(269): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(269): (vcom-1136) Unknown identifier "i_ALUc".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(270): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(270): (vcom-1136) Unknown identifier "i_D3".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(272): (vcom-1136) Unknown identifier "helper".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(275): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(275): (vcom-1136) Unknown identifier "i_D0".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(276): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(276): (vcom-1136) Unknown identifier "i_B".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(277): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(277): (vcom-1136) Unknown identifier "i_ALUc".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(278): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(278): (vcom-1136) Unknown identifier "i_D3".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(279): (vcom-1136) Unknown identifier "helper".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(282): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(282): (vcom-1136) Unknown identifier "i_D0".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(283): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(283): (vcom-1136) Unknown identifier "i_B".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(284): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(284): (vcom-1136) Unknown identifier "i_ALUc".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(285): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(285): (vcom-1136) Unknown identifier "i_D3".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(287): (vcom-1136) Unknown identifier "helper".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(290): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(290): (vcom-1136) Unknown identifier "i_D0".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(291): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(291): (vcom-1136) Unknown identifier "i_B".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(292): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(292): (vcom-1136) Unknown identifier "i_ALUc".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(293): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(293): (vcom-1136) Unknown identifier "i_D3".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(295): (vcom-1136) Unknown identifier "helper".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(298): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(298): (vcom-1136) Unknown identifier "i_D0".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(299): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(299): (vcom-1136) Unknown identifier "i_B".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(300): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(300): (vcom-1136) Unknown identifier "i_ALUc".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(301): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(301): (vcom-1136) Unknown identifier "i_D3".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(303): (vcom-1136) Unknown identifier "helper".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(306): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(306): (vcom-1136) Unknown identifier "i_D0".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(307): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(307): (vcom-1136) Unknown identifier "i_B".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(308): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(308): (vcom-1136) Unknown identifier "i_ALUc".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(309): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(309): (vcom-1136) Unknown identifier "i_D3".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(311): (vcom-1136) Unknown identifier "helper".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(316): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(316): (vcom-1136) Unknown identifier "i_D0".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(317): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(317): (vcom-1136) Unknown identifier "i_B".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(318): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(318): (vcom-1136) Unknown identifier "i_ALUc".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(319): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(319): (vcom-1136) Unknown identifier "i_D3".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(321): (vcom-1136) Unknown identifier "helper".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(324): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(324): (vcom-1136) Unknown identifier "i_D0".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(325): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(325): (vcom-1136) Unknown identifier "i_B".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(326): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(326): (vcom-1136) Unknown identifier "i_ALUc".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(327): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(327): (vcom-1136) Unknown identifier "i_D3".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(329): (vcom-1136) Unknown identifier "helper".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(332): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(332): (vcom-1136) Unknown identifier "i_D0".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(333): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(333): (vcom-1136) Unknown identifier "i_B".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(334): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(334): (vcom-1136) Unknown identifier "i_ALUc".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(335): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(335): (vcom-1136) Unknown identifier "i_D3".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(337): (vcom-1136) Unknown identifier "helper".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(340): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(340): (vcom-1136) Unknown identifier "i_D0".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(341): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(341): (vcom-1136) Unknown identifier "i_B".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(342): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(342): (vcom-1136) Unknown identifier "i_ALUc".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(343): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(343): (vcom-1136) Unknown identifier "i_D3".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(345): (vcom-1136) Unknown identifier "helper".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(348): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(348): (vcom-1136) Unknown identifier "i_D0".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(349): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(349): (vcom-1136) Unknown identifier "i_B".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(350): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(350): (vcom-1136) Unknown identifier "i_ALUc".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(351): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(351): (vcom-1136) Unknown identifier "i_D3".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(353): (vcom-1136) Unknown identifier "helper".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(356): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(356): (vcom-1136) Unknown identifier "i_D0".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(357): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(357): (vcom-1136) Unknown identifier "i_B".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(358): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(358): (vcom-1136) Unknown identifier "i_ALUc".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(359): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(359): (vcom-1136) Unknown identifier "i_D3".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(361): (vcom-1136) Unknown identifier "helper".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(364): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(364): (vcom-1136) Unknown identifier "i_D0".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(365): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(365): (vcom-1136) Unknown identifier "i_B".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(366): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(366): (vcom-1136) Unknown identifier "i_ALUc".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(367): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(367): (vcom-1136) Unknown identifier "i_D3".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(369): (vcom-1136) Unknown identifier "helper".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(372): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(372): (vcom-1136) Unknown identifier "i_D0".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(373): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(373): (vcom-1136) Unknown identifier "i_B".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(374): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(374): (vcom-1136) Unknown identifier "i_ALUc".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(375): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(375): (vcom-1136) Unknown identifier "i_D3".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(377): (vcom-1136) Unknown identifier "helper".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(380): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(380): (vcom-1136) Unknown identifier "i_D0".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(381): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(381): (vcom-1136) Unknown identifier "i_B".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(382): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(382): (vcom-1136) Unknown identifier "i_ALUc".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(383): Illegal target for signal assignment.
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(383): (vcom-1136) Unknown identifier "i_D3".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(385): (vcom-1136) Unknown identifier "helper".
-# ** Error: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(39): (vcom-1035) Formal port "D3" has OPEN or no actual associated with it.
-# ** Note: /home/longz/Desktop/Cpre381/project-1/src/tb_ALU_32bit.vhd(389): VHDL Compiler exiting
-# End time: 18:42:25 on Nov 12,2021, Elapsed time: 0:00:00
-# Errors: 384, Warnings: 3
+# -- Compiling entity MIPS_Processor
+# -- Compiling architecture structure of MIPS_Processor
+# End time: 21:27:42 on Dec 10,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

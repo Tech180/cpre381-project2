@@ -1,5 +1,5 @@
 Flow report for toolflow
-Sun Nov 14 17:02:49 2021
+Fri Dec 10 21:03:36 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Standard Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Flow Failed - Sun Nov 14 17:02:49 2021          ;
+; Flow Status                        ; Flow Failed - Fri Dec 10 21:03:36 2021          ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Standard Edition ;
 ; Revision Name                      ; toolflow                                        ;
 ; Top-level Entity Name              ; MIPS_Processor                                  ;
@@ -65,7 +65,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/14/2021 17:02:40 ;
+; Start date & time ; 12/10/2021 21:03:27 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; toolflow            ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+----------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name    ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+----------------+------------+
-; COMPILER_SIGNATURE_ID               ; 345050397571.163693096030580           ; --            ; --             ; --         ;
+; COMPILER_SIGNATURE_ID               ; 345050382819.163919180723395           ; --            ; --             ; --         ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; MIPS_Processor ; Top        ;
 ; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; MIPS_Processor ; Top        ;
 ; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; MIPS_Processor ; Top        ;
@@ -90,8 +90,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:10     ; 1.0                     ; 550 MB              ; 00:00:17                           ;
-; Total                ; 00:00:10     ; --                      ; --                  ; 00:00:17                           ;
+; Analysis & Synthesis ; 00:00:09     ; 1.0                     ; 579 MB              ; 00:00:18                           ;
+; Total                ; 00:00:09     ; --                      ; --                  ; 00:00:18                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -100,7 +100,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+---------------------------+---------+------------+----------------+
 ; Module Name          ; Machine Hostname          ; OS Name ; OS Version ; Processor type ;
 +----------------------+---------------------------+---------+------------+----------------+
-; Analysis & Synthesis ; vlinux-05.ece.iastate.edu ; Red Hat ; Red Hat    ; x86_64         ;
+; Analysis & Synthesis ; vlinux-17.ece.iastate.edu ; Red Hat ; Red Hat    ; x86_64         ;
 +----------------------+---------------------------+---------+------------+----------------+
 
 

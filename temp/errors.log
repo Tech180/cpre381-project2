@@ -175,3 +175,48 @@ Traceback (most recent call last):
   File "internal/testpy/test_framework.py", line 57, in main
     input("Press Enter To Exit...")
 EOFError
+
+Exception caught at 2021-12-10 21:28:50.738162:
+Traceback (most recent call last):
+  File "/usr/local/mentor/calibre/pkgs/icv_python/asp/lib/python3.6/tkinter/__init__.py", line 1702, in __call__
+    return self.func(*args)
+  File "/home/longz/Desktop/Cpre381/project-2/internal/testpy/run_gui.py", line 197, in chooseSelectedFiles
+    test_framework.queueSimulation(asm_files_to_run, options)
+  File "/home/longz/Desktop/Cpre381/project-2/internal/testpy/test_framework.py", line 65, in queueSimulation
+    runSimulation(x,simOptions)
+  File "/home/longz/Desktop/Cpre381/project-2/internal/testpy/test_framework.py", line 92, in runSimulation
+    compare_dumps(options)
+  File "/home/longz/Desktop/Cpre381/project-2/internal/testpy/test_framework.py", line 215, in compare_dumps
+    dump_compare.compare(student_dump,mars_dump,max_mismatches=mismatches,outfunc=compare_out_function) # captures the output
+  File "/home/longz/Desktop/Cpre381/project-2/internal/testpy/dump_compare.py", line 412, in compare
+    student_firstline, student_secondline, student_thirdline = student_reader.read_next(skipnop=True)
+  File "/home/longz/Desktop/Cpre381/project-2/internal/testpy/dump_compare.py", line 63, in read_next
+    fline = self.f.readline().strip()
+OSError: [Errno 116] Stale file handle
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "internal/testpy/test_framework.py", line 238, in <module>
+    main()
+  File "internal/testpy/test_framework.py", line 55, in main
+    run_gui.guiMain()
+  File "/home/longz/Desktop/Cpre381/project-2/internal/testpy/run_gui.py", line 156, in guiMain
+    window.mainloop()
+  File "/usr/local/mentor/calibre/pkgs/icv_python/asp/lib/python3.6/tkinter/__init__.py", line 1280, in mainloop
+    self.tk.mainloop(n)
+  File "/usr/local/mentor/calibre/pkgs/icv_python/asp/lib/python3.6/tkinter/__init__.py", line 1706, in __call__
+    self.widget._report_exception()
+  File "/usr/local/mentor/calibre/pkgs/icv_python/asp/lib/python3.6/tkinter/__init__.py", line 1449, in _report_exception
+    root.report_callback_exception(exc, val, tb)
+  File "/usr/local/mentor/calibre/pkgs/icv_python/asp/lib/python3.6/tkinter/__init__.py", line 2091, in report_callback_exception
+    print("Exception in Tkinter callback", file=sys.stderr)
+OSError: [Errno 5] Input/output error
+
+Exception caught at 2021-12-10 21:29:38.530350:
+Traceback (most recent call last):
+  File "internal/testpy/test_framework.py", line 238, in <module>
+    main()
+  File "internal/testpy/test_framework.py", line 57, in main
+    input("Press Enter To Exit...")
+EOFError

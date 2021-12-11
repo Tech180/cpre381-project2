@@ -1,5 +1,5 @@
 Analysis & Synthesis report for toolflow
-Sun Nov 14 17:02:49 2021
+Fri Dec 10 21:03:36 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Standard Edition
 
 
@@ -10,7 +10,114 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Standard Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Messages
+  5. Parameter Settings for User Entity Instance: Top-level Entity: |MIPS_Processor
+  6. Parameter Settings for User Entity Instance: mem:IMem
+  7. Parameter Settings for User Entity Instance: mem:DMem
+  8. Parameter Settings for User Entity Instance: Fulladder_N:PC_increment
+  9. Parameter Settings for User Entity Instance: mux_32bit_dataflow:PC_mux
+ 10. Parameter Settings for User Entity Instance: register_IFID:generic_IFID
+ 11. Parameter Settings for User Entity Instance: register_IFID:generic_IFID|Register32bit:generic_32bitregister
+ 12. Parameter Settings for User Entity Instance: register_IFID:generic_IFID|Register32bit:generic_32bitregister1
+ 13. Parameter Settings for User Entity Instance: Register_File:reg
+ 14. Parameter Settings for User Entity Instance: Register_File:reg|Reg_N:reg_0
+ 15. Parameter Settings for User Entity Instance: Register_File:reg|Reg_N:\G1:1:reg_i
+ 16. Parameter Settings for User Entity Instance: Register_File:reg|Reg_N:\G1:2:reg_i
+ 17. Parameter Settings for User Entity Instance: Register_File:reg|Reg_N:\G1:3:reg_i
+ 18. Parameter Settings for User Entity Instance: Register_File:reg|Reg_N:\G1:4:reg_i
+ 19. Parameter Settings for User Entity Instance: Register_File:reg|Reg_N:\G1:5:reg_i
+ 20. Parameter Settings for User Entity Instance: Register_File:reg|Reg_N:\G1:6:reg_i
+ 21. Parameter Settings for User Entity Instance: Register_File:reg|Reg_N:\G1:7:reg_i
+ 22. Parameter Settings for User Entity Instance: Register_File:reg|Reg_N:\G1:8:reg_i
+ 23. Parameter Settings for User Entity Instance: Register_File:reg|Reg_N:\G1:9:reg_i
+ 24. Parameter Settings for User Entity Instance: Register_File:reg|Reg_N:\G1:10:reg_i
+ 25. Parameter Settings for User Entity Instance: Register_File:reg|Reg_N:\G1:11:reg_i
+ 26. Parameter Settings for User Entity Instance: Register_File:reg|Reg_N:\G1:12:reg_i
+ 27. Parameter Settings for User Entity Instance: Register_File:reg|Reg_N:\G1:13:reg_i
+ 28. Parameter Settings for User Entity Instance: Register_File:reg|Reg_N:\G1:14:reg_i
+ 29. Parameter Settings for User Entity Instance: Register_File:reg|Reg_N:\G1:15:reg_i
+ 30. Parameter Settings for User Entity Instance: Register_File:reg|Reg_N:\G1:16:reg_i
+ 31. Parameter Settings for User Entity Instance: Register_File:reg|Reg_N:\G1:17:reg_i
+ 32. Parameter Settings for User Entity Instance: Register_File:reg|Reg_N:\G1:18:reg_i
+ 33. Parameter Settings for User Entity Instance: Register_File:reg|Reg_N:\G1:19:reg_i
+ 34. Parameter Settings for User Entity Instance: Register_File:reg|Reg_N:\G1:20:reg_i
+ 35. Parameter Settings for User Entity Instance: Register_File:reg|Reg_N:\G1:21:reg_i
+ 36. Parameter Settings for User Entity Instance: Register_File:reg|Reg_N:\G1:22:reg_i
+ 37. Parameter Settings for User Entity Instance: Register_File:reg|Reg_N:\G1:23:reg_i
+ 38. Parameter Settings for User Entity Instance: Register_File:reg|Reg_N:\G1:24:reg_i
+ 39. Parameter Settings for User Entity Instance: Register_File:reg|Reg_N:\G1:25:reg_i
+ 40. Parameter Settings for User Entity Instance: Register_File:reg|Reg_N:\G1:26:reg_i
+ 41. Parameter Settings for User Entity Instance: Register_File:reg|Reg_N:\G1:27:reg_i
+ 42. Parameter Settings for User Entity Instance: Register_File:reg|Reg_N:\G1:28:reg_i
+ 43. Parameter Settings for User Entity Instance: Register_File:reg|Reg_N:\G1:29:reg_i
+ 44. Parameter Settings for User Entity Instance: Register_File:reg|Reg_N:\G1:30:reg_i
+ 45. Parameter Settings for User Entity Instance: Register_File:reg|Reg_N:\G1:31:reg_i
+ 46. Parameter Settings for User Entity Instance: mux4to1:generic_forwarding_mux3
+ 47. Parameter Settings for User Entity Instance: mux4to1:generic_forwarding_mux4
+ 48. Parameter Settings for User Entity Instance: mux_32bit_dataflow:jal_read_mux
+ 49. Parameter Settings for User Entity Instance: extender_N:generic_immediate_extend
+ 50. Parameter Settings for User Entity Instance: mux_32bit_dataflow:jump_mux
+ 51. Parameter Settings for User Entity Instance: mux_32bit_dataflow:generic_jr_mux
+ 52. Parameter Settings for User Entity Instance: Fulladder_N:generic_branch_full_adder
+ 53. Parameter Settings for User Entity Instance: mux_32bit_dataflow:branch_mux
+ 54. Parameter Settings for User Entity Instance: register_IDEX:generic_register_IDEX
+ 55. Parameter Settings for User Entity Instance: register_IDEX:generic_register_IDEX|Register32bit:generic_wrAddr
+ 56. Parameter Settings for User Entity Instance: register_IDEX:generic_register_IDEX|Register32bit:generic_inst
+ 57. Parameter Settings for User Entity Instance: register_IDEX:generic_register_IDEX|Register32bit:generic_32bitregister
+ 58. Parameter Settings for User Entity Instance: register_IDEX:generic_register_IDEX|Register32bit:generic_rd
+ 59. Parameter Settings for User Entity Instance: register_IDEX:generic_register_IDEX|Register32bit:generic_rt
+ 60. Parameter Settings for User Entity Instance: register_IDEX:generic_register_IDEX|Register32bit:generic_shamt
+ 61. Parameter Settings for User Entity Instance: register_IDEX:generic_register_IDEX|Register32bit:generic_rtD
+ 62. Parameter Settings for User Entity Instance: register_IDEX:generic_register_IDEX|Register32bit:generic_rd1
+ 63. Parameter Settings for User Entity Instance: register_IDEX:generic_register_IDEX|Register32bit:generic_immediateExtend
+ 64. Parameter Settings for User Entity Instance: register_IDEX:generic_register_IDEX|Register32bit:generic_op
+ 65. Parameter Settings for User Entity Instance: register_IDEX:generic_register_IDEX|Register32bit:generic_PC
+ 66. Parameter Settings for User Entity Instance: mux_32bit_dataflow:generic_regDst_mux
+ 67. Parameter Settings for User Entity Instance: mux_32bit_dataflow:ALUSrc_mux
+ 68. Parameter Settings for User Entity Instance: mux_32bit_dataflow:generic_sv_mux
+ 69. Parameter Settings for User Entity Instance: mux4to1:generic_ALU_mux_1
+ 70. Parameter Settings for User Entity Instance: mux4to1:generic_ALU_mux_2
+ 71. Parameter Settings for User Entity Instance: register_EXMEM:generic_register_EXMEM
+ 72. Parameter Settings for User Entity Instance: register_EXMEM:generic_register_EXMEM|Register32bit:generic_ALUout
+ 73. Parameter Settings for User Entity Instance: register_EXMEM:generic_register_EXMEM|Register32bit:generic_inst_register
+ 74. Parameter Settings for User Entity Instance: register_EXMEM:generic_register_EXMEM|Register32bit:generic_D0
+ 75. Parameter Settings for User Entity Instance: register_EXMEM:generic_register_EXMEM|Register32bit:generic_ALU
+ 76. Parameter Settings for User Entity Instance: register_EXMEM:generic_register_EXMEM|Register32bit:generic_writeaddr
+ 77. Parameter Settings for User Entity Instance: register_EXMEM:generic_register_EXMEM|Register32bit:generic_sltu1
+ 78. Parameter Settings for User Entity Instance: register_EXMEM:generic_register_EXMEM|Register32bit:generic_upperImmediate1
+ 79. Parameter Settings for User Entity Instance: register_EXMEM:generic_register_EXMEM|Register32bit:generic_PC
+ 80. Parameter Settings for User Entity Instance: register_MEMWB:generic_register_MEMWB|Register32bit:generic_dmem_register
+ 81. Parameter Settings for User Entity Instance: register_MEMWB:generic_register_MEMWB|Register32bit:generic_inst_register
+ 82. Parameter Settings for User Entity Instance: register_MEMWB:generic_register_MEMWB|Register32bit:generic_D0
+ 83. Parameter Settings for User Entity Instance: register_MEMWB:generic_register_MEMWB|Register32bit:generic_ALU_register
+ 84. Parameter Settings for User Entity Instance: register_MEMWB:generic_register_MEMWB|Register32bit:writeaddr_reg
+ 85. Parameter Settings for User Entity Instance: register_MEMWB:generic_register_MEMWB|Register32bit:generic_sltu1_register
+ 86. Parameter Settings for User Entity Instance: register_MEMWB:generic_register_MEMWB|Register32bit:generic_upperImmediate1_register
+ 87. Parameter Settings for User Entity Instance: register_MEMWB:generic_register_MEMWB|Register32bit:generic_PC
+ 88. Parameter Settings for User Entity Instance: mux_32bit_dataflow:generic_memtoReg_mux
+ 89. Parameter Settings for User Entity Instance: mux_32bit_dataflow:generic_upperImmediate_mux
+ 90. Parameter Settings for User Entity Instance: mux_32bit_dataflow:generic_sltu_mux
+ 91. Parameter Settings for User Entity Instance: mux_32bit_dataflow:generic_jal_mux
+ 92. Port Connectivity Checks: "register_MEMWB:generic_register_MEMWB"
+ 93. Port Connectivity Checks: "register_EXMEM:generic_register_EXMEM"
+ 94. Port Connectivity Checks: "barrel_shifter:generic_immediate_barrel_shift"
+ 95. Port Connectivity Checks: "mux4to1:generic_ALU_mux_2"
+ 96. Port Connectivity Checks: "mux4to1:generic_ALU_mux_1"
+ 97. Port Connectivity Checks: "mux_32bit_dataflow:ALUSrc_mux"
+ 98. Port Connectivity Checks: "register_IDEX:generic_register_IDEX"
+ 99. Port Connectivity Checks: "barrel_shifter:generic_barrel_shifter_32bit"
+100. Port Connectivity Checks: "forwarding_dataflow:generic_forwarding"
+101. Port Connectivity Checks: "mux_32bit_dataflow:branch_mux"
+102. Port Connectivity Checks: "Fulladder_N:generic_branch_full_adder"
+103. Port Connectivity Checks: "barrel_shifter:generic_branch_barrel_shifter"
+104. Port Connectivity Checks: "barrel_shifter:generic_barrel_shifter"
+105. Port Connectivity Checks: "controlUnit:generic_controlUnit"
+106. Port Connectivity Checks: "mux_32bit_dataflow:jal_read_mux"
+107. Port Connectivity Checks: "Register_File:reg|Reg_N:reg_0"
+108. Port Connectivity Checks: "register_IFID:generic_IFID"
+109. Port Connectivity Checks: "mux_32bit_dataflow:PC_mux"
+110. Port Connectivity Checks: "Fulladder_N:PC_increment"
+111. Port Connectivity Checks: "mem:IMem"
+112. Analysis & Synthesis Messages
 
 
 
@@ -37,7 +144,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Sun Nov 14 17:02:49 2021               ;
+; Analysis & Synthesis Status        ; Failed - Fri Dec 10 21:03:36 2021               ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Standard Edition ;
 ; Revision Name                      ; toolflow                                        ;
 ; Top-level Entity Name              ; MIPS_Processor                                  ;
@@ -156,6 +263,1086 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
++--------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |MIPS_Processor ;
++----------------+-------+-------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                  ;
++----------------+-------+-------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                        ;
++----------------+-------+-------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mem:IMem ;
++----------------+-------+------------------------------+
+; Parameter Name ; Value ; Type                         ;
++----------------+-------+------------------------------+
+; data_width     ; 32    ; Signed Integer               ;
+; addr_width     ; 10    ; Signed Integer               ;
++----------------+-------+------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mem:DMem ;
++----------------+-------+------------------------------+
+; Parameter Name ; Value ; Type                         ;
++----------------+-------+------------------------------+
+; data_width     ; 32    ; Signed Integer               ;
+; addr_width     ; 10    ; Signed Integer               ;
++----------------+-------+------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Fulladder_N:PC_increment ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; N              ; 32    ; Signed Integer                               ;
++----------------+-------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux_32bit_dataflow:PC_mux ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; n              ; 32    ; Signed Integer                                ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: register_IFID:generic_IFID ;
++----------------+-------+------------------------------------------------+
+; Parameter Name ; Value ; Type                                           ;
++----------------+-------+------------------------------------------------+
+; n              ; 32    ; Signed Integer                                 ;
++----------------+-------+------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: register_IFID:generic_IFID|Register32bit:generic_32bitregister ;
++----------------+-------+------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                               ;
++----------------+-------+------------------------------------------------------------------------------------+
+; n              ; 32    ; Signed Integer                                                                     ;
++----------------+-------+------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: register_IFID:generic_IFID|Register32bit:generic_32bitregister1 ;
++----------------+-------+-------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                ;
++----------------+-------+-------------------------------------------------------------------------------------+
+; n              ; 32    ; Signed Integer                                                                      ;
++----------------+-------+-------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Register_File:reg ;
++----------------+-------+---------------------------------------+
+; Parameter Name ; Value ; Type                                  ;
++----------------+-------+---------------------------------------+
+; N              ; 32    ; Signed Integer                        ;
++----------------+-------+---------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Register_File:reg|Reg_N:reg_0 ;
++----------------+-------+---------------------------------------------------+
+; Parameter Name ; Value ; Type                                              ;
++----------------+-------+---------------------------------------------------+
+; n              ; 32    ; Signed Integer                                    ;
++----------------+-------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Register_File:reg|Reg_N:\G1:1:reg_i ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; n              ; 32    ; Signed Integer                                          ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Register_File:reg|Reg_N:\G1:2:reg_i ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; n              ; 32    ; Signed Integer                                          ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Register_File:reg|Reg_N:\G1:3:reg_i ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; n              ; 32    ; Signed Integer                                          ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Register_File:reg|Reg_N:\G1:4:reg_i ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; n              ; 32    ; Signed Integer                                          ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Register_File:reg|Reg_N:\G1:5:reg_i ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; n              ; 32    ; Signed Integer                                          ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Register_File:reg|Reg_N:\G1:6:reg_i ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; n              ; 32    ; Signed Integer                                          ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Register_File:reg|Reg_N:\G1:7:reg_i ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; n              ; 32    ; Signed Integer                                          ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Register_File:reg|Reg_N:\G1:8:reg_i ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; n              ; 32    ; Signed Integer                                          ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Register_File:reg|Reg_N:\G1:9:reg_i ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; n              ; 32    ; Signed Integer                                          ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Register_File:reg|Reg_N:\G1:10:reg_i ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; n              ; 32    ; Signed Integer                                           ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Register_File:reg|Reg_N:\G1:11:reg_i ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; n              ; 32    ; Signed Integer                                           ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Register_File:reg|Reg_N:\G1:12:reg_i ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; n              ; 32    ; Signed Integer                                           ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Register_File:reg|Reg_N:\G1:13:reg_i ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; n              ; 32    ; Signed Integer                                           ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Register_File:reg|Reg_N:\G1:14:reg_i ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; n              ; 32    ; Signed Integer                                           ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Register_File:reg|Reg_N:\G1:15:reg_i ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; n              ; 32    ; Signed Integer                                           ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Register_File:reg|Reg_N:\G1:16:reg_i ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; n              ; 32    ; Signed Integer                                           ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Register_File:reg|Reg_N:\G1:17:reg_i ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; n              ; 32    ; Signed Integer                                           ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Register_File:reg|Reg_N:\G1:18:reg_i ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; n              ; 32    ; Signed Integer                                           ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Register_File:reg|Reg_N:\G1:19:reg_i ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; n              ; 32    ; Signed Integer                                           ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Register_File:reg|Reg_N:\G1:20:reg_i ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; n              ; 32    ; Signed Integer                                           ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Register_File:reg|Reg_N:\G1:21:reg_i ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; n              ; 32    ; Signed Integer                                           ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Register_File:reg|Reg_N:\G1:22:reg_i ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; n              ; 32    ; Signed Integer                                           ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Register_File:reg|Reg_N:\G1:23:reg_i ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; n              ; 32    ; Signed Integer                                           ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Register_File:reg|Reg_N:\G1:24:reg_i ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; n              ; 32    ; Signed Integer                                           ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Register_File:reg|Reg_N:\G1:25:reg_i ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; n              ; 32    ; Signed Integer                                           ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Register_File:reg|Reg_N:\G1:26:reg_i ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; n              ; 32    ; Signed Integer                                           ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Register_File:reg|Reg_N:\G1:27:reg_i ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; n              ; 32    ; Signed Integer                                           ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Register_File:reg|Reg_N:\G1:28:reg_i ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; n              ; 32    ; Signed Integer                                           ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Register_File:reg|Reg_N:\G1:29:reg_i ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; n              ; 32    ; Signed Integer                                           ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Register_File:reg|Reg_N:\G1:30:reg_i ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; n              ; 32    ; Signed Integer                                           ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Register_File:reg|Reg_N:\G1:31:reg_i ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; n              ; 32    ; Signed Integer                                           ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux4to1:generic_forwarding_mux3 ;
++----------------+-------+-----------------------------------------------------+
+; Parameter Name ; Value ; Type                                                ;
++----------------+-------+-----------------------------------------------------+
+; n              ; 32    ; Signed Integer                                      ;
++----------------+-------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux4to1:generic_forwarding_mux4 ;
++----------------+-------+-----------------------------------------------------+
+; Parameter Name ; Value ; Type                                                ;
++----------------+-------+-----------------------------------------------------+
+; n              ; 32    ; Signed Integer                                      ;
++----------------+-------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux_32bit_dataflow:jal_read_mux ;
++----------------+-------+-----------------------------------------------------+
+; Parameter Name ; Value ; Type                                                ;
++----------------+-------+-----------------------------------------------------+
+; n              ; 5     ; Signed Integer                                      ;
++----------------+-------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: extender_N:generic_immediate_extend ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                          ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux_32bit_dataflow:jump_mux ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; n              ; 32    ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux_32bit_dataflow:generic_jr_mux ;
++----------------+-------+-------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                  ;
++----------------+-------+-------------------------------------------------------+
+; n              ; 32    ; Signed Integer                                        ;
++----------------+-------+-------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Fulladder_N:generic_branch_full_adder ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                            ;
++----------------+-------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux_32bit_dataflow:branch_mux ;
++----------------+-------+---------------------------------------------------+
+; Parameter Name ; Value ; Type                                              ;
++----------------+-------+---------------------------------------------------+
+; n              ; 32    ; Signed Integer                                    ;
++----------------+-------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: register_IDEX:generic_register_IDEX ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; n              ; 32    ; Signed Integer                                          ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: register_IDEX:generic_register_IDEX|Register32bit:generic_wrAddr ;
++----------------+-------+--------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                 ;
++----------------+-------+--------------------------------------------------------------------------------------+
+; n              ; 5     ; Signed Integer                                                                       ;
++----------------+-------+--------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: register_IDEX:generic_register_IDEX|Register32bit:generic_inst ;
++----------------+-------+------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                               ;
++----------------+-------+------------------------------------------------------------------------------------+
+; n              ; 32    ; Signed Integer                                                                     ;
++----------------+-------+------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: register_IDEX:generic_register_IDEX|Register32bit:generic_32bitregister ;
++----------------+-------+---------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                        ;
++----------------+-------+---------------------------------------------------------------------------------------------+
+; n              ; 32    ; Signed Integer                                                                              ;
++----------------+-------+---------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: register_IDEX:generic_register_IDEX|Register32bit:generic_rd ;
++----------------+-------+----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                             ;
++----------------+-------+----------------------------------------------------------------------------------+
+; n              ; 5     ; Signed Integer                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: register_IDEX:generic_register_IDEX|Register32bit:generic_rt ;
++----------------+-------+----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                             ;
++----------------+-------+----------------------------------------------------------------------------------+
+; n              ; 5     ; Signed Integer                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: register_IDEX:generic_register_IDEX|Register32bit:generic_shamt ;
++----------------+-------+-------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                ;
++----------------+-------+-------------------------------------------------------------------------------------+
+; n              ; 5     ; Signed Integer                                                                      ;
++----------------+-------+-------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: register_IDEX:generic_register_IDEX|Register32bit:generic_rtD ;
++----------------+-------+-----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                              ;
++----------------+-------+-----------------------------------------------------------------------------------+
+; n              ; 32    ; Signed Integer                                                                    ;
++----------------+-------+-----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: register_IDEX:generic_register_IDEX|Register32bit:generic_rd1 ;
++----------------+-------+-----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                              ;
++----------------+-------+-----------------------------------------------------------------------------------+
+; n              ; 32    ; Signed Integer                                                                    ;
++----------------+-------+-----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: register_IDEX:generic_register_IDEX|Register32bit:generic_immediateExtend ;
++----------------+-------+-----------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                          ;
++----------------+-------+-----------------------------------------------------------------------------------------------+
+; n              ; 32    ; Signed Integer                                                                                ;
++----------------+-------+-----------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: register_IDEX:generic_register_IDEX|Register32bit:generic_op ;
++----------------+-------+----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                             ;
++----------------+-------+----------------------------------------------------------------------------------+
+; n              ; 4     ; Signed Integer                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: register_IDEX:generic_register_IDEX|Register32bit:generic_PC ;
++----------------+-------+----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                             ;
++----------------+-------+----------------------------------------------------------------------------------+
+; n              ; 32    ; Signed Integer                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux_32bit_dataflow:generic_regDst_mux ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; n              ; 5     ; Signed Integer                                            ;
++----------------+-------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux_32bit_dataflow:ALUSrc_mux ;
++----------------+-------+---------------------------------------------------+
+; Parameter Name ; Value ; Type                                              ;
++----------------+-------+---------------------------------------------------+
+; n              ; 32    ; Signed Integer                                    ;
++----------------+-------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux_32bit_dataflow:generic_sv_mux ;
++----------------+-------+-------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                  ;
++----------------+-------+-------------------------------------------------------+
+; n              ; 5     ; Signed Integer                                        ;
++----------------+-------+-------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux4to1:generic_ALU_mux_1 ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; n              ; 32    ; Signed Integer                                ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux4to1:generic_ALU_mux_2 ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; n              ; 32    ; Signed Integer                                ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: register_EXMEM:generic_register_EXMEM ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; n              ; 32    ; Signed Integer                                            ;
++----------------+-------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: register_EXMEM:generic_register_EXMEM|Register32bit:generic_ALUout ;
++----------------+-------+----------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------------+
+; n              ; 32    ; Signed Integer                                                                         ;
++----------------+-------+----------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: register_EXMEM:generic_register_EXMEM|Register32bit:generic_inst_register ;
++----------------+-------+-----------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                          ;
++----------------+-------+-----------------------------------------------------------------------------------------------+
+; n              ; 32    ; Signed Integer                                                                                ;
++----------------+-------+-----------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: register_EXMEM:generic_register_EXMEM|Register32bit:generic_D0 ;
++----------------+-------+------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                               ;
++----------------+-------+------------------------------------------------------------------------------------+
+; n              ; 32    ; Signed Integer                                                                     ;
++----------------+-------+------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: register_EXMEM:generic_register_EXMEM|Register32bit:generic_ALU ;
++----------------+-------+-------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                ;
++----------------+-------+-------------------------------------------------------------------------------------+
+; n              ; 32    ; Signed Integer                                                                      ;
++----------------+-------+-------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: register_EXMEM:generic_register_EXMEM|Register32bit:generic_writeaddr ;
++----------------+-------+-------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                      ;
++----------------+-------+-------------------------------------------------------------------------------------------+
+; n              ; 5     ; Signed Integer                                                                            ;
++----------------+-------+-------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: register_EXMEM:generic_register_EXMEM|Register32bit:generic_sltu1 ;
++----------------+-------+---------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                  ;
++----------------+-------+---------------------------------------------------------------------------------------+
+; n              ; 32    ; Signed Integer                                                                        ;
++----------------+-------+---------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: register_EXMEM:generic_register_EXMEM|Register32bit:generic_upperImmediate1 ;
++----------------+-------+-------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                            ;
++----------------+-------+-------------------------------------------------------------------------------------------------+
+; n              ; 32    ; Signed Integer                                                                                  ;
++----------------+-------+-------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: register_EXMEM:generic_register_EXMEM|Register32bit:generic_PC ;
++----------------+-------+------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                               ;
++----------------+-------+------------------------------------------------------------------------------------+
+; n              ; 32    ; Signed Integer                                                                     ;
++----------------+-------+------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: register_MEMWB:generic_register_MEMWB|Register32bit:generic_dmem_register ;
++----------------+-------+-----------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                          ;
++----------------+-------+-----------------------------------------------------------------------------------------------+
+; n              ; 32    ; Signed Integer                                                                                ;
++----------------+-------+-----------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: register_MEMWB:generic_register_MEMWB|Register32bit:generic_inst_register ;
++----------------+-------+-----------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                          ;
++----------------+-------+-----------------------------------------------------------------------------------------------+
+; n              ; 32    ; Signed Integer                                                                                ;
++----------------+-------+-----------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: register_MEMWB:generic_register_MEMWB|Register32bit:generic_D0 ;
++----------------+-------+------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                               ;
++----------------+-------+------------------------------------------------------------------------------------+
+; n              ; 32    ; Signed Integer                                                                     ;
++----------------+-------+------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: register_MEMWB:generic_register_MEMWB|Register32bit:generic_ALU_register ;
++----------------+-------+----------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                         ;
++----------------+-------+----------------------------------------------------------------------------------------------+
+; n              ; 32    ; Signed Integer                                                                               ;
++----------------+-------+----------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: register_MEMWB:generic_register_MEMWB|Register32bit:writeaddr_reg ;
++----------------+-------+---------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                  ;
++----------------+-------+---------------------------------------------------------------------------------------+
+; n              ; 5     ; Signed Integer                                                                        ;
++----------------+-------+---------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: register_MEMWB:generic_register_MEMWB|Register32bit:generic_sltu1_register ;
++----------------+-------+------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                           ;
++----------------+-------+------------------------------------------------------------------------------------------------+
+; n              ; 32    ; Signed Integer                                                                                 ;
++----------------+-------+------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: register_MEMWB:generic_register_MEMWB|Register32bit:generic_upperImmediate1_register ;
++----------------+-------+----------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                     ;
++----------------+-------+----------------------------------------------------------------------------------------------------------+
+; n              ; 32    ; Signed Integer                                                                                           ;
++----------------+-------+----------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: register_MEMWB:generic_register_MEMWB|Register32bit:generic_PC ;
++----------------+-------+------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                               ;
++----------------+-------+------------------------------------------------------------------------------------+
+; n              ; 32    ; Signed Integer                                                                     ;
++----------------+-------+------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux_32bit_dataflow:generic_memtoReg_mux ;
++----------------+-------+-------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                        ;
++----------------+-------+-------------------------------------------------------------+
+; n              ; 32    ; Signed Integer                                              ;
++----------------+-------+-------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux_32bit_dataflow:generic_upperImmediate_mux ;
++----------------+-------+-------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                              ;
++----------------+-------+-------------------------------------------------------------------+
+; n              ; 32    ; Signed Integer                                                    ;
++----------------+-------+-------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux_32bit_dataflow:generic_sltu_mux ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; n              ; 32    ; Signed Integer                                          ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux_32bit_dataflow:generic_jal_mux ;
++----------------+-------+--------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                   ;
++----------------+-------+--------------------------------------------------------+
+; n              ; 32    ; Signed Integer                                         ;
++----------------+-------+--------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "register_MEMWB:generic_register_MEMWB"                                                ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; i_we   ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; o_d0   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; o_inst ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------+
+; Port Connectivity Checks: "register_EXMEM:generic_register_EXMEM" ;
++------+-------+----------+-----------------------------------------+
+; Port ; Type  ; Severity ; Details                                 ;
++------+-------+----------+-----------------------------------------+
+; i_we ; Input ; Info     ; Stuck at VCC                            ;
++------+-------+----------+-----------------------------------------+
+
+
++---------------------------------------------------------------------------+
+; Port Connectivity Checks: "barrel_shifter:generic_immediate_barrel_shift" ;
++-----------+-------+----------+--------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                    ;
++-----------+-------+----------+--------------------------------------------+
+; i_s[3..0] ; Input ; Info     ; Stuck at GND                               ;
+; i_s[4]    ; Input ; Info     ; Stuck at VCC                               ;
+; i_a       ; Input ; Info     ; Stuck at VCC                               ;
+; i_l       ; Input ; Info     ; Stuck at VCC                               ;
++-----------+-------+----------+--------------------------------------------+
+
+
++-------------------------------------------------------+
+; Port Connectivity Checks: "mux4to1:generic_ALU_mux_2" ;
++------+-------+----------+-----------------------------+
+; Port ; Type  ; Severity ; Details                     ;
++------+-------+----------+-----------------------------+
+; i_d3 ; Input ; Info     ; Stuck at GND                ;
++------+-------+----------+-----------------------------+
+
+
++-------------------------------------------------------+
+; Port Connectivity Checks: "mux4to1:generic_ALU_mux_1" ;
++------+-------+----------+-----------------------------+
+; Port ; Type  ; Severity ; Details                     ;
++------+-------+----------+-----------------------------+
+; i_d3 ; Input ; Info     ; Stuck at GND                ;
++------+-------+----------+-----------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "mux_32bit_dataflow:ALUSrc_mux"                                                            ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port       ; Type   ; Severity ; Details                                                                             ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; o_o[30..0] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "register_IDEX:generic_register_IDEX"                                                        ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port         ; Type   ; Severity ; Details                                                                             ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
+; i_rst        ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; branch       ; Input  ; Info     ; Stuck at GND                                                                        ;
+; o_alucontrol ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; o_branch     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; o_jr         ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; o_op         ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "barrel_shifter:generic_barrel_shifter_32bit"                                        ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; i_s  ; Input  ; Info     ; Stuck at GND                                                                        ;
+; i_a  ; Input  ; Info     ; Stuck at GND                                                                        ;
+; i_l  ; Input  ; Info     ; Stuck at GND                                                                        ;
+; o_o  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "forwarding_dataflow:generic_forwarding"                                                       ;
++----------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port           ; Type   ; Severity ; Details                                                                             ;
++----------------+--------+----------+-------------------------------------------------------------------------------------+
+; forwarding_mux ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------+
+; Port Connectivity Checks: "mux_32bit_dataflow:branch_mux" ;
++------+-------+----------+---------------------------------+
+; Port ; Type  ; Severity ; Details                         ;
++------+-------+----------+---------------------------------+
+; i_s  ; Input ; Info     ; Stuck at GND                    ;
++------+-------+----------+---------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Fulladder_N:generic_branch_full_adder"                                               ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                             ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; i_fc  ; Input  ; Info     ; Stuck at GND                                                                        ;
+; o_cry ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------+
+; Port Connectivity Checks: "barrel_shifter:generic_branch_barrel_shifter" ;
++-----------+-------+----------+-------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                   ;
++-----------+-------+----------+-------------------------------------------+
+; i_s[4..2] ; Input ; Info     ; Stuck at GND                              ;
+; i_s[1]    ; Input ; Info     ; Stuck at VCC                              ;
+; i_s[0]    ; Input ; Info     ; Stuck at GND                              ;
+; i_a       ; Input ; Info     ; Stuck at VCC                              ;
+; i_l       ; Input ; Info     ; Stuck at VCC                              ;
++-----------+-------+----------+-------------------------------------------+
+
+
++-------------------------------------------------------------------+
+; Port Connectivity Checks: "barrel_shifter:generic_barrel_shifter" ;
++-------------+-------+----------+----------------------------------+
+; Port        ; Type  ; Severity ; Details                          ;
++-------------+-------+----------+----------------------------------+
+; i_i[31..26] ; Input ; Info     ; Stuck at GND                     ;
+; i_s[4..2]   ; Input ; Info     ; Stuck at GND                     ;
+; i_s[1]      ; Input ; Info     ; Stuck at VCC                     ;
+; i_s[0]      ; Input ; Info     ; Stuck at GND                     ;
+; i_a         ; Input ; Info     ; Stuck at VCC                     ;
+; i_l         ; Input ; Info     ; Stuck at VCC                     ;
++-------------+-------+----------+----------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "controlUnit:generic_controlUnit"                                                      ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; regdst ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; halt   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------+
+; Port Connectivity Checks: "mux_32bit_dataflow:jal_read_mux" ;
++------+-------+----------+-----------------------------------+
+; Port ; Type  ; Severity ; Details                           ;
++------+-------+----------+-----------------------------------+
+; i_d1 ; Input ; Info     ; Stuck at VCC                      ;
++------+-------+----------+-----------------------------------+
+
+
++-----------------------------------------------------------+
+; Port Connectivity Checks: "Register_File:reg|Reg_N:reg_0" ;
++-------+-------+----------+--------------------------------+
+; Port  ; Type  ; Severity ; Details                        ;
++-------+-------+----------+--------------------------------+
+; i_rst ; Input ; Info     ; Stuck at VCC                   ;
++-------+-------+----------+--------------------------------+
+
+
++--------------------------------------------------------+
+; Port Connectivity Checks: "register_IFID:generic_IFID" ;
++-------+-------+----------+-----------------------------+
+; Port  ; Type  ; Severity ; Details                     ;
++-------+-------+----------+-----------------------------+
+; i_rst ; Input ; Info     ; Stuck at VCC                ;
++-------+-------+----------+-----------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "mux_32bit_dataflow:PC_mux"                                                          ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; o_o  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Fulladder_N:PC_increment"                                                                  ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                             ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; i_fb[31..3] ; Input  ; Info     ; Stuck at GND                                                                        ;
+; i_fb[1..0]  ; Input  ; Info     ; Stuck at GND                                                                        ;
+; i_fb[2]     ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; i_fc        ; Input  ; Info     ; Stuck at GND                                                                        ;
+; o_cry       ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "mem:IMem"                                                                           ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
@@ -176,119 +1363,219 @@ Info: Running Quartus Prime Analysis & Synthesis
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Sun Nov 14 17:02:39 2021
+    Info: Processing started: Fri Dec 10 21:03:27 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off toolflow -c toolflow
-Info (125068): Revision "toolflow" was previously opened in Quartus II software version 18.0.0 Standard Edition. Created Quartus Prime Default Settings File /home/longz/Desktop/Cpre381/project-1/internal/QuartusWork/toolflow_assignment_defaults.qdf, which contains the default assignment setting information from Quartus II software version 18.0.0 Standard Edition.
+Info (125068): Revision "toolflow" was previously opened in Quartus II software version 18.0.0 Standard Edition. Created Quartus Prime Default Settings File /home/longz/Desktop/Cpre381/project-2/internal/QuartusWork/toolflow_assignment_defaults.qdf, which contains the default assignment setting information from Quartus II software version 18.0.0 Standard Edition.
 Info (125069): Default assignment values were changed in the current version of the Quartus Prime software -- changes to default assignments values are contained in file /usr/local/usr/local/quartus/20.1/quartus/linux64/assignment_defaults.qdf
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
-Info (12021): Found 2 design units, including 1 entities, in source file /home/longz/Desktop/Cpre381/project-1/src/ALU_32bit.vhd
-    Info (12022): Found design unit 1: ALU_32bit-structural File: /home/longz/Desktop/Cpre381/project-1/src/ALU_32bit.vhd Line: 31
-    Info (12023): Found entity 1: ALU_32bit File: /home/longz/Desktop/Cpre381/project-1/src/ALU_32bit.vhd Line: 20
-Info (12021): Found 2 design units, including 1 entities, in source file /home/longz/Desktop/Cpre381/project-1/src/BarrelShifter.vhd
-    Info (12022): Found design unit 1: barrel_shifter-bsh File: /home/longz/Desktop/Cpre381/project-1/src/BarrelShifter.vhd Line: 14
-    Info (12023): Found entity 1: barrel_shifter File: /home/longz/Desktop/Cpre381/project-1/src/BarrelShifter.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file /home/longz/Desktop/Cpre381/project-1/src/Fulladder.vhd
-    Info (12022): Found design unit 1: Fulladder-pizza File: /home/longz/Desktop/Cpre381/project-1/src/Fulladder.vhd Line: 30
-    Info (12023): Found entity 1: Fulladder File: /home/longz/Desktop/Cpre381/project-1/src/Fulladder.vhd Line: 21
-Info (12021): Found 2 design units, including 1 entities, in source file /home/longz/Desktop/Cpre381/project-1/src/Fulladder_N.vhd
-    Info (12022): Found design unit 1: Fulladder_N-pizza_N File: /home/longz/Desktop/Cpre381/project-1/src/Fulladder_N.vhd Line: 31
-    Info (12023): Found entity 1: Fulladder_N File: /home/longz/Desktop/Cpre381/project-1/src/Fulladder_N.vhd Line: 21
-Info (12021): Found 2 design units, including 1 entities, in source file /home/longz/Desktop/Cpre381/project-1/src/MIPS_Processor.vhd
-    Info (12022): Found design unit 1: MIPS_Processor-structure File: /home/longz/Desktop/Cpre381/project-1/src/MIPS_Processor.vhd Line: 32
-    Info (12023): Found entity 1: MIPS_Processor File: /home/longz/Desktop/Cpre381/project-1/src/MIPS_Processor.vhd Line: 20
-Info (12021): Found 2 design units, including 1 entities, in source file /home/longz/Desktop/Cpre381/project-1/src/Reg_N.vhd
-    Info (12022): Found design unit 1: Reg_N-abc File: /home/longz/Desktop/Cpre381/project-1/src/Reg_N.vhd Line: 28
-    Info (12023): Found entity 1: Reg_N File: /home/longz/Desktop/Cpre381/project-1/src/Reg_N.vhd Line: 18
-Info (12021): Found 2 design units, including 1 entities, in source file /home/longz/Desktop/Cpre381/project-1/src/Register_File.vhd
-    Info (12022): Found design unit 1: Register_File-structural File: /home/longz/Desktop/Cpre381/project-1/src/Register_File.vhd Line: 33
-    Info (12023): Found entity 1: Register_File File: /home/longz/Desktop/Cpre381/project-1/src/Register_File.vhd Line: 20
-Info (12021): Found 2 design units, including 1 entities, in source file /home/longz/Desktop/Cpre381/project-1/src/addsub.vhd
-    Info (12022): Found design unit 1: addsub-behavior File: /home/longz/Desktop/Cpre381/project-1/src/addsub.vhd Line: 31
-    Info (12023): Found entity 1: addsub File: /home/longz/Desktop/Cpre381/project-1/src/addsub.vhd Line: 21
-Info (12021): Found 2 design units, including 1 entities, in source file /home/longz/Desktop/Cpre381/project-1/src/andg2.vhd
-    Info (12022): Found design unit 1: andg2-dataflow File: /home/longz/Desktop/Cpre381/project-1/src/andg2.vhd Line: 31
-    Info (12023): Found entity 1: andg2 File: /home/longz/Desktop/Cpre381/project-1/src/andg2.vhd Line: 23
-Info (12021): Found 2 design units, including 1 entities, in source file /home/longz/Desktop/Cpre381/project-1/src/bitxtend.vhd
-    Info (12022): Found design unit 1: extender_N-behavior File: /home/longz/Desktop/Cpre381/project-1/src/bitxtend.vhd Line: 16
-    Info (12023): Found entity 1: extender_N File: /home/longz/Desktop/Cpre381/project-1/src/bitxtend.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file /home/longz/Desktop/Cpre381/project-1/src/controlUnit.vhd
-    Info (12022): Found design unit 1: controlUnit-behavioral File: /home/longz/Desktop/Cpre381/project-1/src/controlUnit.vhd Line: 42
-    Info (12023): Found entity 1: controlUnit File: /home/longz/Desktop/Cpre381/project-1/src/controlUnit.vhd Line: 20
-Info (12021): Found 2 design units, including 1 entities, in source file /home/longz/Desktop/Cpre381/project-1/src/controlUnit_tb.vhd
-    Info (12022): Found design unit 1: controlUnit_tb-behavior File: /home/longz/Desktop/Cpre381/project-1/src/controlUnit_tb.vhd Line: 23
-    Info (12023): Found entity 1: controlUnit_tb File: /home/longz/Desktop/Cpre381/project-1/src/controlUnit_tb.vhd Line: 20
-Info (12021): Found 2 design units, including 1 entities, in source file /home/longz/Desktop/Cpre381/project-1/src/decoder5t32.vhd
-    Info (12022): Found design unit 1: decoder5t32-dataflow File: /home/longz/Desktop/Cpre381/project-1/src/decoder5t32.vhd Line: 29
-    Info (12023): Found entity 1: decoder5t32 File: /home/longz/Desktop/Cpre381/project-1/src/decoder5t32.vhd Line: 23
-Info (12021): Found 2 design units, including 1 entities, in source file /home/longz/Desktop/Cpre381/project-1/src/dffg.vhd
-    Info (12022): Found design unit 1: dffg-mixed File: /home/longz/Desktop/Cpre381/project-1/src/dffg.vhd Line: 33
-    Info (12023): Found entity 1: dffg File: /home/longz/Desktop/Cpre381/project-1/src/dffg.vhd Line: 23
-Info (12021): Found 2 design units, including 1 entities, in source file /home/longz/Desktop/Cpre381/project-1/src/fetch.vhd
-    Info (12022): Found design unit 1: fetch-behavorial File: /home/longz/Desktop/Cpre381/project-1/src/fetch.vhd Line: 26
-    Info (12023): Found entity 1: fetch File: /home/longz/Desktop/Cpre381/project-1/src/fetch.vhd Line: 17
-Info (12021): Found 2 design units, including 1 entities, in source file /home/longz/Desktop/Cpre381/project-1/src/mem.vhd
-    Info (12022): Found design unit 1: mem-rtl File: /home/longz/Desktop/Cpre381/project-1/src/mem.vhd Line: 27
-    Info (12023): Found entity 1: mem File: /home/longz/Desktop/Cpre381/project-1/src/mem.vhd Line: 8
-Info (12021): Found 2 design units, including 1 entities, in source file /home/longz/Desktop/Cpre381/project-1/src/mux32t1_array.vhd
-    Info (12022): Found design unit 1: mux32t1_array-dataflow File: /home/longz/Desktop/Cpre381/project-1/src/mux32t1_array.vhd Line: 30
-    Info (12023): Found entity 1: mux32t1_array File: /home/longz/Desktop/Cpre381/project-1/src/mux32t1_array.vhd Line: 23
-Info (12021): Found 2 design units, including 1 entities, in source file /home/longz/Desktop/Cpre381/project-1/src/mux8to1_32bit_data.vhd
-    Info (12022): Found design unit 1: mux8to1_32bit_data-dataflow File: /home/longz/Desktop/Cpre381/project-1/src/mux8to1_32bit_data.vhd Line: 33
-    Info (12023): Found entity 1: mux8to1_32bit_data File: /home/longz/Desktop/Cpre381/project-1/src/mux8to1_32bit_data.vhd Line: 20
-Info (12021): Found 2 design units, including 1 entities, in source file /home/longz/Desktop/Cpre381/project-1/src/mux_32bit_dataflow.vhd
-    Info (12022): Found design unit 1: mux_32bit_dataflow-dataflow File: /home/longz/Desktop/Cpre381/project-1/src/mux_32bit_dataflow.vhd Line: 30
-    Info (12023): Found entity 1: mux_32bit_dataflow File: /home/longz/Desktop/Cpre381/project-1/src/mux_32bit_dataflow.vhd Line: 21
-Info (12021): Found 2 design units, including 1 entities, in source file /home/longz/Desktop/Cpre381/project-1/src/nand_32bit_data.vhd
-    Info (12022): Found design unit 1: nand_32bit_data-dataflow File: /home/longz/Desktop/Cpre381/project-1/src/nand_32bit_data.vhd Line: 26
-    Info (12023): Found entity 1: nand_32bit_data File: /home/longz/Desktop/Cpre381/project-1/src/nand_32bit_data.vhd Line: 20
-Info (12021): Found 2 design units, including 1 entities, in source file /home/longz/Desktop/Cpre381/project-1/src/nor_32bit_data.vhd
-    Info (12022): Found design unit 1: nor_32bit_data-dataflow File: /home/longz/Desktop/Cpre381/project-1/src/nor_32bit_data.vhd Line: 26
-    Info (12023): Found entity 1: nor_32bit_data File: /home/longz/Desktop/Cpre381/project-1/src/nor_32bit_data.vhd Line: 20
-Info (12021): Found 2 design units, including 1 entities, in source file /home/longz/Desktop/Cpre381/project-1/src/or_32bit_data.vhd
-    Info (12022): Found design unit 1: or_32bit_data-dataflow File: /home/longz/Desktop/Cpre381/project-1/src/or_32bit_data.vhd Line: 26
-    Info (12023): Found entity 1: or_32bit_data File: /home/longz/Desktop/Cpre381/project-1/src/or_32bit_data.vhd Line: 20
-Info (12021): Found 2 design units, including 1 entities, in source file /home/longz/Desktop/Cpre381/project-1/src/org2.vhd
-    Info (12022): Found design unit 1: org2-dataflow File: /home/longz/Desktop/Cpre381/project-1/src/org2.vhd Line: 31
-    Info (12023): Found entity 1: org2 File: /home/longz/Desktop/Cpre381/project-1/src/org2.vhd Line: 23
-Info (12021): Found 2 design units, including 1 entities, in source file /home/longz/Desktop/Cpre381/project-1/src/programCounter.vhd
-    Info (12022): Found design unit 1: programCounter-behavorial File: /home/longz/Desktop/Cpre381/project-1/src/programCounter.vhd Line: 23
-    Info (12023): Found entity 1: programCounter File: /home/longz/Desktop/Cpre381/project-1/src/programCounter.vhd Line: 15
-Info (12021): Found 2 design units, including 1 entities, in source file /home/longz/Desktop/Cpre381/project-1/src/programCounterAdd.vhd
-    Info (12022): Found design unit 1: programCounterAdd-mixed File: /home/longz/Desktop/Cpre381/project-1/src/programCounterAdd.vhd Line: 24
-    Info (12023): Found entity 1: programCounterAdd File: /home/longz/Desktop/Cpre381/project-1/src/programCounterAdd.vhd Line: 17
-Info (12021): Found 2 design units, including 1 entities, in source file /home/longz/Desktop/Cpre381/project-1/src/programCounterEnd.vhd
-    Info (12022): Found design unit 1: programCounterEnd-mixed File: /home/longz/Desktop/Cpre381/project-1/src/programCounterEnd.vhd Line: 26
-    Info (12023): Found entity 1: programCounterEnd File: /home/longz/Desktop/Cpre381/project-1/src/programCounterEnd.vhd Line: 16
-Info (12021): Found 1 design units, including 0 entities, in source file /home/longz/Desktop/Cpre381/project-1/src/reg_array_type.vhd
-    Info (12022): Found design unit 1: reg_array_type File: /home/longz/Desktop/Cpre381/project-1/src/reg_array_type.vhd Line: 21
-Info (12021): Found 2 design units, including 1 entities, in source file /home/longz/Desktop/Cpre381/project-1/src/xor_32bit_data.vhd
-    Info (12022): Found design unit 1: xor_32bit_data-dataflow File: /home/longz/Desktop/Cpre381/project-1/src/xor_32bit_data.vhd Line: 26
-    Info (12023): Found entity 1: xor_32bit_data File: /home/longz/Desktop/Cpre381/project-1/src/xor_32bit_data.vhd Line: 20
-Info (12021): Found 2 design units, including 1 entities, in source file /home/longz/Desktop/Cpre381/project-1/src/xorg2.vhd
-    Info (12022): Found design unit 1: xorg2-dataflow File: /home/longz/Desktop/Cpre381/project-1/src/xorg2.vhd Line: 31
-    Info (12023): Found entity 1: xorg2 File: /home/longz/Desktop/Cpre381/project-1/src/xorg2.vhd Line: 23
+Info (12021): Found 2 design units, including 1 entities, in source file /home/longz/Desktop/Cpre381/project-2/src/ALU_32bit.vhd
+    Info (12022): Found design unit 1: ALU_32bit-structural File: /home/longz/Desktop/Cpre381/project-2/src/ALU_32bit.vhd Line: 31
+    Info (12023): Found entity 1: ALU_32bit File: /home/longz/Desktop/Cpre381/project-2/src/ALU_32bit.vhd Line: 20
+Info (12021): Found 2 design units, including 1 entities, in source file /home/longz/Desktop/Cpre381/project-2/src/BarrelShifter.vhd
+    Info (12022): Found design unit 1: barrel_shifter-bsh File: /home/longz/Desktop/Cpre381/project-2/src/BarrelShifter.vhd Line: 14
+    Info (12023): Found entity 1: barrel_shifter File: /home/longz/Desktop/Cpre381/project-2/src/BarrelShifter.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /home/longz/Desktop/Cpre381/project-2/src/Fulladder.vhd
+    Info (12022): Found design unit 1: Fulladder-pizza File: /home/longz/Desktop/Cpre381/project-2/src/Fulladder.vhd Line: 30
+    Info (12023): Found entity 1: Fulladder File: /home/longz/Desktop/Cpre381/project-2/src/Fulladder.vhd Line: 21
+Info (12021): Found 2 design units, including 1 entities, in source file /home/longz/Desktop/Cpre381/project-2/src/Fulladder_N.vhd
+    Info (12022): Found design unit 1: Fulladder_N-pizza_N File: /home/longz/Desktop/Cpre381/project-2/src/Fulladder_N.vhd Line: 31
+    Info (12023): Found entity 1: Fulladder_N File: /home/longz/Desktop/Cpre381/project-2/src/Fulladder_N.vhd Line: 21
+Info (12021): Found 2 design units, including 1 entities, in source file /home/longz/Desktop/Cpre381/project-2/src/MIPS_Processor.vhd
+    Info (12022): Found design unit 1: MIPS_Processor-structure File: /home/longz/Desktop/Cpre381/project-2/src/MIPS_Processor.vhd Line: 32
+    Info (12023): Found entity 1: MIPS_Processor File: /home/longz/Desktop/Cpre381/project-2/src/MIPS_Processor.vhd Line: 20
+Info (12021): Found 2 design units, including 1 entities, in source file /home/longz/Desktop/Cpre381/project-2/src/MemForwardingUnit.vhd
+    Info (12022): Found design unit 1: MemForwardingUnit-behavorial File: /home/longz/Desktop/Cpre381/project-2/src/MemForwardingUnit.vhd Line: 30
+    Info (12023): Found entity 1: MemForwardingUnit File: /home/longz/Desktop/Cpre381/project-2/src/MemForwardingUnit.vhd Line: 22
+Info (12021): Found 2 design units, including 1 entities, in source file /home/longz/Desktop/Cpre381/project-2/src/Reg_N.vhd
+    Info (12022): Found design unit 1: Reg_N-abc File: /home/longz/Desktop/Cpre381/project-2/src/Reg_N.vhd Line: 28
+    Info (12023): Found entity 1: Reg_N File: /home/longz/Desktop/Cpre381/project-2/src/Reg_N.vhd Line: 18
+Info (12021): Found 2 design units, including 1 entities, in source file /home/longz/Desktop/Cpre381/project-2/src/Register_File.vhd
+    Info (12022): Found design unit 1: Register_File-structural File: /home/longz/Desktop/Cpre381/project-2/src/Register_File.vhd Line: 33
+    Info (12023): Found entity 1: Register_File File: /home/longz/Desktop/Cpre381/project-2/src/Register_File.vhd Line: 20
+Info (12021): Found 2 design units, including 1 entities, in source file /home/longz/Desktop/Cpre381/project-2/src/addsub.vhd
+    Info (12022): Found design unit 1: addsub-behavior File: /home/longz/Desktop/Cpre381/project-2/src/addsub.vhd Line: 31
+    Info (12023): Found entity 1: addsub File: /home/longz/Desktop/Cpre381/project-2/src/addsub.vhd Line: 21
+Info (12021): Found 2 design units, including 1 entities, in source file /home/longz/Desktop/Cpre381/project-2/src/andg2.vhd
+    Info (12022): Found design unit 1: andg2-dataflow File: /home/longz/Desktop/Cpre381/project-2/src/andg2.vhd Line: 31
+    Info (12023): Found entity 1: andg2 File: /home/longz/Desktop/Cpre381/project-2/src/andg2.vhd Line: 23
+Info (12021): Found 2 design units, including 1 entities, in source file /home/longz/Desktop/Cpre381/project-2/src/bitxtend.vhd
+    Info (12022): Found design unit 1: extender_N-behavior File: /home/longz/Desktop/Cpre381/project-2/src/bitxtend.vhd Line: 16
+    Info (12023): Found entity 1: extender_N File: /home/longz/Desktop/Cpre381/project-2/src/bitxtend.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /home/longz/Desktop/Cpre381/project-2/src/controlUnit.vhd
+    Info (12022): Found design unit 1: controlUnit-behavioral File: /home/longz/Desktop/Cpre381/project-2/src/controlUnit.vhd Line: 42
+    Info (12023): Found entity 1: controlUnit File: /home/longz/Desktop/Cpre381/project-2/src/controlUnit.vhd Line: 20
+Info (12021): Found 2 design units, including 1 entities, in source file /home/longz/Desktop/Cpre381/project-2/src/controlUnit_tb.vhd
+    Info (12022): Found design unit 1: controlUnit_tb-behavior File: /home/longz/Desktop/Cpre381/project-2/src/controlUnit_tb.vhd Line: 23
+    Info (12023): Found entity 1: controlUnit_tb File: /home/longz/Desktop/Cpre381/project-2/src/controlUnit_tb.vhd Line: 20
+Info (12021): Found 2 design units, including 1 entities, in source file /home/longz/Desktop/Cpre381/project-2/src/control_hazard_dataflow.vhd
+    Info (12022): Found design unit 1: control_hazard_dataflow-dataflow File: /home/longz/Desktop/Cpre381/project-2/src/control_hazard_dataflow.vhd Line: 32
+    Info (12023): Found entity 1: control_hazard_dataflow File: /home/longz/Desktop/Cpre381/project-2/src/control_hazard_dataflow.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/longz/Desktop/Cpre381/project-2/src/decoder5t32.vhd
+    Info (12022): Found design unit 1: decoder5t32-dataflow File: /home/longz/Desktop/Cpre381/project-2/src/decoder5t32.vhd Line: 29
+    Info (12023): Found entity 1: decoder5t32 File: /home/longz/Desktop/Cpre381/project-2/src/decoder5t32.vhd Line: 23
+Info (12021): Found 2 design units, including 1 entities, in source file /home/longz/Desktop/Cpre381/project-2/src/dffg.vhd
+    Info (12022): Found design unit 1: dffg-mixed File: /home/longz/Desktop/Cpre381/project-2/src/dffg.vhd Line: 33
+    Info (12023): Found entity 1: dffg File: /home/longz/Desktop/Cpre381/project-2/src/dffg.vhd Line: 23
+Info (12021): Found 2 design units, including 1 entities, in source file /home/longz/Desktop/Cpre381/project-2/src/fetch.vhd
+    Info (12022): Found design unit 1: fetch-behavorial File: /home/longz/Desktop/Cpre381/project-2/src/fetch.vhd Line: 26
+    Info (12023): Found entity 1: fetch File: /home/longz/Desktop/Cpre381/project-2/src/fetch.vhd Line: 17
+Info (12021): Found 2 design units, including 1 entities, in source file /home/longz/Desktop/Cpre381/project-2/src/forwarding_dataflow.vhd
+    Info (12022): Found design unit 1: forwarding_dataflow-behavioral File: /home/longz/Desktop/Cpre381/project-2/src/forwarding_dataflow.vhd Line: 28
+    Info (12023): Found entity 1: forwarding_dataflow File: /home/longz/Desktop/Cpre381/project-2/src/forwarding_dataflow.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/longz/Desktop/Cpre381/project-2/src/mem.vhd
+    Info (12022): Found design unit 1: mem-rtl File: /home/longz/Desktop/Cpre381/project-2/src/mem.vhd Line: 27
+    Info (12023): Found entity 1: mem File: /home/longz/Desktop/Cpre381/project-2/src/mem.vhd Line: 8
+Info (12021): Found 2 design units, including 1 entities, in source file /home/longz/Desktop/Cpre381/project-2/src/mux32t1_array.vhd
+    Info (12022): Found design unit 1: mux32t1_array-dataflow File: /home/longz/Desktop/Cpre381/project-2/src/mux32t1_array.vhd Line: 30
+    Info (12023): Found entity 1: mux32t1_array File: /home/longz/Desktop/Cpre381/project-2/src/mux32t1_array.vhd Line: 23
+Info (12021): Found 2 design units, including 1 entities, in source file /home/longz/Desktop/Cpre381/project-2/src/mux4to1.vhd
+    Info (12022): Found design unit 1: mux4to1-structural File: /home/longz/Desktop/Cpre381/project-2/src/mux4to1.vhd Line: 14
+    Info (12023): Found entity 1: mux4to1 File: /home/longz/Desktop/Cpre381/project-2/src/mux4to1.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/longz/Desktop/Cpre381/project-2/src/mux8to1_32bit_data.vhd
+    Info (12022): Found design unit 1: mux8to1_32bit_data-dataflow File: /home/longz/Desktop/Cpre381/project-2/src/mux8to1_32bit_data.vhd Line: 33
+    Info (12023): Found entity 1: mux8to1_32bit_data File: /home/longz/Desktop/Cpre381/project-2/src/mux8to1_32bit_data.vhd Line: 20
+Info (12021): Found 2 design units, including 1 entities, in source file /home/longz/Desktop/Cpre381/project-2/src/mux_32bit_dataflow.vhd
+    Info (12022): Found design unit 1: mux_32bit_dataflow-dataflow File: /home/longz/Desktop/Cpre381/project-2/src/mux_32bit_dataflow.vhd Line: 30
+    Info (12023): Found entity 1: mux_32bit_dataflow File: /home/longz/Desktop/Cpre381/project-2/src/mux_32bit_dataflow.vhd Line: 21
+Info (12021): Found 2 design units, including 1 entities, in source file /home/longz/Desktop/Cpre381/project-2/src/nand_32bit_data.vhd
+    Info (12022): Found design unit 1: nand_32bit_data-dataflow File: /home/longz/Desktop/Cpre381/project-2/src/nand_32bit_data.vhd Line: 26
+    Info (12023): Found entity 1: nand_32bit_data File: /home/longz/Desktop/Cpre381/project-2/src/nand_32bit_data.vhd Line: 20
+Info (12021): Found 2 design units, including 1 entities, in source file /home/longz/Desktop/Cpre381/project-2/src/nor_32bit_data.vhd
+    Info (12022): Found design unit 1: nor_32bit_data-dataflow File: /home/longz/Desktop/Cpre381/project-2/src/nor_32bit_data.vhd Line: 26
+    Info (12023): Found entity 1: nor_32bit_data File: /home/longz/Desktop/Cpre381/project-2/src/nor_32bit_data.vhd Line: 20
+Info (12021): Found 2 design units, including 1 entities, in source file /home/longz/Desktop/Cpre381/project-2/src/or_32bit_data.vhd
+    Info (12022): Found design unit 1: or_32bit_data-dataflow File: /home/longz/Desktop/Cpre381/project-2/src/or_32bit_data.vhd Line: 26
+    Info (12023): Found entity 1: or_32bit_data File: /home/longz/Desktop/Cpre381/project-2/src/or_32bit_data.vhd Line: 20
+Info (12021): Found 2 design units, including 1 entities, in source file /home/longz/Desktop/Cpre381/project-2/src/org2.vhd
+    Info (12022): Found design unit 1: org2-dataflow File: /home/longz/Desktop/Cpre381/project-2/src/org2.vhd Line: 31
+    Info (12023): Found entity 1: org2 File: /home/longz/Desktop/Cpre381/project-2/src/org2.vhd Line: 23
+Info (12021): Found 2 design units, including 1 entities, in source file /home/longz/Desktop/Cpre381/project-2/src/programCounter.vhd
+    Info (12022): Found design unit 1: programCounter-behavorial File: /home/longz/Desktop/Cpre381/project-2/src/programCounter.vhd Line: 12
+    Info (12023): Found entity 1: programCounter File: /home/longz/Desktop/Cpre381/project-2/src/programCounter.vhd Line: 4
+Info (12021): Found 1 design units, including 0 entities, in source file /home/longz/Desktop/Cpre381/project-2/src/reg_array_type.vhd
+    Info (12022): Found design unit 1: reg_array_type File: /home/longz/Desktop/Cpre381/project-2/src/reg_array_type.vhd Line: 21
+Info (12021): Found 2 design units, including 1 entities, in source file /home/longz/Desktop/Cpre381/project-2/src/register32bit.vhd
+    Info (12022): Found design unit 1: Register32bit-bigboy File: /home/longz/Desktop/Cpre381/project-2/src/register32bit.vhd Line: 32
+    Info (12023): Found entity 1: Register32bit File: /home/longz/Desktop/Cpre381/project-2/src/register32bit.vhd Line: 18
+Info (12021): Found 2 design units, including 1 entities, in source file /home/longz/Desktop/Cpre381/project-2/src/register_EXMEM.vhd
+    Info (12022): Found design unit 1: register_EXMEM-structural File: /home/longz/Desktop/Cpre381/project-2/src/register_EXMEM.vhd Line: 41
+    Info (12023): Found entity 1: register_EXMEM File: /home/longz/Desktop/Cpre381/project-2/src/register_EXMEM.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/longz/Desktop/Cpre381/project-2/src/register_IDEX.vhd
+    Info (12022): Found design unit 1: register_IDEX-structural File: /home/longz/Desktop/Cpre381/project-2/src/register_IDEX.vhd Line: 62
+    Info (12023): Found entity 1: register_IDEX File: /home/longz/Desktop/Cpre381/project-2/src/register_IDEX.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/longz/Desktop/Cpre381/project-2/src/register_IFID.vhd
+    Info (12022): Found design unit 1: register_IFID-structural File: /home/longz/Desktop/Cpre381/project-2/src/register_IFID.vhd Line: 17
+    Info (12023): Found entity 1: register_IFID File: /home/longz/Desktop/Cpre381/project-2/src/register_IFID.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/longz/Desktop/Cpre381/project-2/src/register_MEMWB.vhd
+    Info (12022): Found design unit 1: register_MEMWB-structural File: /home/longz/Desktop/Cpre381/project-2/src/register_MEMWB.vhd Line: 36
+    Info (12023): Found entity 1: register_MEMWB File: /home/longz/Desktop/Cpre381/project-2/src/register_MEMWB.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/longz/Desktop/Cpre381/project-2/src/tb_datapath.vhd
+    Info (12022): Found design unit 1: tb_pipeline-mixed File: /home/longz/Desktop/Cpre381/project-2/src/tb_datapath.vhd Line: 9
+    Info (12023): Found entity 1: tb_pipeline File: /home/longz/Desktop/Cpre381/project-2/src/tb_datapath.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/longz/Desktop/Cpre381/project-2/src/xor_32bit_data.vhd
+    Info (12022): Found design unit 1: xor_32bit_data-dataflow File: /home/longz/Desktop/Cpre381/project-2/src/xor_32bit_data.vhd Line: 26
+    Info (12023): Found entity 1: xor_32bit_data File: /home/longz/Desktop/Cpre381/project-2/src/xor_32bit_data.vhd Line: 20
+Info (12021): Found 2 design units, including 1 entities, in source file /home/longz/Desktop/Cpre381/project-2/src/xorg2.vhd
+    Info (12022): Found design unit 1: xorg2-dataflow File: /home/longz/Desktop/Cpre381/project-2/src/xorg2.vhd Line: 31
+    Info (12023): Found entity 1: xorg2 File: /home/longz/Desktop/Cpre381/project-2/src/xorg2.vhd Line: 23
 Info (12127): Elaborating entity "MIPS_Processor" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at MIPS_Processor.vhd(51): object "s_Halt" assigned a value but never read File: /home/longz/Desktop/Cpre381/project-1/src/MIPS_Processor.vhd Line: 51
-Warning (10036): Verilog HDL or VHDL warning at MIPS_Processor.vhd(74): object "s_bne" assigned a value but never read File: /home/longz/Desktop/Cpre381/project-1/src/MIPS_Processor.vhd Line: 74
-Warning (10036): Verilog HDL or VHDL warning at MIPS_Processor.vhd(75): object "s_beq" assigned a value but never read File: /home/longz/Desktop/Cpre381/project-1/src/MIPS_Processor.vhd Line: 75
-Warning (10541): VHDL Signal Declaration warning at MIPS_Processor.vhd(82): used implicit default value for signal "s_Signed" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/longz/Desktop/Cpre381/project-1/src/MIPS_Processor.vhd Line: 82
-Warning (10541): VHDL Signal Declaration warning at MIPS_Processor.vhd(83): used implicit default value for signal "s_no" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/longz/Desktop/Cpre381/project-1/src/MIPS_Processor.vhd Line: 83
-Warning (10541): VHDL Signal Declaration warning at MIPS_Processor.vhd(86): used implicit default value for signal "s_jal" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/longz/Desktop/Cpre381/project-1/src/MIPS_Processor.vhd Line: 86
-Warning (10036): Verilog HDL or VHDL warning at MIPS_Processor.vhd(87): object "s_sv" assigned a value but never read File: /home/longz/Desktop/Cpre381/project-1/src/MIPS_Processor.vhd Line: 87
-Warning (10036): Verilog HDL or VHDL warning at MIPS_Processor.vhd(88): object "s_ui" assigned a value but never read File: /home/longz/Desktop/Cpre381/project-1/src/MIPS_Processor.vhd Line: 88
-Warning (10036): Verilog HDL or VHDL warning at MIPS_Processor.vhd(90): object "s_sltu" assigned a value but never read File: /home/longz/Desktop/Cpre381/project-1/src/MIPS_Processor.vhd Line: 90
-Warning (10541): VHDL Signal Declaration warning at MIPS_Processor.vhd(91): used implicit default value for signal "s_branch" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/longz/Desktop/Cpre381/project-1/src/MIPS_Processor.vhd Line: 91
-Warning (10036): Verilog HDL or VHDL warning at MIPS_Processor.vhd(93): object "s_Zero" assigned a value but never read File: /home/longz/Desktop/Cpre381/project-1/src/MIPS_Processor.vhd Line: 93
-Error (10344): VHDL expression error at MIPS_Processor.vhd(315): expression has 5 elements, but must have 32 elements File: /home/longz/Desktop/Cpre381/project-1/src/MIPS_Processor.vhd Line: 315
-Error (10324): VHDL Expression error at MIPS_Processor.vhd(316): expression ""11111"" has 5 elements ; expected 32 elements. File: /home/longz/Desktop/Cpre381/project-1/src/MIPS_Processor.vhd Line: 316
-Error (10346): VHDL error at MIPS_Processor.vhd(314): formal port or parameter "i_D0" must have actual or default value File: /home/longz/Desktop/Cpre381/project-1/src/MIPS_Processor.vhd Line: 314
-Error (10346): VHDL error at MIPS_Processor.vhd(314): formal port or parameter "i_D1" must have actual or default value File: /home/longz/Desktop/Cpre381/project-1/src/MIPS_Processor.vhd Line: 314
-Error (12153): Can't elaborate top-level user hierarchy
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 5 errors, 12 warnings
-    Error: Peak virtual memory: 550 megabytes
-    Error: Processing ended: Sun Nov 14 17:02:49 2021
-    Error: Elapsed time: 00:00:10
-    Error: Total CPU time (on all processors): 00:00:17
+Warning (10036): Verilog HDL or VHDL warning at MIPS_Processor.vhd(51): object "s_Halt" assigned a value but never read File: /home/longz/Desktop/Cpre381/project-2/src/MIPS_Processor.vhd Line: 51
+Warning (10541): VHDL Signal Declaration warning at MIPS_Processor.vhd(70): used implicit default value for signal "s_D0" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/longz/Desktop/Cpre381/project-2/src/MIPS_Processor.vhd Line: 70
+Warning (10541): VHDL Signal Declaration warning at MIPS_Processor.vhd(72): used implicit default value for signal "s_regDst" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/longz/Desktop/Cpre381/project-2/src/MIPS_Processor.vhd Line: 72
+Warning (10036): Verilog HDL or VHDL warning at MIPS_Processor.vhd(79): object "op_Code" assigned a value but never read File: /home/longz/Desktop/Cpre381/project-2/src/MIPS_Processor.vhd Line: 79
+Warning (10036): Verilog HDL or VHDL warning at MIPS_Processor.vhd(80): object "funct" assigned a value but never read File: /home/longz/Desktop/Cpre381/project-2/src/MIPS_Processor.vhd Line: 80
+Warning (10541): VHDL Signal Declaration warning at MIPS_Processor.vhd(83): used implicit default value for signal "s_Signed" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/longz/Desktop/Cpre381/project-2/src/MIPS_Processor.vhd Line: 83
+Warning (10541): VHDL Signal Declaration warning at MIPS_Processor.vhd(84): used implicit default value for signal "sl" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/longz/Desktop/Cpre381/project-2/src/MIPS_Processor.vhd Line: 84
+Warning (10541): VHDL Signal Declaration warning at MIPS_Processor.vhd(85): used implicit default value for signal "sr" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/longz/Desktop/Cpre381/project-2/src/MIPS_Processor.vhd Line: 85
+Warning (10541): VHDL Signal Declaration warning at MIPS_Processor.vhd(93): used implicit default value for signal "s_ALUControl" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/longz/Desktop/Cpre381/project-2/src/MIPS_Processor.vhd Line: 93
+Warning (10541): VHDL Signal Declaration warning at MIPS_Processor.vhd(97): used implicit default value for signal "s_Zero" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/longz/Desktop/Cpre381/project-2/src/MIPS_Processor.vhd Line: 97
+Warning (10541): VHDL Signal Declaration warning at MIPS_Processor.vhd(110): used implicit default value for signal "s_O_PC" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/longz/Desktop/Cpre381/project-2/src/MIPS_Processor.vhd Line: 110
+Warning (10541): VHDL Signal Declaration warning at MIPS_Processor.vhd(142): used implicit default value for signal "s_D0_IFID" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/longz/Desktop/Cpre381/project-2/src/MIPS_Processor.vhd Line: 142
+Warning (10036): Verilog HDL or VHDL warning at MIPS_Processor.vhd(145): object "s_PC_mux1" assigned a value but never read File: /home/longz/Desktop/Cpre381/project-2/src/MIPS_Processor.vhd Line: 145
+Warning (10541): VHDL Signal Declaration warning at MIPS_Processor.vhd(148): used implicit default value for signal "s_inst1" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/longz/Desktop/Cpre381/project-2/src/MIPS_Processor.vhd Line: 148
+Warning (10036): Verilog HDL or VHDL warning at MIPS_Processor.vhd(169): object "s_ALUOP_IDEX" assigned a value but never read File: /home/longz/Desktop/Cpre381/project-2/src/MIPS_Processor.vhd Line: 169
+Warning (10541): VHDL Signal Declaration warning at MIPS_Processor.vhd(171): used implicit default value for signal "s_flush_IFID" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/longz/Desktop/Cpre381/project-2/src/MIPS_Processor.vhd Line: 171
+Warning (10541): VHDL Signal Declaration warning at MIPS_Processor.vhd(172): used implicit default value for signal "s_stall_IFID" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/longz/Desktop/Cpre381/project-2/src/MIPS_Processor.vhd Line: 172
+Warning (10541): VHDL Signal Declaration warning at MIPS_Processor.vhd(173): used implicit default value for signal "s_stall_IDEX" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/longz/Desktop/Cpre381/project-2/src/MIPS_Processor.vhd Line: 173
+Warning (10036): Verilog HDL or VHDL warning at MIPS_Processor.vhd(192): object "s_ALUControl_IDEX" assigned a value but never read File: /home/longz/Desktop/Cpre381/project-2/src/MIPS_Processor.vhd Line: 192
+Warning (10036): Verilog HDL or VHDL warning at MIPS_Processor.vhd(194): object "s_jr_IDEX" assigned a value but never read File: /home/longz/Desktop/Cpre381/project-2/src/MIPS_Processor.vhd Line: 194
+Warning (10036): Verilog HDL or VHDL warning at MIPS_Processor.vhd(211): object "s_branch_IDEX" assigned a value but never read File: /home/longz/Desktop/Cpre381/project-2/src/MIPS_Processor.vhd Line: 211
+Warning (10036): Verilog HDL or VHDL warning at MIPS_Processor.vhd(212): object "s_forwarding_mux" assigned a value but never read File: /home/longz/Desktop/Cpre381/project-2/src/MIPS_Processor.vhd Line: 212
+Warning (10541): VHDL Signal Declaration warning at MIPS_Processor.vhd(213): used implicit default value for signal "s_flush_IDEX" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/longz/Desktop/Cpre381/project-2/src/MIPS_Processor.vhd Line: 213
+Warning (10873): Using initial value X (don't care) for net "s_j_temp[31..28]" at MIPS_Processor.vhd(152) File: /home/longz/Desktop/Cpre381/project-2/src/MIPS_Processor.vhd Line: 152
+Info (12128): Elaborating entity "mem" for hierarchy "mem:IMem" File: /home/longz/Desktop/Cpre381/project-2/src/MIPS_Processor.vhd Line: 499
+Info (12128): Elaborating entity "Fulladder_N" for hierarchy "Fulladder_N:PC_increment" File: /home/longz/Desktop/Cpre381/project-2/src/MIPS_Processor.vhd Line: 520
+Info (12128): Elaborating entity "Fulladder" for hierarchy "Fulladder_N:PC_increment|Fulladder:ADDER0" File: /home/longz/Desktop/Cpre381/project-2/src/Fulladder_N.vhd Line: 46
+Info (12128): Elaborating entity "xorg2" for hierarchy "Fulladder_N:PC_increment|Fulladder:ADDER0|xorg2:g_xor0" File: /home/longz/Desktop/Cpre381/project-2/src/Fulladder.vhd Line: 62
+Info (12128): Elaborating entity "andg2" for hierarchy "Fulladder_N:PC_increment|Fulladder:ADDER0|andg2:g_and0" File: /home/longz/Desktop/Cpre381/project-2/src/Fulladder.vhd Line: 72
+Info (12128): Elaborating entity "org2" for hierarchy "Fulladder_N:PC_increment|Fulladder:ADDER0|org2:g_or0" File: /home/longz/Desktop/Cpre381/project-2/src/Fulladder.vhd Line: 82
+Info (12128): Elaborating entity "mux_32bit_dataflow" for hierarchy "mux_32bit_dataflow:PC_mux" File: /home/longz/Desktop/Cpre381/project-2/src/MIPS_Processor.vhd Line: 530
+Info (12128): Elaborating entity "register_IFID" for hierarchy "register_IFID:generic_IFID" File: /home/longz/Desktop/Cpre381/project-2/src/MIPS_Processor.vhd Line: 539
+Info (12128): Elaborating entity "Register32bit" for hierarchy "register_IFID:generic_IFID|Register32bit:generic_32bitregister" File: /home/longz/Desktop/Cpre381/project-2/src/register_IFID.vhd Line: 32
+Info (12128): Elaborating entity "Register_File" for hierarchy "Register_File:reg" File: /home/longz/Desktop/Cpre381/project-2/src/MIPS_Processor.vhd Line: 561
+Info (12128): Elaborating entity "decoder5t32" for hierarchy "Register_File:reg|decoder5t32:write_decoder" File: /home/longz/Desktop/Cpre381/project-2/src/Register_File.vhd Line: 66
+Info (12128): Elaborating entity "Reg_N" for hierarchy "Register_File:reg|Reg_N:reg_0" File: /home/longz/Desktop/Cpre381/project-2/src/Register_File.vhd Line: 78
+Info (12128): Elaborating entity "dffg" for hierarchy "Register_File:reg|Reg_N:reg_0|dffg:\G_NBit_REG:0:g_dffg0" File: /home/longz/Desktop/Cpre381/project-2/src/Reg_N.vhd Line: 41
+Info (12128): Elaborating entity "mux32t1_array" for hierarchy "Register_File:reg|mux32t1_array:read_mux_t" File: /home/longz/Desktop/Cpre381/project-2/src/Register_File.vhd Line: 94
+Info (12128): Elaborating entity "mux4to1" for hierarchy "mux4to1:generic_forwarding_mux3" File: /home/longz/Desktop/Cpre381/project-2/src/MIPS_Processor.vhd Line: 573
+Info (12128): Elaborating entity "mux_32bit_dataflow" for hierarchy "mux_32bit_dataflow:jal_read_mux" File: /home/longz/Desktop/Cpre381/project-2/src/MIPS_Processor.vhd Line: 591
+Info (12128): Elaborating entity "controlUnit" for hierarchy "controlUnit:generic_controlUnit" File: /home/longz/Desktop/Cpre381/project-2/src/MIPS_Processor.vhd Line: 598
+Warning (10631): VHDL Process Statement warning at controlUnit.vhd(57): inferring latch(es) for signal or variable "RegDst", which holds its previous value in one or more paths through the process File: /home/longz/Desktop/Cpre381/project-2/src/controlUnit.vhd Line: 57
+Warning (10631): VHDL Process Statement warning at controlUnit.vhd(57): inferring latch(es) for signal or variable "ALUSrc", which holds its previous value in one or more paths through the process File: /home/longz/Desktop/Cpre381/project-2/src/controlUnit.vhd Line: 57
+Warning (10631): VHDL Process Statement warning at controlUnit.vhd(57): inferring latch(es) for signal or variable "MemtoReg", which holds its previous value in one or more paths through the process File: /home/longz/Desktop/Cpre381/project-2/src/controlUnit.vhd Line: 57
+Warning (10631): VHDL Process Statement warning at controlUnit.vhd(57): inferring latch(es) for signal or variable "RegWrite", which holds its previous value in one or more paths through the process File: /home/longz/Desktop/Cpre381/project-2/src/controlUnit.vhd Line: 57
+Warning (10631): VHDL Process Statement warning at controlUnit.vhd(57): inferring latch(es) for signal or variable "MemWrite", which holds its previous value in one or more paths through the process File: /home/longz/Desktop/Cpre381/project-2/src/controlUnit.vhd Line: 57
+Warning (10631): VHDL Process Statement warning at controlUnit.vhd(57): inferring latch(es) for signal or variable "ALUControl", which holds its previous value in one or more paths through the process File: /home/longz/Desktop/Cpre381/project-2/src/controlUnit.vhd Line: 57
+Warning (10631): VHDL Process Statement warning at controlUnit.vhd(57): inferring latch(es) for signal or variable "beq", which holds its previous value in one or more paths through the process File: /home/longz/Desktop/Cpre381/project-2/src/controlUnit.vhd Line: 57
+Warning (10631): VHDL Process Statement warning at controlUnit.vhd(57): inferring latch(es) for signal or variable "bne", which holds its previous value in one or more paths through the process File: /home/longz/Desktop/Cpre381/project-2/src/controlUnit.vhd Line: 57
+Warning (10631): VHDL Process Statement warning at controlUnit.vhd(57): inferring latch(es) for signal or variable "j", which holds its previous value in one or more paths through the process File: /home/longz/Desktop/Cpre381/project-2/src/controlUnit.vhd Line: 57
+Warning (10631): VHDL Process Statement warning at controlUnit.vhd(57): inferring latch(es) for signal or variable "jr", which holds its previous value in one or more paths through the process File: /home/longz/Desktop/Cpre381/project-2/src/controlUnit.vhd Line: 57
+Warning (10631): VHDL Process Statement warning at controlUnit.vhd(57): inferring latch(es) for signal or variable "sltu", which holds its previous value in one or more paths through the process File: /home/longz/Desktop/Cpre381/project-2/src/controlUnit.vhd Line: 57
+Warning (10631): VHDL Process Statement warning at controlUnit.vhd(57): inferring latch(es) for signal or variable "shiftVariable", which holds its previous value in one or more paths through the process File: /home/longz/Desktop/Cpre381/project-2/src/controlUnit.vhd Line: 57
+Warning (10631): VHDL Process Statement warning at controlUnit.vhd(57): inferring latch(es) for signal or variable "upper_immediate", which holds its previous value in one or more paths through the process File: /home/longz/Desktop/Cpre381/project-2/src/controlUnit.vhd Line: 57
+Warning (10631): VHDL Process Statement warning at controlUnit.vhd(57): inferring latch(es) for signal or variable "s_halt", which holds its previous value in one or more paths through the process File: /home/longz/Desktop/Cpre381/project-2/src/controlUnit.vhd Line: 57
+Info (10041): Inferred latch for "s_halt" at controlUnit.vhd(57) File: /home/longz/Desktop/Cpre381/project-2/src/controlUnit.vhd Line: 57
+Info (10041): Inferred latch for "upper_immediate" at controlUnit.vhd(57) File: /home/longz/Desktop/Cpre381/project-2/src/controlUnit.vhd Line: 57
+Info (10041): Inferred latch for "shiftVariable" at controlUnit.vhd(57) File: /home/longz/Desktop/Cpre381/project-2/src/controlUnit.vhd Line: 57
+Info (10041): Inferred latch for "sltu" at controlUnit.vhd(57) File: /home/longz/Desktop/Cpre381/project-2/src/controlUnit.vhd Line: 57
+Info (10041): Inferred latch for "jr" at controlUnit.vhd(57) File: /home/longz/Desktop/Cpre381/project-2/src/controlUnit.vhd Line: 57
+Info (10041): Inferred latch for "j" at controlUnit.vhd(57) File: /home/longz/Desktop/Cpre381/project-2/src/controlUnit.vhd Line: 57
+Info (10041): Inferred latch for "bne" at controlUnit.vhd(57) File: /home/longz/Desktop/Cpre381/project-2/src/controlUnit.vhd Line: 57
+Info (10041): Inferred latch for "beq" at controlUnit.vhd(57) File: /home/longz/Desktop/Cpre381/project-2/src/controlUnit.vhd Line: 57
+Info (10041): Inferred latch for "ALUControl[0]" at controlUnit.vhd(57) File: /home/longz/Desktop/Cpre381/project-2/src/controlUnit.vhd Line: 57
+Info (10041): Inferred latch for "ALUControl[1]" at controlUnit.vhd(57) File: /home/longz/Desktop/Cpre381/project-2/src/controlUnit.vhd Line: 57
+Info (10041): Inferred latch for "ALUControl[2]" at controlUnit.vhd(57) File: /home/longz/Desktop/Cpre381/project-2/src/controlUnit.vhd Line: 57
+Info (10041): Inferred latch for "ALUControl[3]" at controlUnit.vhd(57) File: /home/longz/Desktop/Cpre381/project-2/src/controlUnit.vhd Line: 57
+Info (10041): Inferred latch for "MemWrite" at controlUnit.vhd(57) File: /home/longz/Desktop/Cpre381/project-2/src/controlUnit.vhd Line: 57
+Info (10041): Inferred latch for "RegWrite" at controlUnit.vhd(57) File: /home/longz/Desktop/Cpre381/project-2/src/controlUnit.vhd Line: 57
+Info (10041): Inferred latch for "MemtoReg" at controlUnit.vhd(57) File: /home/longz/Desktop/Cpre381/project-2/src/controlUnit.vhd Line: 57
+Info (10041): Inferred latch for "ALUSrc" at controlUnit.vhd(57) File: /home/longz/Desktop/Cpre381/project-2/src/controlUnit.vhd Line: 57
+Info (10041): Inferred latch for "RegDst" at controlUnit.vhd(57) File: /home/longz/Desktop/Cpre381/project-2/src/controlUnit.vhd Line: 57
+Info (12128): Elaborating entity "extender_N" for hierarchy "extender_N:generic_immediate_extend" File: /home/longz/Desktop/Cpre381/project-2/src/MIPS_Processor.vhd Line: 618
+Info (12128): Elaborating entity "barrel_shifter" for hierarchy "barrel_shifter:generic_barrel_shifter" File: /home/longz/Desktop/Cpre381/project-2/src/MIPS_Processor.vhd Line: 631
+Info (12128): Elaborating entity "forwarding_dataflow" for hierarchy "forwarding_dataflow:generic_forwarding" File: /home/longz/Desktop/Cpre381/project-2/src/MIPS_Processor.vhd Line: 679
+Info (12128): Elaborating entity "register_IDEX" for hierarchy "register_IDEX:generic_register_IDEX" File: /home/longz/Desktop/Cpre381/project-2/src/MIPS_Processor.vhd Line: 727
+Info (12128): Elaborating entity "Register32bit" for hierarchy "register_IDEX:generic_register_IDEX|Register32bit:generic_wrAddr" File: /home/longz/Desktop/Cpre381/project-2/src/register_IDEX.vhd Line: 83
+Info (12128): Elaborating entity "Register32bit" for hierarchy "register_IDEX:generic_register_IDEX|Register32bit:generic_op" File: /home/longz/Desktop/Cpre381/project-2/src/register_IDEX.vhd Line: 155
+Info (12128): Elaborating entity "register_EXMEM" for hierarchy "register_EXMEM:generic_register_EXMEM" File: /home/longz/Desktop/Cpre381/project-2/src/MIPS_Processor.vhd Line: 890
+Info (12128): Elaborating entity "register_MEMWB" for hierarchy "register_MEMWB:generic_register_MEMWB" File: /home/longz/Desktop/Cpre381/project-2/src/MIPS_Processor.vhd Line: 946
+Error (12014): Net "s_PC_IFID[31]", which fans out to "register_IDEX:generic_register_IDEX|PC[31]", cannot be assigned more than one value File: /home/longz/Desktop/Cpre381/project-2/src/MIPS_Processor.vhd Line: 124
+    Error (12015): Net is fed by "register_IFID:generic_IFID|o_PC[31]" File: /home/longz/Desktop/Cpre381/project-2/src/register_IFID.vhd Line: 12
+    Error (12015): Net is fed by "barrel_shifter:generic_barrel_shifter|o_O[31]" File: /home/longz/Desktop/Cpre381/project-2/src/BarrelShifter.vhd Line: 19
+Error (12014): Net "s_PC_IFID[30]", which fans out to "register_IDEX:generic_register_IDEX|PC[30]", cannot be assigned more than one value File: /home/longz/Desktop/Cpre381/project-2/src/MIPS_Processor.vhd Line: 124
+    Error (12015): Net is fed by "register_IFID:generic_IFID|o_PC[30]" File: /home/longz/Desktop/Cpre381/project-2/src/register_IFID.vhd Line: 12
+    Error (12015): Net is fed by "barrel_shifter:generic_barrel_shifter|o_O[30]" File: /home/longz/Desktop/Cpre381/project-2/src/BarrelShifter.vhd Line: 19
+Error (12014): Net "s_PC_IFID[29]", which fans out to "register_IDEX:generic_register_IDEX|PC[29]", cannot be assigned more than one value File: /home/longz/Desktop/Cpre381/project-2/src/MIPS_Processor.vhd Line: 124
+    Error (12015): Net is fed by "register_IFID:generic_IFID|o_PC[29]" File: /home/longz/Desktop/Cpre381/project-2/src/register_IFID.vhd Line: 12
+    Error (12015): Net is fed by "barrel_shifter:generic_barrel_shifter|o_O[29]" File: /home/longz/Desktop/Cpre381/project-2/src/BarrelShifter.vhd Line: 19
+Error (12014): Net "s_PC_IFID[28]", which fans out to "register_IDEX:generic_register_IDEX|PC[28]", cannot be assigned more than one value File: /home/longz/Desktop/Cpre381/project-2/src/MIPS_Processor.vhd Line: 124
+    Error (12015): Net is fed by "register_IFID:generic_IFID|o_PC[28]" File: /home/longz/Desktop/Cpre381/project-2/src/register_IFID.vhd Line: 12
+    Error (12015): Net is fed by "barrel_shifter:generic_barrel_shifter|o_O[28]" File: /home/longz/Desktop/Cpre381/project-2/src/BarrelShifter.vhd Line: 19
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 12 errors, 39 warnings
+    Error: Peak virtual memory: 579 megabytes
+    Error: Processing ended: Fri Dec 10 21:03:36 2021
+    Error: Elapsed time: 00:00:09
+    Error: Total CPU time (on all processors): 00:00:18
 
 

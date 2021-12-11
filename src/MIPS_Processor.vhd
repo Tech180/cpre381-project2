@@ -485,6 +485,34 @@ component mux4to1 is
          o_O  : out std_logic_vector(N-1 downto 0));
 end component;
 
+component control_hazard_dataflow is
+  generic(N : integer := 32);
+  port(branch					         : in std_logic;
+       jump					             : in std_logic;
+       branch_IDEX					     : in std_logic;
+       memtoReg_IDEX	                 : in std_logic;
+       jr	                             : in std_logic;
+       j_IDEX	                         : in std_logic;
+       jr_IDEX	                         : in std_logic;
+
+       memtoReg_EXMEM	                 : in std_logic;
+
+       rd_IFID		                     : in std_logic_vector(4 downto 0);
+       rt_IFID		                     : in std_logic_vector(4 downto 0);
+       regdst_EXMEM		                 : in std_logic_vector(4 downto 0);
+       writeAddr_EXMEM		             : in std_logic_vector(4 downto 0);
+
+       inst_IDEX						 : in std_logic_vector(31 downto 0);
+       inst_EXMEM						 : in std_logic_vector(31 downto 0);
+
+       flush_IFID	                     : out std_logic;
+       stall_IFID	                     : out std_logic;
+       stall_IDEX	                     : out std_logic;
+       stall_PC	                         : out std_logic;
+       flush_IDEX	                     : out std_logic);
+
+end component;
+
 --hazard unit
 begin
 
@@ -675,7 +703,32 @@ begin
 
     --hazard unit!
     --TODO
+hazard: control_hazard_dataflow
+  port map(branch           => s_Branch,
+           jump             => s_j,
+           branch_IDEX      => s_branch_IDEX,
+           memtoReg_IDEX    => s_memtoReg_IDEX,
+           jr               => s_jr,
+           j_IDEX           => s_j_IDEX,
+           jr_IDEX          => s_jr_IDEX,
 
+           memtoReg_EXMEM   => s_memToReg_EXMEM,
+
+           rd_IFID          => s_inst_IFID(20 downto 16),
+           rt_IFID          => s_inst_IFID(25 downto 21),
+           regdst_EXMEM     => s_regdst_mux1_EXMEM,
+           writeAddr_EXMEM  => s_writeAddress_EXMEM,
+           
+           inst_IDEX        => s_inst_IDEX,
+           inst_EXMEM       =>s_inst_EXMEM,
+
+           flush_IFID       => s_flush_IFID,
+           stall_IFID       => s_stall_IFID,
+           stall_IDEX       => s_stall_IDEX,
+           stall_PC         => s_stall_PC,
+           flush_IDEX       => s_flush_IDEX);
+    
+    
     generic_forwarding : forwarding_dataflow
         port map(regWrite_EXMEM => s_regWrite_EXMEM,
                  regWrite_MEMWB => s_RegWr,
